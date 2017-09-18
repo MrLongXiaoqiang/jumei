@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	
+}
+body{
+	background: #fafafa;
+}
+a:link{
+	text-decoration: none;
+	color: white;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+}
