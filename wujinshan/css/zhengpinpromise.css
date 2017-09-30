@@ -1,0 +1,1081 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+
+
+
+a {
+	color: #6c6c6c;
+}
+
+.header_row_1 ul:last-child li:nth-child(5) a,
+a:hover {
+	color: #ed155b;
+}
+
+
+.header_div {
+	height: 680px;
+	position: relative;
+}
+
+.header_center {
+	margin: 0 auto;
+	font-size: 12px;
+	color: #6c6c6c;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+}
+
+.body_left,
+.body_right {
+	/*background: lightblue;*/
+}
+
+.header_center ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+.header_center ul:first-child {
+	float: left;
+}
+
+.header_row_1 .header_center ul:last-child {
+	width: 479px;
+	float: right;
+}
+
+.down_jiantou_pic {
+	font-size: 3px;
+	margin-left: 5px;
+}
+
+.shuxian:first-child {
+	margin-right: 10px;
+}
+
+.shuxian:last-child {
+	margin-left: 10px;
+}
+
+.shuxian {
+	opacity: .6;
+	font-size: 15px;
+}
+
+.header_phone_pic {
+	background: url(http://a2.jmstatic.com/6af6d8c6b9b5ec16/header_sprites1.png) 0px -21px no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+	height: 14px;
+	width: 10px;
+}
+
+.header_row_1 {
+	background: #e5e5e5;
+}
+
+
+/*header_centerou头部中间位置*/
+
+.header_row_2 .header_center {
+	height: 110px;
+	line-height: 110px;
+	vertical-align: middle;
+}
+
+.header_row_2 .header_center_left a {
+	width: 165px;
+	height: 85px;
+	display: inline-block;
+	float: left;
+	background: url(http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg);
+	margin-top: 16px;
+}
+
+.header_row_2 {
+	height: 110px;
+	vertical-align: middle;
+}
+
+.header_center_right {
+	float: right;
+	line-height: 110px;
+	vertical-align: middle;
+}
+
+.header_center_right a {
+	/*width: 190px;*/
+	height: 32px;
+	display: inline-block;
+	border: 1px solid #e5e5e5;
+	line-height: 30px;
+	overflow: hidden;
+}
+
+.header_center_right a span {
+	display: inline-block;
+	background: #e5e5e5;
+	height: 31px;
+	/*width:80px;*/
+	margin-left: 5px;
+	text-align: center;
+}
+
+.header_center_right a img {
+	line-height: 28px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.header_center_right a span .down_jiantou_pic {
+	margin: 0px 3px 0px 0px;
+}
+
+
+/*header_row_3头部下部*/
+
+.header_row_3 {
+	background: url(http://a1.jmstatic.com/e653901f7f30da9c/nav_new_line.jpg);
+	height: 38px;
+}
+
+.header_row_3 a {
+	color: white;
+	font-size: 14px;
+}
+
+.header_row_3 ul:first-child li {
+	margin-right: 40px;
+	height: 38px;
+	line-height: 38px;
+	vertical-align: middle;
+}
+
+.header_row_3 ul:first-child li:first-child {
+	background: #ed155b;
+	width: 60px;
+	height: 38px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.header_row_3 ul:first-child li:hover a,
+{
+	opacity: .6;
+	text-decoration: none;
+}
+
+.header_row_3 ul:last-child {
+	float: right;
+	width: 156px;
+}
+
+.header_row_3 ul:last-child li a {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.header_row_3 ul:last-child li:first-child a {
+	background: url(http://a3.jmstatic.com/0d4bbfe600f8d38b/z_01new.jpg)no-repeat;
+}
+
+.header_row_3 ul:last-child li:nth-child(2) a {
+	background: url(http://a5.jmstatic.com/901163e36281c86a/z02.jpg)no-repeat;
+}
+
+.header_row_3 ul:last-child li:last-child a {
+	background: url(http://a1.jmstatic.com/79ab7f2d9d35ac68/z03.jpg)no-repeat;
+}
+
+.header_row_3 ul:last-child li {
+	float: left;
+}
+
+.zhengpin_pic {
+	width: 100%;
+	height: 420px;
+	background: url(http://images2.jumei.com/activity/guarantee/top_bg.jpg);
+}
+
+.zhengpin_pic_center {
+	width: 100%;
+	height: 400px;
+	background: url(http://images.jumei.com/act/header03.jpg) center no-repeat;
+}
+
+
+/*header_bottom头部下侧导航*/
+
+.header_bottom_nav {
+	height: 97px;
+	width: 100%;
+	background: #fafafa;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	text-align: center;
+}
+
+.header_bottom_nav ul {
+	margin: 0 auto;
+	width: 1130px;
+	height: 100%;
+	margin-top: 10px;
+}
+
+.header_bottom_nav ul li {
+	height: 85px;
+	width: 93px;
+	float: left;
+	overflow: hidden;
+}
+
+.header_bottom_nav ul li:nth-child(7) span:first-child {
+	position: relative;
+	right: 15px;
+	width: 115px;
+	display: inline-block;
+}
+
+.header_bottom_nav ul li:nth-child(7) span:nth-child(2) {
+	position: relative;
+	width: 100px;
+	bottom: 5px;
+	display: inline-block;
+}
+
+.header_bottom_nav ul li:nth-child(7) {
+	width: 100px;
+	text-align: center;
+}
+
+.header_bottom_nav ul li span:first-child {
+	display: block;
+	overflow: hidden;
+	width: 100px;
+	height: 50px;
+}
+
+.header_bottom_nav ul li span:last-child {
+	line-height: 40px;
+	vertical-align: 40px;
+}
+
+.header_bottom_nav ul li a span:first-child {
+	background: url(http://images2.jumei.com/activity/guarantee/menu_bg_v2.png?v=2) no-repeat;
+}
+
+.header_bottom_nav ul li:first-child a span {
+	background-position: -1050px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(2) a span {
+	background-position: 0px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(3) a span {
+	background-position: -95px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(4) a span {
+	background-position: -951px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(5) a span {
+	background-position: -190px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(6) a span {
+	background-position: -281px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(7) a span {
+	background-position: -371px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(8) a span {
+	background-position: -491px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(9) a span {
+	background-position: -581px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(10) a span {
+	background-position: -671px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(11) a span {
+	background-position: -771px 0px;
+}
+
+.header_bottom_nav ul li:nth-child(12) a span {
+	background-position: -861px 0px;
+}
+
+.header_bottom_nav ul li:hover a span {
+	background-position-y: -50px;
+}
+
+.header_bottom_nav ul li:hover a span:last-child {
+	background: #ed155b;
+	display: block;
+	height: 40px;
+	color: white;
+}
+
+.nav_hover_a {
+	background: #ed155b;
+	display: block;
+	height: 40px;
+	width: 90px;
+	color: white;
+}
+
+
+/*主体内容*/
+
+section>div {
+	width: 100%;
+	background: #fafafa;
+}
+
+section>div>div {
+	margin: 0 auto;
+	background: white;
+}
+
+.section_div_1_video {
+	width: 1090px;
+	margin: 20px auto;
+	text-align: center;
+	background: white;
+}
+
+.section_div_1 .section_banner_pic {
+	background: url(http://p0.jmstatic.com/activity/guarantee/ipo_head2.jpg?v%EF%BC%9D1)no-repeat;
+}
+
+.section_div_2 .section_banner_pic {
+	background: url(http://images.jumei.com/act/quality_stock_ad.jpg)no-repeat top center transparent;
+	background-color: #304341;
+}
+
+.section_div_3 .section_banner_pic {
+	background: url(http://images.jumei.com/act/zheng_01.jpg)no-repeat top center transparent;
+	background-color: #600000;
+}
+
+.section_div_4 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/quality_ad.jpg)no-repeat top center transparent;
+	background-color: #160122;
+}
+
+.section_div_5 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/jianding_center_ad.jpg)no-repeat top center transparent;
+	background-color: #141226;
+}
+
+.section_div_6 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/bold_consignment_ad.jpg?v=1)no-repeat top center transparent;
+	background-color: #13132b;
+}
+
+.section_div_7 .section_banner_pic {
+	background: url(http://p0.jmstatic.com/jmstore/image/000/000/423_std/5475b881a8180.jpg)no-repeat top center transparent;
+	background-color: #3d0e22;
+}
+
+.section_div_8 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/country_lead_ad.jpg)no-repeat top center transparent;
+	background-color: #f30c5b;
+}
+
+.section_div_9 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/star_commend_ad.jpg)no-repeat top center transparent;
+	background-color: #262613;
+}
+
+.section_div_10 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/user_confide_ad.jpg)no-repeat top center transparent;
+	background-color: #282126;
+}
+
+.section_div_11 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/quality_photo_ad.jpg)no-repeat top center transparent;
+	background-color: #383838;
+}
+
+.section_div_12 .section_banner_pic {
+	background: url(http://images2.jumei.com/activity/guarantee/gold_service_ad.jpg)no-repeat top center transparent;
+	background-color: #543f1e;
+}
+
+
+/*主体内容1：在美上市*/
+
+.section_banner_pic {
+	height: 301px;
+	margin: 0 auto;
+}
+
+.section_div_4 .section_banner_pic {
+	height: 250px;
+}
+
+.section_div_1_video {}
+
+.section_div_1_2 {
+	width: 962px;
+	height: 538px;
+}
+
+.section_div_1_2 p {
+	display: inline-block;
+	width: 446px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1c1c1c;
+	font-family: '宋体';
+}
+
+.section_div_1_3 {
+	width: 640px;
+	height: 360px;
+}
+
+
+/*采购流程*/
+
+.section_caigouliucheng_header {
+	font-size: 28px;
+	color: black;
+}
+
+.section_caigouliucheng {
+	width: 958px;
+	background: white;
+	padding: 20px;
+}
+
+.section_caigouliucheng span:first-child {
+	color: #666666;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.section_caigouliucheng span:nth-child(2) {
+	color: #666666;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.section_caigouliucheng p {
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+
+/*正品联盟*/
+
+.section_div_3_text {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.section_div_3_text p {
+	width: 900px;
+	height: 60px;
+	line-height: 60px;
+	background: #a90305;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 34px;
+	margin: 20px 0;
+}
+
+.section_div_3_text img {
+	margin: 10px;
+}
+
+
+/*保证保险*/
+
+.section_div_4_text {
+	width: 960px;
+	height: 1020px;
+	text-align: center;
+}
+
+.section_div_4_text img {
+	margin: 10px;
+}
+
+
+/**/
+
+.section_div_5_text {
+	width: 958px;
+	text-align: center;
+}
+
+.section_div_5_text img {
+	margin: 10px;
+}
+
+.section_div_5_text img:nth-child(2) {
+	/*margin-left: 30px;*/
+}
+
+.section_div_5_text img:nth-child(3) {
+	margin-left: 78px;
+}
+
+.section_div_5_text img:nth-child(7),
+.section_div_5_text img:nth-child(4),
+.section_div_5_text img:nth-child(5),
+.section_div_5_text img:nth-child(6) {
+	margin-left: 30px;
+}
+
+.section_div_5_text img:nth-child(4) {
+	margin-left: 10px;
+}
+
+.section_div_5_text img:last-child {}
+
+
+/*内容6闪电发货*/
+
+.section_div_6_text {
+	width: 958px;
+	height: 1190px;
+	margin-top: 10px;
+}
+
+.section_div_6_text div {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 130px;
+	height: 130px;
+	/*background: red;*/
+	/*padding-top: 30px;*/
+}
+
+.section_div_6_text div:first-child {
+	padding-top: 30px;
+}
+
+.section_div_6_text div:first-child span:first-child {
+	width: 93px;
+	height: 77px;
+	background: url(http://images2.jumei.com/activity/guarantee/bold_corn.jpg)no-repeat;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.section_div_6_text div:first-child span:nth-child(2) {
+	font-size: 28px;
+	color: #ed145b;
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	left: 50px;
+}
+
+.section_div_6_text_header_p {
+	text-align: right;
+	margin-right: 50px;
+	font-size: 14px;
+	color: #aaa;
+}
+
+.section_div_6_text_wenbendouble h3 {
+	font-size: 30px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+}
+
+.section_div_6_text_wenbendouble p {
+	font-size: 14px;
+	font-family: "宋体";
+	line-height: 21px;
+	color: #666666;
+	width: 300px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.section_div_6_text_wenbendouble {
+	width: 300px;
+	height: 106px;
+	float: left;
+	margin-right: 10px;
+}
+
+.section_div_6_row {
+	margin-bottom: 30px;
+}
+
+<!--内容7 30天无理由退货--> .section_div_7_header {
+	text-align: center;
+	width: 950px;
+	margin: 0 auto;
+	height: 490px;
+}
+
+.section_div_7_header div:first-child {
+	text-align: center;
+	width: 950px;
+	margin: 0 auto;
+}
+
+.section_div_7_header div:first-child img {
+	margin-top: 20px;
+}
+
+.section_div_7_header_row2 span {
+	width: 113px;
+	height: 84px;
+	float: left;
+	background: url(http://p0.jmstatic.com/jmstore/image/000/000/423_std/5475b91949e9d.jpg)no-repeat;
+}
+
+.section_div_7_header_row2 {
+	height: 134px;
+	width: 950px;
+	margin: 0 auto;
+	padding-left: 80px;
+}
+
+.section_div_7_header_row2 div {
+	float: left;
+	width: 720px;
+	color: black;
+	margin-left: 20px;
+}
+
+.section_div_7_header_row2 div:nth-child(2) {
+	font-size: 30px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.section_div_7_header_row2 div:nth-child(3) {
+	font-size: 14px;
+	font-family: "宋体";
+	line-height: 21px;
+	/*height: 212px;*/
+}
+
+.section_div_7_header_row2 img {
+	margin-top: 20px;
+	float: left;
+	margin-left: 20px;
+}
+
+.section_div_7_header_row2>p {
+	float: left;
+	margin: 20px;
+}
+
+.section_div_7_header_row3 {
+	/*float: left;*/
+	/*clear: both;*/
+	width: 950px;
+	height: 273px;
+	padding: 20px 0 100px 0;
+}
+
+<!--内容8 信誉保证--> .section_div_8_text {
+	width: 950px;
+	padding: 50px;
+}
+
+.section_div_8_text_row1 {
+	width: 958px;
+	margin: 0 auto;
+}
+
+.section_div_8_text_row1>div:first-child {
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.section_div_8_text_row1>p {
+	font-size: 14px;
+	font-family: "宋体";
+	line-height: 21px;
+	color: #666666;
+}
+
+.section_div_8_text_row2 {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.section_div_8_text_row2 p {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.width_500px {
+	width: 450px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+
+/*内容第9块 明星支持*/
+
+.section_div_9_text {
+	width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+
+/**/
+
+.section_div_11_text,
+.section_div_12_text,
+.section_div_10_text {
+	width: 950px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section_div_10_text textarea {
+	width: 900px;
+	height: 500px;
+}
+
+
+/*第十二部分*/
+
+.section_div_12_text>div:first-child {
+	font-size: 30px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.section_div_12_text>p {
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+
+/*footer部分*/
+
+.footer_div {
+	width: 100%;
+	height: 336px;
+	float: left;
+	border-top: 1px solid gray;
+	margin-top: 10px;
+	background: white;
+	clear: both;
+}
+
+.footer_div_1 a:first-child {
+	display: block;
+	width: 130px;
+	height: 140px;
+	float: left;
+}
+
+.footer_div_1 {
+	font-size: 14px;
+	border-bottom: 1px solid #999;
+}
+
+.footer_div_1 a span:last-child {
+	color: #999999;
+}
+
+.footer_div_1 a span:first-child {
+	background: url(http://a1.jmstatic.com/a80588af4bfc3be4/footer_0901.jpg)no-repeat;
+	width: 63px;
+	height: 63px;
+	margin: 0 auto 20px;
+	display: block;
+}
+
+.footer_div_1 a:nth-child(2) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png)0px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(2) {
+	width: 170px;
+	float: left;
+}
+
+.footer_div_1 a:nth-child(3) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png)-127px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(3) {
+	width: 160px;
+	float: left;
+}
+
+.footer_div_1 a:nth-child(4) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png) -190px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(4) {
+	width: 168px;
+	float: left;
+}
+
+.footer_div_1 a:nth-child(5) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png)-253px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(5) {
+	width: 170px;
+	float: left;
+}
+
+.footer_div_1 a:nth-child(6) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png) -315px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(6) {
+	width: 158px;
+	float: left;
+}
+
+.footer_div_1 a:nth-child(7) span:first-child {
+	background: url(http://a4.jmstatic.com/2198d559e0e2c3fd/footer_new.png) -378px 0px no-repeat;
+}
+
+.footer_div_1 a:nth-child(7) {
+	width: 134px;
+	float: left;
+}
+
+.footer_div_1 a span:nth-child(2) {
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+}
+
+.footer_div_1 a span:nth-child(3) {
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+}
+
+.footer_div_1 {
+	height: 166px;
+	padding: 30px 0px 0px 0px;
+	text-align: center;
+}
+
+.footer_div_2 {
+	/*height: 165px;*/
+	padding-top: 30px;
+	margin-top: -20px;
+}
+
+.footer_div_2 ul {
+	float: left;
+	/*height: 143px;*/
+	float: left;
+}
+
+.footer_div_2 ul li:first-child {
+	margin-bottom: 10px;
+}
+
+.footer_div_2 ul:first-child {
+	width: 176px;
+}
+
+.footer_div_2 ul:nth-child(2) {
+	width: 172px;
+}
+
+.footer_div_2 ul:nth-child(3) {
+	width: 172px;
+}
+
+.footer_div_2 ul:nth-child(4) {
+	width: 172px;
+}
+
+.footer_div_2 ul:nth-child(5) {
+	width: 143px;
+}
+
+.footer_div_2 ul:nth-child(7) {
+	width: 110px;
+	padding-left: 30px;
+	float: right;
+}
+
+.footer_div_2 ul:nth-child(7) li:nth-child(2) {
+	height: 78px;
+	width: 78px;
+	background: url(http://a5.jmstatic.com/fa73c812fb960875/header_corn_new_v2.png) 0px -423px no-repeat;
+	position: relative;
+	right: 5px;
+}
+
+.footer_div_2 ul:nth-child(6) li:nth-child(2) {
+	height: 78px;
+	width: 78px;
+	background: url(http://a5.jmstatic.com/fa73c812fb960875/header_corn_new_v2.png) 0px -423px no-repeat;
+	position: relative;
+	right: 5px;
+}
+
+.footer_div_2 ul:nth-child(6) li:nth-child(3),
+.footer_div_2 ul:nth-child(7) li:nth-child(3) {
+	font-size: 12px;
+	color: #999999;
+	position: relative;
+	right: 5px;
+}
+
+.footer_div_2 ul:nth-child(6) {
+	width: 110px;
+	float: right;
+	margin-right: 5px;
+}
+
+.footer_div_2 ul li {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.footer_div_2 ul li a {
+	font-size: 12px;
+	color: #999999;
+}
+
+.footer_div_3 {
+	height: 95px;
+	background: url(http://a1.jmstatic.com/07c1f8519c836ade/footer_dy.jpg)top center;
+	width: 100%;
+	float: left;
+}
+
+.footer_div_4 {
+	height: 48px;
+	background: url(http://a1.jmstatic.com/b8eb8e59f67968ee/footer_btm02_bg.jpg);
+	width: 100%;
+	float: left;
+}
+
+.footer_div_4 a {
+	font-size: 13px;
+	color: white;
+	margin-right: 10px;
+	line-height: 48px;
+	vertical-align: middle;
+}
+
+.footer_div_5 {
+	height: 132px;
+	padding-bottom: 80px;
+	background: url(http://a3.jmstatic.com/9fab7638c2b22895/newindex_footer_bg.png);
+	width: 100%;
+	float: left;
+}
+
+.footer_div_5 a,
+.footer_div_5 p {
+	font-size: 13px;
+	color: #999999;
+}
+
+.footer_div_5 a {
+	width: 126px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer_five_bottom a:first-child {
+	background: url(http://a4.jmstatic.com/a6195c982dae0cec/footer_btm_icon.png) 0px 0px no-repeat;
+}
+
+.footer_five_bottom a:nth-child(2) {
+	background: url(http://a4.jmstatic.com/a6195c982dae0cec/footer_btm_icon.png) -126px 0px no-repeat;
+}
+
+.footer_five_bottom a:nth-child(3) {
+	background: url(http://a4.jmstatic.com/a6195c982dae0cec/footer_btm_icon.png) -252px 0px no-repeat;
+}
+
+.footer_five_bottom a:nth-child(4) {
+	background: url(http://a4.jmstatic.com/a6195c982dae0cec/footer_btm_icon.png) -378px 0px no-repeat;
+}
+
+.footer_five_bottom a:nth-child(5) {
+	background: url(http://a4.jmstatic.com/a6195c982dae0cec/footer_btm_icon.png) -504px 0px no-repeat;
+}
+
+.footer_div_5 p:first-child,
+.footer_div_5 p:nth-child(2) {
+	margin-top: 15px;
+}
+
+.footer_five_bottom {
+	margin-top: -20px;
+}
+
+.width_1090 {
+	width: 1090px;
+	margin: 0 auto;
+}
+
+section>a {
+	/*position: absolute;*/
+	/*margin-top: 50px;*/
+	/*position: relative;
+	top: 50px;
+	margin-bottom: -50px;*/
+}
