@@ -6,9 +6,24 @@
 
 
 
+//计算组合价格
+var pric =document.getElementsByName("recomd_group");
 
-
-
+for(var i=0;i<pric.length;i++){
+	pric[i].onchange=function(){
+		var sum=169;
+		if(pric[0].checked){
+			sum+=119;
+		}
+		if(pric[1].checked){
+			sum+=65;
+		}
+		if(pric[2].checked){
+			sum+=79;
+		}
+		document.getElementById("money").innerHTML=sum;
+	}
+}
 
 
 
@@ -81,3 +96,64 @@ for(var ss=0;ss<icon.length;ss++){
 	}
 	
 }
+/*一下是jquery*/
+$(function(){
+	$(window).scroll(function(){
+		var height=parseFloat($(".detail_tab").offset().top)-parseFloat($(document).scrollTop());
+		
+		if(height<0){
+			$("#hiden_fixed").show();
+		}else{
+			$("#hiden_fixed").hide();
+		}
+	});
+	
+	
+	
+})
+//无聊的波波波波宝宝
+
+$(".dire_left").click(function(){
+	
+	var lef=parseInt($(".D_recent_right .tmd").css("left"));
+
+	if(lef>-700){
+		$(".D_recent_right .tmd").css({
+		"left":"-=680px"
+	});
+	}
+	if(lef<-1200){
+		$(".D_recent_right .tmd").css({
+		"left": "0"
+	});
+	}
+	
+	
+	
+});
+$(".dire_right").click(function(){
+	var lef=parseInt($(".tmd").css("left"));
+	if(lef<0){
+		
+		$(".tmd").css("left","+=680px");
+	}
+	if(lef==0){
+		$(".tmd").css("left","-1360px")
+	}
+});
+//五毛特效
+$(".tx").hover(function(){
+	$(this).addClass("togclass");
+	$(this).prev("p").animate({
+		"opacity":"1",
+		"left":"-92px"
+	},"slow");
+},function(){
+	$(this).removeClass("togclass");
+	$(this).prev("p").animate({
+		"opacity":"0",
+		"left":"-152px"
+	});
+})
+	
+
