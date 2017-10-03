@@ -1,0 +1,325 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\000031}}
+.body {
+  background: #fafafa; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\000035}}
+.D_recent_review {
+  width: 1090px;
+  padding: 12px 0px;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\000038}}
+  .D_recent_review:after {
+    content: "";
+    display: block;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000314}}
+  .D_recent_review .D_recent_left {
+    margin-left: 15px;
+    background: white;
+    width: 260px;
+    height: 330px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000321}}
+  .D_recent_review .D_recent_right {
+    margin-right: 15px;
+    background: white;
+    width: 780px;
+    height: 330px;
+    float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000328}}
+  .D_recent_review h2 {
+    font-size: 12px;
+    font-weight: 400 !important;
+    background: #eee;
+    color: #666;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 12px;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000338}}
+  .D_recent_review .left_content {
+    width: 238px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px dotted darkgrey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000344}}
+    .D_recent_review .left_content img {
+      left: 10px;
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000351}}
+    .D_recent_review .left_content .words {
+      left: 8px;
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      width: 130px;
+      height: 65px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000358}}
+      .D_recent_review .left_content .words .ff {
+        font-size: 12px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000361}}
+      .D_recent_review .left_content .words .price {
+        font-size: 12px !important;
+        color: #ed145b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000369}}
+.D_right_content {
+  position: relative;
+  width: 780px;
+  height: 300px;
+  line-height: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000374}}
+  .D_right_content:after {
+    content: "";
+    display: block;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000379}}
+  .D_right_content span {
+    font-size: 12px;
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    transform: scale(0.8, 1.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000387}}
+.dire_left, .dire_right {
+  display: inline-block;
+  width: 30px;
+  height: 54px;
+  font-size: 12px !important;
+  overflow: hidden;
+  margin-top: -27px;
+  text-align: center;
+  background: url(../img/index_new_icos.png) no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\0000398}}
+.dire_left {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  float: left;
+  background-position: -34px -300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003107}}
+.dire_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  float: right;
+  background-position: -64px -300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003115}}
+.lis {
+  width: 680px;
+  height: 280px;
+  float: left;
+  margin-left: 52px;
+  overflow: hidden;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003123}}
+.lis ul li {
+  list-style: none;
+  display: inline-block;
+  width: 166.3px;
+  height: 240px;
+  position: relative;
+  white-space: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003130}}
+  .lis ul li img {
+    display: block;
+    width: 160px;
+    height: 160px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003135}}
+  .lis ul li .cnm {
+    width: 136px;
+    position: absolute;
+    z-index: 999;
+    line-height: 15px;
+    top: 166px;
+    font-size: 13px !important;
+    color: black !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003146}}
+  .lis ul li .cnn {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    position: absolute;
+    top: 213px;
+    width: 136px;
+    color: red !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003156}}
+.lis .tmd {
+  transition: all;
+  position: absolute;
+  left: 0;
+  margin-top: 18px;
+  width: 2040px;
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003164}}
+.foot .foot_1 {
+  width: 1349px;
+  height: 186px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003165}}
+  .foot .foot_1 {
+    background: white;
+    border-top: 1px solid darkgray; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003171}}
+  .foot .foot_1 .foot_101 {
+    border-bottom: 1px solid darkgray;
+    width: 1090px;
+    height: 186px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003177}}
+  .foot .foot_1 .ax {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 140px;
+    text-align: center;
+    margin-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003184}}
+    .foot .foot_1 .ax span {
+      display: block;
+      margin-left: 32px;
+      width: 63px;
+      height: 63px;
+      margin-bottom: 24px;
+      margin-top: 10px;
+      background: url(../img/footer_0901.jpg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003197}}
+    .foot .foot_1 .ax b {
+      font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003203}}
+    .foot .foot_1 .ax p {
+      font-size: 12px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003210}}
+    .foot .foot_1 .ax .first_corn {
+      background-position: -1px -1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003213}}
+    .foot .foot_1 .ax .second_corn {
+      background-position: -63px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003216}}
+    .foot .foot_1 .ax .third_corn {
+      background-position: -126px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003219}}
+    .foot .foot_1 .ax .fouth_corn {
+      background-position: -189px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003222}}
+    .foot .foot_1 .ax .fifth_corn {
+      background-position: -252px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003225}}
+    .foot .foot_1 .ax .sixth_corn {
+      background-position: -315px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003228}}
+    .foot .foot_1 .ax .seventh_corn {
+      background-position: -378px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003233}}
+.foot_2 {
+  width: 1349px;
+  height: 195px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003236}}
+  .foot_2 .foot2_content {
+    width: 1090px;
+    height: 195px;
+    margin: 0 auto;
+    white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003242}}
+  .foot_2 ul {
+    margin-top: 17px;
+    margin-left: -7px;
+    display: inline-block;
+    width: 176px;
+    height: 143px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003249}}
+    .foot_2 ul li {
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 200;
+      display: block;
+      color: rgba(0, 0, 0, 0.7); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003257}}
+  .foot_2 ul li:first-of-type {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003264}}
+.llog1 {
+  width: 78px;
+  height: 78px;
+  background: url(http://a5.jmstatic.com/fa73c812fb960875/header_corn_new_v2.png) 0 -423px no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003269}}
+.llog2 {
+  width: 78px;
+  height: 78px;
+  background: url(http://a3.jmstatic.com/81b63beae3ad62e0/jumei_weixin_footer.png) no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003274}}
+.foot_3 {
+  height: 98px;
+  background: url(../img/footer_dy.jpg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003278}}
+.foot_4 {
+  width: 1340px;
+  height: 48px;
+  background: #000000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003282}}
+  .foot_4 .foot_401 {
+    width: 1090px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003286}}
+    .foot_4 .foot_401 a {
+      display: inline-block;
+      height: 48px;
+      margin-right: 10px;
+      color: white;
+      line-height: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003295}}
+.foot_5 {
+  height: 1340px;
+  height: 214px;
+  background: url(../img/newindex_footer_bg.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003299}}
+  .foot_5 .foot_501 {
+    width: 1090px;
+    height: 214px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003304}}
+  .foot_5 p {
+    position: relative;
+    top: 25px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003310}}
+  .foot_5 .p2s {
+    top: 55px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003313}}
+  .foot_5 a {
+    display: inline-block;
+    width: 126px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../img/footer_btm_icon.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003320}}
+  .foot_5 .foot_log2 {
+    background-position: -126px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003323}}
+  .foot_5 .foot_log3 {
+    background-position: -252px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003326}}
+  .foot_5 .foot_log4 {
+    background-position: -378px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/perfume\.scss}line{font-family:\00003329}}
+  .foot_5 .foot_log2 {
+    background-position: -504px 0; }
