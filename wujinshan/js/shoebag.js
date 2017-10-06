@@ -1,26 +1,3 @@
-$(function(){
-//右侧导航动画
-
-$(".sport_ad_pic_row2 p").hover(function(){
-	var index=$(this).index()+1;
-	if(index==1){
-			$(this).parent().find("#sport_ad_pic_row2_textder").removeClass().addClass("sport_ad_pic_row2_underlineposition_1")
-
-	}else if(index==2){
-			$(this).parent().find("#sport_ad_pic_row2_textder").removeClass().addClass("sport_ad_pic_row2_underlineposition_2")
-
-	}else{
-			$(this).parent().find("#sport_ad_pic_row2_textder").removeClass().addClass("sport_ad_pic_row2_underlineposition_3")
-
-	}
-	
-	
-},function(){})
-
-	
-	
-})
-
 
 
 var sTop = 0;
@@ -34,7 +11,7 @@ $(document).ready(function() {
 
 function cessssssss() {
 	sTop = document.documentElement.scrollTop || document.body.scrollTop;
-//	document.getElementById("ceshi").innerText = sTop;
+	//	document.getElementById("ceshi").innerText = sTop;
 }
 
 function a() {
@@ -80,7 +57,7 @@ function juhuifengqiangdaojishi() {
 }
 //右侧导航一般动画效果
 $(document).ready(function() {
-		//	$(".ul_li_position_realitive").mouseover(function(){
+	//	$(".ul_li_position_realitive").mouseover(function(){
 	////		alert(123)
 	//		$(".ul_li_position_realitive .nav_right_center_normal_div").fadeIn();
 	//		$(".ul_li_position_realitive .nav_right_center_normal_div").CSS("right","40px");
@@ -107,7 +84,7 @@ $(document).ready(function() {
 	//与滚动条相关动画
 
 	$(".jiarugouwuche").click(function() {
-		$(".gouwucheshangpinshuliang").html(parseInt($(".gouwucheshangpinshuliang").html())+1);
+		$(".gouwucheshangpinshuliang").html(parseInt($(".gouwucheshangpinshuliang").html()) + 1);
 	});
 })
 
