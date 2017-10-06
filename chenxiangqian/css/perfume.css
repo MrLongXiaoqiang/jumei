@@ -1,0 +1,270 @@
+.body {
+  background: #fafafa; }
+
+.D_recent_review {
+  width: 1090px;
+  padding: 12px 0px;
+  margin: 0 auto; }
+  .D_recent_review:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .D_recent_review .D_recent_left {
+    margin-left: 15px;
+    background: white;
+    width: 260px;
+    height: 330px;
+    float: left; }
+  .D_recent_review .D_recent_right {
+    margin-right: 15px;
+    background: white;
+    width: 780px;
+    height: 330px;
+    float: right; }
+  .D_recent_review h2 {
+    font-size: 12px;
+    font-weight: 400 !important;
+    background: #eee;
+    color: #666;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 12px;
+    position: relative; }
+  .D_recent_review .left_content {
+    width: 238px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px dotted darkgrey; }
+    .D_recent_review .left_content img {
+      left: 10px;
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      border: none; }
+    .D_recent_review .left_content .words {
+      left: 8px;
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      width: 130px;
+      height: 65px; }
+      .D_recent_review .left_content .words .ff {
+        font-size: 12px !important; }
+      .D_recent_review .left_content .words .price {
+        font-size: 12px !important;
+        color: #ed145b; }
+
+.D_right_content {
+  position: relative;
+  width: 780px;
+  height: 300px;
+  line-height: 300px; }
+  .D_right_content:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .D_right_content span {
+    font-size: 12px;
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    transform: scale(0.8, 1.5); }
+
+.dire_left, .dire_right {
+  display: inline-block;
+  width: 30px;
+  height: 54px;
+  font-size: 12px !important;
+  overflow: hidden;
+  margin-top: -27px;
+  text-align: center;
+  background: url(../img/index_new_icos.png) no-repeat; }
+
+.dire_left {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  float: left;
+  background-position: -34px -300px; }
+
+.dire_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  float: right;
+  background-position: -64px -300px; }
+
+.lis {
+  width: 680px;
+  height: 280px;
+  float: left;
+  margin-left: 52px;
+  overflow: hidden;
+  position: relative; }
+
+.lis ul li {
+  list-style: none;
+  display: inline-block;
+  width: 166.3px;
+  height: 240px;
+  position: relative;
+  white-space: normal; }
+  .lis ul li img {
+    display: block;
+    width: 160px;
+    height: 160px; }
+  .lis ul li .cnm {
+    width: 136px;
+    position: absolute;
+    z-index: 999;
+    line-height: 15px;
+    top: 166px;
+    font-size: 13px !important;
+    color: black !important; }
+  .lis ul li .cnn {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    position: absolute;
+    top: 213px;
+    width: 136px;
+    color: red !important; }
+
+.lis .tmd {
+  transition: all;
+  position: absolute;
+  left: 0;
+  margin-top: 18px;
+  width: 2040px;
+  white-space: nowrap; }
+
+.foot .foot_1 {
+  width: 1349px;
+  height: 186px; }
+  .foot .foot_1 {
+    background: white;
+    border-top: 1px solid darkgray; }
+  .foot .foot_1 .foot_101 {
+    border-bottom: 1px solid darkgray;
+    width: 1090px;
+    height: 186px;
+    margin: 0 auto; }
+  .foot .foot_1 .ax {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 140px;
+    text-align: center;
+    margin-right: 20px; }
+    .foot .foot_1 .ax span {
+      display: block;
+      margin-left: 32px;
+      width: 63px;
+      height: 63px;
+      margin-bottom: 24px;
+      margin-top: 10px;
+      background: url(../img/footer_0901.jpg); }
+    .foot .foot_1 .ax b {
+      font-size: 16px; }
+    .foot .foot_1 .ax p {
+      font-size: 12px !important; }
+    .foot .foot_1 .ax .first_corn {
+      background-position: -1px -1px; }
+    .foot .foot_1 .ax .second_corn {
+      background-position: -63px 0; }
+    .foot .foot_1 .ax .third_corn {
+      background-position: -126px 0; }
+    .foot .foot_1 .ax .fouth_corn {
+      background-position: -189px 0; }
+    .foot .foot_1 .ax .fifth_corn {
+      background-position: -252px 0; }
+    .foot .foot_1 .ax .sixth_corn {
+      background-position: -315px 0; }
+    .foot .foot_1 .ax .seventh_corn {
+      background-position: -378px 0; }
+
+.foot_2 {
+  width: 1349px;
+  height: 195px; }
+  .foot_2 .foot2_content {
+    width: 1090px;
+    height: 195px;
+    margin: 0 auto;
+    white-space: nowrap; }
+  .foot_2 ul {
+    margin-top: 17px;
+    margin-left: -7px;
+    display: inline-block;
+    width: 176px;
+    height: 143px;
+    float: left; }
+    .foot_2 ul li {
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 200;
+      display: block;
+      color: rgba(0, 0, 0, 0.7); }
+  .foot_2 ul li:first-of-type {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700; }
+
+.llog1 {
+  width: 78px;
+  height: 78px;
+  background: url(http://a5.jmstatic.com/fa73c812fb960875/header_corn_new_v2.png) 0 -423px no-repeat; }
+
+.llog2 {
+  width: 78px;
+  height: 78px;
+  background: url(http://a3.jmstatic.com/81b63beae3ad62e0/jumei_weixin_footer.png) no-repeat; }
+
+.foot_3 {
+  height: 98px;
+  background: url(../img/footer_dy.jpg); }
+
+.foot_4 {
+  width: 1340px;
+  height: 48px;
+  background: #000000; }
+  .foot_4 .foot_401 {
+    width: 1090px;
+    margin: 0 auto; }
+    .foot_4 .foot_401 a {
+      display: inline-block;
+      height: 48px;
+      margin-right: 10px;
+      color: white;
+      line-height: 48px; }
+
+.foot_5 {
+  height: 1340px;
+  height: 214px;
+  background: url(../img/newindex_footer_bg.png); }
+  .foot_5 .foot_501 {
+    width: 1090px;
+    height: 214px;
+    margin: 0 auto; }
+  .foot_5 p {
+    position: relative;
+    top: 25px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7); }
+  .foot_5 .p2s {
+    top: 55px; }
+  .foot_5 a {
+    display: inline-block;
+    width: 126px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../img/footer_btm_icon.png) no-repeat; }
+  .foot_5 .foot_log2 {
+    background-position: -126px 0; }
+  .foot_5 .foot_log3 {
+    background-position: -252px 0; }
+  .foot_5 .foot_log4 {
+    background-position: -378px 0; }
+  .foot_5 .foot_log2 {
+    background-position: -504px 0; }
+
+/*# sourceMappingURL=perfume.css.map */

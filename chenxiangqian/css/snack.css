@@ -1,0 +1,861 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\000038}}
+.arrowtrans, .header_content .arrow, .header_content .header_bottom .header_bottomcontent .tt s {
+  display: inline-block;
+  width: 6px;
+  height: 3px;
+  background: url(../img/header_newicon1.png) no-repeat;
+  position: relative;
+  top: -1px;
+  transition: all 1s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000315}}
+.arrowtrans {
+  transform: rotate(180deg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000320}}
+.header_content .header_topcontent:after, .header_content .header_center .header_centercontent:after, .header_content .nav_hid:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000332}}
+* {
+  font-size: 12px;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000337}}
+.header_content .header_topcontent, .header_content .header_center .header_centercontent, .header_content .header_bottom .header_bottomcontent {
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000340}}
+a:link {
+  text-decoration: none;
+  color: #999; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000344}}
+a:hover {
+  color: #ed155b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000348}}
+.header_content {
+  display: block;
+  width: 1349px;
+  height: 177px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000351}}
+  .header_content .header_top {
+    background: #f2f2f2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000355}}
+  .header_content .header_topcontent {
+    display: block;
+    width: 960px;
+    height: 28px;
+    line-height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000361}}
+    .header_content .header_topcontent li {
+      list-style: none;
+      display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000365}}
+    .header_content .header_topcontent .hidden_kid {
+      position: absolute;
+      z-index: 888;
+      top: 28px;
+      left: -53px;
+      background: white;
+      height: 168px;
+      width: 28px;
+      box-shadow: 0 5px 10px -5px;
+      text-align: center;
+      display: block;
+      width: 110px;
+      height: 168px;
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000377}}
+      .header_content .header_topcontent .hidden_kid a {
+        display: block;
+        width: 110px;
+        height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000382}}
+    .header_content .header_topcontent .left {
+      display: block;
+      width: 228px;
+      height: 28px;
+      float: left;
+      color: #6c6c6c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000386}}
+      .header_content .header_topcontent .left li {
+        margin-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000392}}
+    .header_content .header_topcontent .right {
+      display: block;
+      width: 480px;
+      height: 28px;
+      float: right;
+      color: #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\0000397}}
+      .header_content .header_topcontent .right li {
+        position: relative;
+        margin-left: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003102}}
+    .header_content .header_topcontent .collection {
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      background: url(../img/header_sprites1.png) no-repeat;
+      position: relative;
+      top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003108}}
+    .header_content .header_topcontent .cell {
+      display: inline-block;
+      width: 10px;
+      height: 14px;
+      background: url(../img/header_sprites1.png) no-repeat 0 -19px;
+      position: relative;
+      top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003118}}
+    .header_content .header_topcontent span {
+      display: inline-block;
+      width: 1px;
+      height: 14px;
+      margin-left: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003128}}
+  .header_content .header_center {
+    display: block;
+    width: 1340px;
+    height: 110px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003130}}
+    .header_content .header_center .header_centercontent {
+      position: relative;
+      display: block;
+      width: 960px;
+      height: 110px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003134}}
+      .header_content .header_center .header_centercontent .jm_lg {
+        float: left;
+        position: absolute;
+        top: 18px;
+        display: block;
+        width: 165px;
+        height: 85px;
+        background: url(../img/logo_new_v1.jpg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003141}}
+      .header_content .header_center .header_centercontent .center_right {
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        line-height: 34px;
+        background: #f8f8f8;
+        float: right;
+        position: absolute;
+        top: 32px;
+        right: 0;
+        border: 1px solid #e5e5e5;
+        display: block;
+        width: 140px;
+        height: 34px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003151}}
+        .header_content .header_center .header_centercontent .center_right .cart_log {
+          float: left;
+          display: inline-block;
+          width: 49px;
+          height: 34px;
+          background: white url(../img/cart.gif) no-repeat 11px 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003159}}
+        .header_content .header_center .header_centercontent .center_right .hid {
+          position: absolute;
+          width: 300px;
+          height: 82px;
+          line-height: 82px;
+          top: 31px;
+          left: -159px;
+          text-align: center;
+          font-size: 15px;
+          z-index: 999;
+          display: none;
+          background: white;
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003177}}
+  .header_content .header_bottom {
+    display: block;
+    width: 1349px;
+    height: 38px;
+    background: black;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003182}}
+    .header_content .header_bottom .header_bottomcontent {
+      display: block;
+      width: 960px;
+      height: 38px;
+      line-height: 38px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003186}}
+      .header_content .header_bottom .header_bottomcontent .tt {
+        font-size: 14px !important;
+        display: inline-block;
+        margin: 0 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003187}}
+        .header_content .header_bottom .header_bottomcontent .tt:hover {
+          opacity: 0.7;
+          color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003194}}
+        .header_content .header_bottom .header_bottomcontent .tt s {
+          left: 2px;
+          top: -2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003200}}
+      .header_content .header_bottom .header_bottomcontent ul {
+        float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003202}}
+        .header_content .header_bottom .header_bottomcontent ul li {
+          list-style: none;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          margin: 0 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003211}}
+        .header_content .header_bottom .header_bottomcontent ul li:nth-of-type(1) {
+          background: url(../img/z_01new.jpg) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003214}}
+        .header_content .header_bottom .header_bottomcontent ul li:nth-of-type(2) {
+          background: url(../img/z02.jpg) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003217}}
+        .header_content .header_bottom .header_bottomcontent ul li:nth-of-type(3) {
+          background: url(../img/z03.jpg) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003223}}
+  .header_content .nav_head {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003226}}
+  .header_content .nav_hid {
+    display: none;
+    width: 1060px;
+    height: 308px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: -277px;
+    background: white;
+    z-index: 999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003236}}
+  .header_content .nav_left {
+    display: inline-block;
+    width: 254px;
+    height: 288px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003239}}
+    .header_content .nav_left img {
+      display: block;
+      width: 254;
+      height: 135px;
+      margin: 12px 8px;
+      transition: all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003245}}
+      .header_content .nav_left img:hover {
+        transform: scale(1.01); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003251}}
+  .header_content .nav_right {
+    margin-left: 15px;
+    float: left;
+    display: inline-block;
+    width: 713px;
+    height: 273px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003255}}
+    .header_content .nav_right > div {
+      display: inline-block;
+      width: 213px;
+      height: 273px;
+      position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003260}}
+      .header_content .nav_right > div h1 {
+        text-align: center;
+        font-size: 15px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003263}}
+        .header_content .nav_right > div h1 span {
+          position: relative;
+          top: 12px;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url(../img/new_header_icon.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003271}}
+      .header_content .nav_right > div .top {
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.6);
+        border-right: 1px dotted rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+        color: black;
+        position: absolute;
+        display: block;
+        width: 208px;
+        height: 136px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003280}}
+      .header_content .nav_right > div .bottom {
+        margin: 0 auto;
+        border-right: 1px dotted rgba(0, 0, 0, 0.6);
+        top: 137px !important;
+        color: black;
+        position: absolute;
+        display: block;
+        width: 208px;
+        height: 136px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003295}}
+.detail_body {
+  display: block;
+  width: 1349px;
+  height: 18371px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003297}}
+  .detail_body .ur_cont {
+    display: block;
+    width: 960px;
+    height: 45px;
+    margin: 0 auto;
+    line-height: 45px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003305}}
+.big_img {
+  display: block;
+  width: 960px;
+  height: 664px;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003308}}
+  .big_img .big_left {
+    float: left;
+    display: inline-block;
+    width: 375px;
+    height: 664px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003311}}
+    .big_img .big_left .img_contenner1 {
+      display: block;
+      width: 375px;
+      height: 500px;
+      position: relative;
+      overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003315}}
+      .big_img .big_left .img_contenner1 .mouso {
+        display: none;
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background: white;
+        opacity: 0.7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003325}}
+    .big_img .big_left .smallpic_list {
+      width: 350px;
+      height: 92px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003328}}
+      .big_img .big_left .smallpic_list li {
+        list-style: none;
+        float: left;
+        width: 66px;
+        height: 90px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003335}}
+        .big_img .big_left .smallpic_list li img {
+          animation: all 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003337}}
+          .big_img .big_left .smallpic_list li img:hover {
+            transform: scale(1.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003345}}
+  .big_img .big_right {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 350px;
+    height: 664px;
+    padding-left: 35px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003350}}
+    .big_img .big_right .hh1 {
+      font-weight: 600;
+      position: absolute;
+      top: 20px;
+      height: 25px;
+      line-height: 30px;
+      font-size: 18px;
+      z-index: -1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003359}}
+    .big_img .big_right .pp1 {
+      font-weight: 300;
+      position: absolute;
+      top: 91px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003363}}
+      .big_img .big_right .pp1 sup {
+        position: relative;
+        top: -5px;
+        font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003368}}
+      .big_img .big_right .pp1 span {
+        font-size: 38px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003372}}
+    .big_img .big_right .sp1 {
+      position: absolute;
+      top: 151px;
+      letter-spacing: 1px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      height: 45px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003381}}
+      .big_img .big_right .sp1 i {
+        margin-right: 5px;
+        position: relative;
+        top: 4px;
+        display: inline-block;
+        height: 19px;
+        width: 19px;
+        background: url(http://a3.jmstatic.com/c511bf0d7170fdda/pop_detail_icon.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003391}}
+    .big_img .big_right .yf {
+      color: rgba(0, 0, 0, 0.4);
+      width: 350px;
+      position: absolute;
+      top: 210px;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px dotted darkgrey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003400}}
+    .big_img .big_right .fw {
+      color: rgba(0, 0, 0, 0.6);
+      width: 350px;
+      position: absolute;
+      top: 260px;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px dotted darkgrey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003408}}
+      .big_img .big_right .fw span {
+        color: rgba(0, 0, 0, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003413}}
+    .big_img .big_right .xh {
+      width: 350px;
+      position: absolute;
+      top: 310px;
+      height: 60px;
+      line-height: 60px;
+      border-top: 1px dotted darkgrey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003420}}
+      .big_img .big_right .xh .xhsp {
+        color: rgba(0, 0, 0, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003423}}
+      .big_img .big_right .xh .xhchoice {
+        position: absolute;
+        display: inline-block;
+        border: 1px solid red;
+        height: 26px;
+        width: 144px;
+        line-height: 26px;
+        left: 56px;
+        top: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003432}}
+        .big_img .big_right .xh .xhchoice s {
+          display: block;
+          width: 14px;
+          height: 15px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: url(http://a3.jmstatic.com/c511bf0d7170fdda/pop_detail_icon.png) no-repeat -137px 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003444}}
+    .big_img .big_right .dy {
+      position: absolute;
+      top: 390px;
+      width: 207px;
+      height: 48px;
+      background: #4a4a4a;
+      color: white;
+      font-size: 17px;
+      line-height: 48px;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003454}}
+      .big_img .big_right .dy s {
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        margin-right: 14px;
+        width: 14px;
+        height: 22px;
+        background: url(http://a2.jmstatic.com/9a7e5bff1a64cc22/ie6_alert.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003464}}
+    .big_img .big_right .gmrs {
+      position: absolute;
+      top: 460px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003467}}
+      .big_img .big_right .gmrs s {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background: url(http://a3.jmstatic.com/c511bf0d7170fdda/pop_detail_icon.png) no-repeat -148px -20px;
+        margin-right: 8px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003474}}
+      .big_img .big_right .gmrs span {
+        color: #f64e85; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003479}}
+    .big_img .big_right .sm {
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 19px;
+      position: absolute;
+      top: 485px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003485}}
+    .big_img .big_right .lppz {
+      color: #f64e85; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003488}}
+    .big_img .big_right .sw {
+      position: absolute;
+      top: 544px;
+      height: 22px;
+      line-height: 22px;
+      width: 166px;
+      color: #8b8a8a;
+      padding: 0 15px;
+      background: url(http://a1.jmstatic.com/84f59e5ac495866c/pop_deal_1.png) 0 -385px no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003498}}
+    .big_img .big_right .nodata {
+      position: absolute;
+      top: 570px;
+      line-height: 100px;
+      text-align: center;
+      width: 350px;
+      height: 100px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003511}}
+  .big_img .big_one {
+    width: 375px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    left: 583px;
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003518}}
+    .big_img .big_one img {
+      position: absolute; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003524}}
+.picture_detail {
+  width: 960px;
+  height: 17967px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003530}}
+.magic_choice {
+  display: block;
+  width: 960px;
+  height: 41px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  line-height: 41px;
+  margin: 0 auto;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003538}}
+  .magic_choice .magic_boy li {
+    margin-left: 5px;
+    border-right: 1px dotted darkgray;
+    text-align: center;
+    list-style: none;
+    width: 91px;
+    height: 38px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003546}}
+    .magic_choice .magic_boy li a {
+      font-size: 14px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003552}}
+  .magic_choice .magic_hid {
+    display: none;
+    width: 260px;
+    height: 41px;
+    margin-left: 11px;
+    line-height: 41px;
+    transition: all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003560}}
+    .magic_choice .magic_hid span {
+      font-size: 24px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003563}}
+    .magic_choice .magic_hid s {
+      float: right;
+      text-decoration: none;
+      display: inline-block;
+      width: 195px !important;
+      text-align: center;
+      height: 100%;
+      height: 41px;
+      background: #4c4b4b;
+      color: white;
+      font-size: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003580}}
+.cpjs s {
+  background-position: 0 -24px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003586}}
+.cpjs, .spcs_log, .spxq_log, .reduce, .zix {
+  width: 932px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 1px dotted darkgray;
+  line-height: 60px;
+  font-size: 22px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003594}}
+.cpjs s, .spcs_log s, .spxq_log s, .reduce s, .zix s {
+  position: relative;
+  top: 3px;
+  left: 30px;
+  display: inline-block;
+  width: 269px;
+  height: 21px;
+  background: url(../img/tit_icon_1.png) no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003603}}
+.bulala {
+  width: 800px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003610}}
+.spcs_log {
+  margin: 20px 0px;
+  font-size: 22px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003614}}
+  .spcs_log s {
+    background-position: 0 -46px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003619}}
+.spcs_detail {
+  height: 571px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003622}}
+.desc {
+  float: left;
+  width: 343px;
+  height: 175px;
+  padding-left: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003627}}
+  .desc p {
+    font-size: 14px !important;
+    line-height: 38px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003632}}
+.pic {
+  margin-right: 60px;
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003636}}
+.spxq {
+  width: 932px;
+  height: 13586px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003642}}
+.spxq_log s {
+  background-position: 0 -68px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003647}}
+.titl {
+  font-size: 20px;
+  color: #e36c09;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003652}}
+.many_pictures {
+  width: 755px;
+  height: 1335px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003657}}
+.reduce {
+  margin-top: 180px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003660}}
+  .reduce s {
+    background-position: 0 -110px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003665}}
+.hs {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 175px;
+  height: 25px;
+  line-height: 25px;
+  background: url(http://a1.jmstatic.com/84f59e5ac495866c/pop_deal_1.png) 0 -385px no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003674}}
+.nodata {
+  width: 932px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003680}}
+.pj {
+  width: 932px;
+  height: 1508px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003685}}
+.dx {
+  margin-top: 18px;
+  height: 37px;
+  width: 932px;
+  line-height: 37px;
+  background: #f4f4f4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003691}}
+  .dx span {
+    margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003693}}
+    .dx span label {
+      font-size: 14px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003699}}
+.pjnr {
+  width: 932px;
+  height: 1390px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003702}}
+  .pjnr .comments {
+    width: 932px;
+    height: 130px;
+    border-bottom: 1px solid darkgray; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003706}}
+    .pjnr .comments .use_his {
+      width: 932px;
+      height: 62px;
+      line-height: 62px;
+      color: #7e7e7e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003711}}
+      .pjnr .comments .use_his .user_name {
+        float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003714}}
+      .pjnr .comments .use_his s {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        position: relative;
+        top: 6px;
+        left: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003723}}
+      .pjnr .comments .use_his .date {
+        float: right;
+        margin-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003728}}
+    .pjnr .comments .coment_words {
+      margin-top: -8px;
+      overflow: auto;
+      width: 932px;
+      height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003734}}
+    .pjnr .comments .by_type {
+      opacity: 0.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003740}}
+.fye {
+  margin-top: -40px;
+  width: 932px;
+  height: 40px;
+  line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003745}}
+  .fye .change_page {
+    float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003747}}
+    .fye .change_page li {
+      list-style: none;
+      display: inline-block;
+      width: 32px;
+      height: 27px;
+      line-height: 27px;
+      border: 1px solid darkgray;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003756}}
+    .fye .change_page li:nth-of-type(6) {
+      width: 52px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003762}}
+.redcolor {
+  background: #e42f6b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003768}}
+.zix s {
+  background-position: 0 -179px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003773}}
+.promise {
+  margin-top: 30px;
+  width: 940px;
+  height: 177px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003778}}
+  .promise a {
+    margin-left: 100px;
+    display: inline-block;
+    width: 124px;
+    height: 97px;
+    background: url(http://a1.jmstatic.com/9345910149b9eabc/pop_lc.jpg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003785}}
+  .promise .seven_day {
+    background-position: 0 -97px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003788}}
+  .promise .zp {
+    background-position: 0 -194px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003791}}
+  .promise .hb {
+    background-position: 0 -291px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003795}}
+.zwzd {
+  width: 960px;
+  height: 900px;
+  line-height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003799}}
+  .zwzd h2 {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003805}}
+  .zwzd p {
+    color: #666;
+    line-height: 22px;
+    font-size: 14px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003812}}
+.zwzd .question {
+  height: 60px !important;
+  margin-top: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003815}}
+  .zwzd .question .q1 {
+    font-size: 16px !important;
+    margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003818}}
+    .zwzd .question .q1 s {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background: black;
+      color: white;
+      line-height: 17px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px !important;
+      margin-right: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003831}}
+  .zwzd .question .a2 {
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003833}}
+    .zwzd .question .a2 s {
+      text-decoration: none;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      line-height: 17px;
+      text-align: center;
+      background: #e7245f;
+      color: white;
+      font-size: 16px !important;
+      margin-right: 21px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003847}}
+.rutine {
+  height: 65px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003849}}
+  .rutine li {
+    list-style: none;
+    text-align: center;
+    height: 63px;
+    width: 96px;
+    margin-right: 15px;
+    color: white;
+    float: left;
+    background: #2f2f2f; }

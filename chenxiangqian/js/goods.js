@@ -156,4 +156,15 @@ $(".tx").hover(function(){
 	});
 })
 	
+//侧边
 
+				$(".aside i:eq(0)").hover(function(){
+					$(this).toggleClass("ani");
+						$(this).find("s").show();
+				},function(){
+					$(this).toggleClass("ani");
+					$(this).find("s").hide();
+				});
+				$(".aside i:eq(0)").find("span").click(function(){
+					$(this).parent().parent().hide();
+				});
