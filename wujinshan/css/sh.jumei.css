@@ -169,6 +169,7 @@ body {
 	padding: 28px;
 	margin-left: 124px;
 	float: left;
+	overflow: visible;
 }
 
 .header_search_text {
@@ -184,7 +185,7 @@ body {
 
 #header_search_button {
 	width: 100px;
-	height: 36.5px;
+	height: 35.5px;
 	font: 13.3333px arial;
 	cursor: pointer;
 	background: #ed145b;
@@ -544,14 +545,33 @@ body {
 	height: 350px;
 	position: relative;
 	background: red;
+	/*display: inline-block;*/
 }
 
-.today_main_content_a_one_pic {
+.today_main_content_a_one_pic:hover{
+	cursor: pointer;
+}
+
+
+.today_main_content>div:first-child .today_main_content_a_one_pic{
 	float: left;
 	width: 610px;
 	height: 350px;
-	background: url(http://p3.jmstatic.com/product/002/476/2476658_std/2476658_dx_1500_400.jpg)-300px 0 no-repeat;
+	background: url(http://p1.jmstatic.com/product/002/406/2406641_std/2406641_dx_1500_400.jpg)-300px 0 no-repeat;
 }
+.today_main_content>div:nth-child(2) .today_main_content_a_one_pic{
+	float: left;
+	width: 610px;
+	height: 350px;
+	background: url(http://p4.jmstatic.com/product/003/017/3017379_std/3017379_dx_1500_400.jpg)-300px -20px no-repeat;
+}
+.today_main_content>div:nth-child(3) .today_main_content_a_one_pic{
+	float: left;
+	width: 610px;
+	height: 350px;
+	background: url(http://p3.jmstatic.com/product/003/831/3831448_std/3831448_dx_1500_400.jpg)-300px 0 no-repeat;
+}
+
 
 .top_1 {
 	display: block;
@@ -724,6 +744,10 @@ body {
 
 
 /*今日新品*/
+.today_new_list ul li:hover .jiarugouwuche{
+	opacity: 1;
+}
+
 
 .today_new_deal {
 	margin-top: 20px;
@@ -788,6 +812,8 @@ body {
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	opacity: 0;
+	transition: all 0.5s;
 }
 
 .today_new_list_pic_tishi {
@@ -1947,4 +1973,42 @@ body {
 /*加入购物车*/
 .jiarugouwuche:hover{
 	cursor: pointer;
+}
+/*.move_pic{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background: red;
+	bottom: 130px;
+	right: 70px;
+	
+}*/
+
+
+
+/*历史搜索框*/
+.search_history{
+	position: absolute;
+	background: white;
+	width: 411px;
+	height: 200px;
+	top: 62px;
+	display: none;
+	box-shadow: 0 0 2px #C9C9C9;
+	padding: 5px 10px;
+	}
+	
+
+.search_history ul li{
+	display: block;
+	font-size: 12px;
+	color: #C0C0C0;
+	float: none;
+	margin: 5px 0px;
+}
+.search_history ul li:hover{
+	cursor: pointer;
+	
 }

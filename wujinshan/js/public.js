@@ -139,3 +139,9 @@ function left_nav_can() {
 }
 
 //加入购物车操作
+
+
+//cookie的相关代码
+$(function(){
+	
+})

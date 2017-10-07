@@ -109,3 +109,36 @@ function left_nav_can() {
 }
 
 //加入购物车操作
+
+
+
+
+
+
+//搜索框下拉选项设置
+
+$(function(){
+	$("#header_search_button").click(function(){
+		var str=$(this).prev().val().trim();
+		if(str.length>=1&&str!=null){
+			$.cookie("HIS_SEARCH",str);
+			var listr="<li>"+str+"</li>"
+			$(this).parent().next().find("ul").html(listr+$(this).parent().next().find("ul").html());
+			$(this).prev().val("");
+		}
+	})
+	$("#index_search_text").focus(function(){
+		$(this).parent().next().slideDown()
+	})
+	$("#index_search_text").blur(function(){
+		$(this).parent().next().hide()
+		
+	})
+	
+	$("#search_history ul li").click(function(){
+		alert(123)
+		$(this).parent().parent().prev().find("#index_search_text").val($(this).text());
+		alert($(this).parent().parent().prev().find("#index_search_text"));
+	})
+
+})
