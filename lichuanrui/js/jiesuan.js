@@ -48,11 +48,12 @@ function dec_count(aaa) {
 
 function gouwuchexiaoji(bbb) {
 	$(bbb).next().text((parseFloat($(bbb).prev().text()) * parseFloat($(bbb).find("input").val())).toFixed(2));
+	
 }
 
-function gouwuchexiaoji(bbb) {
-	$(bbb).next().text((parseFloat($(bbb).prev().text()) * parseFloat($(bbb).find("input").val())).toFixed(2));
-}
+//function gouwuchexiaoji(bbb) {
+//	$(bbb).next().text((parseFloat($(bbb).prev().text()) * parseFloat($(bbb).find("input").val())).toFixed(2));
+//}
 
 function gouwuchezongjine() {
 	var totalMoney = 0.0;
@@ -146,7 +147,7 @@ $(function() {
 
 	for(var i = 1; i < 6; i++) {
 		var ckie = "GOODS_" + i;
-		if($.cookie(ckie) == 0) {
+		if(!($.cookie(ckie) > 0)) {
 			$("#" + ckie).hide();
 		} else {
 			$("#" + ckie).show().find(".shuliang").val($.cookie(ckie));
