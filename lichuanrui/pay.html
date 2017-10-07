@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/pay.css" type="text/css" />
+		<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/pay.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<div style="background: white;">
+					<div class="top">
+						<div class="user_box">
+							<div>聚美优品欢迎您，
+								<a href="http://passport.jumei.com/i/account/login" style="color: red;">GGVVR[退出]</a>|
+								<a href="http://passport.jumei.com/i/account/signup" style="color: gray;">订单查询</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top_center">
+					<div class="top_pic">
+						<img src="http://f0.jmstatic.com/static_cart/dist/20170728/images/cart_logo.jpg?v=1" alt="聚美优品" />
+					</div>
+					<div class="top_transpot">
+						<img src="img/pay8.png" />
+					</div>
+		</header>
+		<section>
+			<div class="big_background">
+				<div class="container">
+					<div class="address">
+						<div class="address_pos">
+							<h3>1.地址选择</h2>
+						</div>
+						<div class="address_ziti">
+							<img src="http://f0.jmstatic.com/static_cart/dist/20170925/images/confirmation/message_bugle.png"/>
+							<span id="adress_piao">温馨提示：您的订单内含有海外购商品，根据国家法律规定，您需要上传身份证号，以便海关清关，否则有可能收不到包裹！</span>
+						</div>
+						<div class="address_add">
+							<a><input type="button"value="+使用新地址"/></a>
+						</div>
+					</div>
+					<div class="time">
+						<div class="address_pos">
+							<h3>2.送货时间</h3>
+						</div>
+						<div class="time_choese">
+							<div id="working"><input type="radio" name="time" value="仅工作日送货" /><label for="working">仅工作日送货</label></div>
+							<div id="onweek"><input type="radio" name="time" value="仅周末送货" /><label for="onweek">仅周末送货</label></div>
+							<div id="everyday"><input type="radio" name="time" value="工作日/周末/假日均可" /><label for="everyday">工作日/周末/假日均可</label></div>
+						</div>
+					</div>
+					<div class="goods_list">
+						<div class="goods">
+							<h3>3.商品清单</h3>
+							<div id="goods_right">
+								<a href="#">返回修改购物车</a>
+							</div>
+						</div>
+						<div>
+							<table class="sheet">
+								<thead class="cart_group_item">
+									<tr id="biankuang">
+										<th class="cart_overview">
+											<div class="cart_group_header">
+												<span id="jiacu">聚美优品发货</span>
+											</div>
+										</th>
+										<th>数量</th>
+										<th>单价</th>
+										<th>小计（元）</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="xiangshui">
+										<td class="konghang">
+											<div>
+												<img src="img/1334176_60_60.jpg" />
+												<span style="color: palevioletred;">[极速免税]</span>
+												<a href="#">意大利•古驰(GUCCI) 罪爱女性（又名罪爱女用/罪爱女士喷式）淡香水</a>
+											</div>
+										</td>
+										<td>1</td>
+										<td>￥298.00</td>
+										<td>￥298.00</td>
+						</div>
+						</tr>
+						<tr class="fansizhe">
+							<td class="konghang">
+								<div>
+									<img src="http://p3.jmstatic.com/product/001/312/1312103_std/1312103_60_60.jpg" />
+									<span style="color: palevioletred;">[极速免税]</span>
+									<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）淡香水5ml</a>
+								</div>
+							</td>
+							<td>1</td>
+							<td>￥300.00</td>
+							<td>￥300.00</td>
+					</div>
+					</tbody>
+					<tfoot>
+						</tr>
+						<tr class="post">
+							<td colspan="3" class="transtion_way">
+								<div class="neirong">
+									配送方式 <span id="newgoods">（享新用户满39元包邮，已减免¥5）</span>：快递
+								</div>
+							</td>
+							<td>￥0.00</td>
+						</tr>
+						<tr class="discount">
+							<td colspan="4">
+								<span id="icona">+</span>
+								<div class="redbag">
+									使用现金券和红包
+								</div>
+								<div class="youhui">
+									使用现金劵：<input type="text" placeholder="请输入您的现金劵" />或&nbsp;<span id="juanhao">直接输入劵号</span>
+									<input type="text" placeholder="请输入现金劵号"/><br />
+									使用红包：<input type="text" placeholder="请选择您的红包"/>或&nbsp;<span id="hongbaohao">直接输入红包号</span>
+									<input type="text" placeholder="请输入红包号"/>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+					</table>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="first_line">
+					<input type="checkbox" class="suoyao" />索要发票
+					<div id="question_neirong">
+						<ul>
+							<li><b>1.发票类型</b>：聚美目前只支持开具普通发票</li>
+							<li><b>2.发票金额</b>：不包含运费金额以及礼品卡支付、现金券和红包抵扣的金额；</li>
+							<li><b>3.发票内容</b>: <br /> 1）交易单中聚美优品发货的商品，由聚美开具发票，发票内容根据购买商品所属分类确定。
+								<br /> 2）交易单中非聚美优品发货的商品，由商家开具发票，发票内容由商家决定。
+							</li>
+						</ul>
+					</div>
+					<span class="question"></span>
+					<div class="text_right">
+						<span>共</span>
+						<span id="shangpinshuliang">2</span>
+						<span>件商品,总商品金额:</span>
+						<span id="totalmoney">&nbsp;&nbsp;&nbsp;&nbsp;￥598.00</span>
+					</div>
+					<div class="second_line">
+						<span>总运费：</span>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;￥0.00</span>
+					</div>
+					<div class="third_line">
+						<span>应付总额:</span>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;￥598.00</span>
+					</div>
+				</div>
+
+				<div class="fapioaleixing">
+					<div>
+						发票类型
+						<input type="radio" name="fapiao" id="hidedianzi" />纸质发票
+						<input type="radio" name="fapiao" id="showdianzi" />电子发票
+					</div>
+					<div>
+						发票抬头
+						<input type="radio" name="taitou" id="hidetaitou" />个人
+						<input type="radio" name="taitou" id="showtaitou" />单位
+					</div>
+					<div class="youxiang">
+						邮箱号:<input type="text" placeholder="请输入邮箱号" />
+					</div>
+					<div class="fapiaodanwei">
+						<div>
+							<span style="color: red;">*</span> 公司名称：
+							<input type="text" placeholder="请输入公司名称" />
+						</div>
+						<div>
+							<span style="color: red;">*</span> 纳税人识别号：
+							<input type="text" placeholder="请输入纳税人识别号" />
+						</div>
+					</div>
+				</div>
+				<div class="queren">
+					<span id="back"><a href="#">返回修改购物车</a></span>
+					<div class="yingfu_right">
+						应付总额：<span id="fukuan">￥598.00</span>
+						<div class="jiaoyi">
+						<a href="#">确认交易</a>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		</section>
+		<footer>
+			<div class="end">
+				<div class="banquan">
+					<p>© 2013 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 </p>
+					<p>京公网安备 11010102001226 |
+						<a href="#">京ICP证111033号</a>| 食品流通许可证 SP1101051110165515（1-1） |
+						<a href="#">营业执照</a>
+					</p>
+				</div>
+				<div id="juzhong">
+					<a href="#"><img src="img/2017-09-18_114954.png" </a>
+						<a href="#"><img src="img/2017-09-18_115106.png" </a>
+							<a href="#"><img src="img/2017-09-18_115155.png" </a>
+								<a href="#"><img src="img/2017-09-18_115236.png" </a>
+									<a href="#"><img src="img/2017-09-18_115306.png" </a>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

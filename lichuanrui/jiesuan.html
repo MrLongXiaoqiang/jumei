@@ -6,6 +6,8 @@
 		<title></title>
 		<link rel="stylesheet" href="css/jiesuan.css" type="text/css" />
 		<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jiesuan.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -33,13 +35,303 @@
 			</div>
 		</header>
 		<section>
-			<div class="wrapper">
-				<div class="contain">
-					<p><img src="img/2017-09-18_232706.png" /> 请在 18分31秒 内去结账，并在下单后 20 分钟内完成支付</p>
+			<div class="contaniner">
+				<div class="daojis">
+					<span id="bac">
+					</span>请在 <span id="time" style="color: red;"></span> 内去结账，并在下单后 20 分钟内完成支付
+					<div class="rightlogo">
+						<span><i id="zheng"></i>真品防伪码</span>
+						<span><i id="tuihuo"></i>30天无条件退货</span>
+						<span><i id="baoyou"></i>美妆满2件或299元包邮</span>
+					</div>
 				</div>
-				
+				<div class="common_shippment">
+					<i class=".common_shippment i">包邮</i>
+					<span>新用户首单满39元包邮,自营非食品类满两件或满299元包邮</span>
+				</div>
+				<div>
+					<table class="cart_group_item">
+						<thead>
+							<th class="cart_overview">
+								<div class="cart_group_header">
+									<input type="checkbox" checked="checked" />
+									<span id="jiacu">聚美优品发货</span>
+								</div>
+							</th>
+							<th>聚美价（元）</th>
+							<th>数量</th>
+							<th>小计（元）</th>
+							<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td colspan="5">
+									<div class="chexiao" id="show">
+										您已删除
+										<a href="#">意大利•古驰(GUCCI) 罪爱女性（又名罪爱女用/罪爱女士喷式）淡香水</a>，如有误，
+										<a href="#">可撤销删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr class="xiangshui">
+								<td class="konghang">
+									<div>
+										<input type="checkbox" checked="checked" value="true" />
+										<img src="img/1334176_60_60.jpg" />
+										<span style="color: palevioletred;">[极速免税]</span>
+										<a href="#">意大利•古驰(GUCCI) 罪爱女性（又名罪爱女用/罪爱女士喷式）淡香水</a>
+										</div>
+								</td>
+								<td class="jiage">298.00</td>
+								<td class="add" onchange="gouwuchexiaoji(this)">
+									<span class="decrease" onclick="dec_count(this)">-</span>
+									<input type="text" value="1" class="shul" />
+									<span class="plus" onclick="add_count(this)">+</span>
+								</td>
+								<td class="xiaoji">298.00</td>
+								<td>
+									<div class="del" id="hide"></div>
+									</div>
+								</td>
+				</div>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<div class="chexiao2" id="show2">
+							您已删除
+							<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）5ml</a>，如有误，
+							<a href="#">可撤销删除</a>
+						</div>
+					</td>
+				</tr>
+				<tr class="xiangshui2">
+					<td class="konghang2">
+						<div>
+							<input type="checkbox" value="true" checked="checked" />
+							<img src="http://p3.jmstatic.com/product/001/312/1312103_std/1312103_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）5ml</a>
+						</div>
+					</td>
+					<td class="jiage2">300.00</td>
+					<td class="add2" onchange="gouwuchexiaoji(this)">
+						<span class="decrease2" onclick="dec_count(this)">-</span>
+						<input type="text" value="1" class="shul2" />
+						<span class="plus2" onclick="add_count(this)">+</span>
+					</td>
+					<td class="xiaoji">300.00</td>
+					<td>
+						<div class="del2" id="hide2"></div>
+					</td>
+			</div>
+			<div id="cart_side_nav">
+				<a href="#"></a>
+			</div>
+			</tr>
+				<tr class="xiangshui2">
+					<td class="konghang2">
+						<div>
+							<input type="checkbox" value="true" checked="checked" />
+							<img src="http://p3.jmstatic.com/product/001/312/1312103_std/1312103_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）5ml</a>
+						</div>
+					</td>
+					<td class="jiage2">300.00</td>
+					<td class="add2" onchange="gouwuchexiaoji(this)">
+						<span class="decrease2" onclick="dec_count(this)">-</span>
+						<input type="text" value="1" class="shul2" />
+						<span class="plus2" onclick="add_count(this)">+</span>
+					</td>
+					<td class="xiaoji">300.00</td>
+					<td>
+						<div class="del2" id="hide2"></div>
+					</td>
+			</div>
+			<div id="cart_side_nav">
+				<a href="#"></a>
+			</div>
+			</tr>
+				<tr class="xiangshui2">
+					<td class="konghang2">
+						<div>
+							<input type="checkbox" value="true" checked="checked" />
+							<img src="http://p3.jmstatic.com/product/001/312/1312103_std/1312103_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）5ml</a>
+						</div>
+					</td>
+					<td class="jiage2">300.00</td>
+					<td class="add2" onchange="gouwuchexiaoji(this)">
+						<span class="decrease2" onclick="dec_count(this)">-</span>
+						<input type="text" value="1" class="shul2" />
+						<span class="plus2" onclick="add_count(this)">+</span>
+					</td>
+					<td class="xiaoji">300.00</td>
+					<td>
+						<div class="del2" id="hide2"></div>
+					</td>
+			</div>
+			<div id="cart_side_nav">
+				<a href="#"></a>
+			</div>
+			</tr>
+				<tr class="xiangshui2">
+					<td class="konghang2">
+						<div>
+							<input type="checkbox" value="true" checked="checked" />
+							<img src="http://p3.jmstatic.com/product/001/312/1312103_std/1312103_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">意大利•范思哲（versace）晶钻女用香水（又名女士香水）5ml</a>
+						</div>
+					</td>
+					<td class="jiage2">300.00</td>
+					<td class="add2" onchange="gouwuchexiaoji(this)">
+						<span class="decrease2" onclick="dec_count(this)">-</span>
+						<input type="text" value="1" class="shul2" />
+						<span class="plus2" onclick="add_count(this)">+</span>
+					</td>
+					<td class="xiaoji">300.00</td>
+					<td>
+						<div class="del2" id="hide2"></div>
+					</td>
+			</div>
+			<div id="cart_side_nav">
+				<a href="#"></a>
+			</div>
+			</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">
+						<div class="jiesuan" onchange="gouwuchezongjine(this)">
+							<div class="fd">商品金额<span id="je">￥598.00</span></div>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+			</table>
+			</div>
+			<div class="cotent_footer">
+				<div class="qianm">
+					<input type="checkbox" checked="checked" "/>全选
+					<a href="# " class="go_back_shopping ">继续购物</a>
+					<span class="seperate_line ">|</span>
+					<a href="#" id="hide3">清空选中商品</a>
+				</div>
+				<div class="foot_right ">
+					<span id="dingweia "><span id="yinfu ">1</span> 件商品&nbsp;&nbsp;商品应付总额:</span>
+					<span id="qian ">￥598.00</span>
+					<a href="# "><img src="img/2017-09-21_165123.png " />
+					</a>
+				</div>
+			</div>
+			</div>
+			<div class="recommend_box ">
+				<div class="nav_tips ">
+				<a href="# " class="recommend_box .nav_tips a ">今日备受欢迎</a>
+				</div>
+				<div>
+					<ul>
+						<li class="list ">
+							<div>
+								<a href="# "><img src="img/images/1293263_160_160.jpg "/></a>
+							</div>
+							<div class="tips_info_box ">
+								<a href="# " class="recommend_box .tips_info_box a ">5.1折/ 韩国【补水“膜”王】美迪惠尔MEDIHEAL水库面膜</a>
+							</div>
+							<div class="price ">
+								<span class="now ">￥89.0</span>
+								<span class="old ">￥174.00</span>
+							</div>
+							<div class="putin ">
+								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+							</div>
+						</li>
+						<li class="list ">
+							<div>
+								<a href="# "><img src="img/images/20504_160_160.jpg "/></a>
+							</div>
+							<div class="tips_info_box ">
+								<a href="# " class="recommend_box .tips_info_box a ">8折/ 中国台湾 欣兰多媚卡雅黑冻膜 225g</a>
+							</div>
+							<div class="price ">
+								<span class="now ">￥118.0</span>
+								<span class="old ">￥148.00</span>
+							</div>
+							<div class="putin ">
+								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+							</div>
+						</li>
+						<li class="list ">
+							<div>
+								<a href="# "><img src="img/images/20605_160_160.jpg "/></a>
+							</div>
+							<div class="tips_info_box ">
+								<a href="# " class="recommend_box .tips_info_box a ">6.3折/ 日本•芙丽芳丝（freeplus）净润洗面霜 100g</a>
+							</div>
+							<div class="price ">
+								<span class="now ">￥95.0</span>
+								<span class="old ">￥150.00</span>
+							</div>
+							<div class="putin ">
+								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+							</div>
+						</li>
+						<li class="list ">
+							<div>
+								<a href="# "><img src="img/images/1775400_160_160.jpg "/></a>
+							</div>
+							<div class="tips_info_box ">
+								<a href="# " class="recommend_box .tips_info_box a ">7.2折/ 泰国 【一线艺人御用】mistine羽翼粉饼，巨遮瑕巨控油,流汗、流泪不流妆！</a>
+							</div>
+							<div class="price ">
+								<span class="now ">￥49.0</span>
+								<span class="old ">￥69.00</span>
+							</div>
+							<div class="putin ">
+								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+							</div>
+						</li>
+						<li class="list ">
+							<div>
+								<a href="# "><img src="img/images/1304253_160_160.jpg "/></a>
+							</div>
+							<div class="tips_info_box ">
+								<a href="# " class="recommend_box .tips_info_box a ">法国 【天然活肤水】雅漾舒护活泉喷雾300ml,增强肌肤耐受性,24h水润不干燥</a>
+							</div>
+							<div class="price ">
+								<span class="now ">￥99.0</span>
+								<span class="old ">￥129.00</span>
+							</div>
+							<div class="putin ">
+								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</body>
+	<footer>
+		<div class="end ">
+			<div class="banquan ">
+				<p>© 2013 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 </p>
+				<p>京公网安备 11010102001226 |
+					<a href="# ">京ICP证111033号</a>| 食品流通许可证 SP1101051110165515（1-1） |
+					<a href="# ">营业执照</a>
+				</p>
+			</div>
+			<div id="juzhong ">
+				<a href="# "><img src="img/2017-09-18_114954.png " </a> 
+					<a href="# "><img src="img/2017-09-18_115106.png " </a>
+						<a href="# "><img src="img/2017-09-18_115155.png " </a>
+							<a href="# "><img src="img/2017-09-18_115236.png " </a>
+								<a href="# "><img src="img/2017-09-18_115306.png " </a>
+			</div>
+		</div>
+	</footer>
 
 </html>

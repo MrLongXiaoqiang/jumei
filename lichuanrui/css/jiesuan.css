@@ -51,19 +51,504 @@
 	height: 67px;
 	width: 1369px;
 }
+
+
 /*section*/
-.wrapper{
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    margin: 0 0 15px 0;
-}
-.contain{
-	margin: 0 auto;
-	/*border: 1px solid black;*/
-	height: 246px;
+
+.contaniner {
 	width: 960px;
+	height: 255px;
+	/*border: 1px solid black;*/
+	margin: 50px 194.5px;
+	position: relative;
 }
+
+.daojis {
+	font-size: 14px;
+}
+
+#bac {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	background-image: url(../img/icons.png) -10px -10px no-repeat;
+}
+
+.rightlogo {
+	display: inline-block;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+}
+
+#zheng {
+	display: inline-block;
+	width: 26px;
+	height: 25px;
+	line-height: 30;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/header_sprites1.png) 0px -102px no-repeat;
+}
+
+#tuihuo {
+	display: inline-block;
+	width: 26px;
+	height: 25px;
+	line-height: 30;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/header_sprites1.png) 0px -136px no-repeat;
+}
+
+#baoyou {
+	display: inline-block;
+	width: 26px;
+	height: 25px;
+	line-height: 30;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/header_sprites1.png) 0px -172px no-repeat;
+}
+
+.common_shippment {
+	padding-top: 5px;
+	color: #fa8801;
+	clear: both;
+	font-size: 10px;
+}
+
+.common_shippment i {
+	width: 35px;
+	padding-left: 5px;
+	background: url(../img/icons.png) 10px -100px no-repeat;
+	background-position: -2px -86px;
+}
+
+
+/*购物车内容*/
+
+.cart_group_header {
+	height: 34px;
+	line-height: 34px;
+	text-align: left;
+	border-left: 5px solid #ed145b;
+	width: 537px;
+}
+
+.cart_group_item th {
+	height: 34px;
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 400;
+	border-bottom: 1px solid #eee;
+	background: #fafafa;
+	color: #000;
+	width: 100px;
+}
+
+.cart_overview {
+	width: 1000px;
+}
+
+#jiacu {
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.chexiao {
+	float: left;
+	width: 958px;
+	height: 30px;
+	font-size: 12px;
+	display: none;
+	border: 1px solid deeppink;
+}
+
+.chexiao a {
+	color: red;
+	text-decoration: none;
+}
+
+.chexiao a:hover {
+	text-decoration: underline;
+}
+
+.konghang {
+	height: 34px;
+	line-height: 34px;
+	text-align: left;
+	border-left: 5px solid #FFFFFF;
+	width: 537px;
+	height: 100px;
+	font-size: 12px;
+}
+
+.konghang img {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.konghang a {
+	color: black;
+}
+
+.konghang a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.jiage {
+	font-size: 13px;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.add {
+	display: block;
+	width: 74px;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid gainsboro;
+	/*float: left;*/
+	position: relative;
+	top: 40px;
+	right: -15px;
+}
+
+.shul {
+	width: 30px;
+	height: 20px;
+	border: none;
+	text-align: center;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: #e0e0e0;
+	float: left;
+}
+
+.decrease {
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/show/cart_num_editer_bg.jpg);
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+
+.plus {
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+}
+
+.xiaoji {
+	font-size: 13px;
+	font-weight: bolder;
+	color: red;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.del {
+	height: 18px;
+	width: 18px;
+	margin: 0 auto;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/show/icons.png) -35px -30px no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.chexiao2 {
+	float: left;
+	width: 958px;
+	height: 30px;
+	font-size: 12px;
+	display: none;
+	border: 1px solid deeppink;
+}
+
+.chexiao2 a {
+	color: red;
+	text-decoration: none;
+}
+
+.chexiao2 a:hover {
+	text-decoration: underline;
+}
+
+.konghang2 {
+	height: 34px;
+	line-height: 34px;
+	text-align: left;
+	border-left: 5px solid #FFFFFF;
+	width: 537px;
+	height: 100px;
+	font-size: 12px;
+}
+
+.konghang2 img {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.konghang2 a {
+	color: black;
+}
+
+.konghang2 a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.jiage2 {
+	font-size: 13px;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.add2 {
+	display: block;
+	width: 74px;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid gainsboro;
+	position: relative;
+	top: 40px;
+	right: -15px;
+}
+
+.shul2 {
+	width: 30px;
+	height: 20px;
+	border: none;
+	text-align: center;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: #e0e0e0;
+	float: left;
+}
+
+.decrease2 {
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/show/cart_num_editer_bg.jpg);
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+
+.plus2 {
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+}
+
+.xiaoji2 {
+	font-size: 13px;
+	font-weight: bolder;
+	color: red;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.del2 {
+	height: 18px;
+	width: 18px;
+	margin: 0 auto;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170728/images/show/icons.png) -35px -30px no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#cart_side_nav {
+	width: 59px;
+	height: 128px;
+	position: fixed;
+	top: 300px;
+	right: 0;
+	z-index: 90;
+	opacity: .5;
+}
+
+#cart_side_nav a {
+	width: 59px;
+	height: 128px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(http://f0.jmstatic.com/static_cart/dist/20170925/images/cart_side.png) no-repeat 0 0 transparent;
+}
+
+.jiesuan {
+	display: inline-block;
+	width: 959px;
+	height: 31px;
+	color: gray;
+	/*background: gainsboro;*/
+	font-size: 13px;
+}
+
+.fd {
+	border: 1px solid white;
+	background: #fafafa;
+	float: right;
+}
+
+#je {
+	color: red;
+	font-weight: bolder;
+	font-size: 14px;
+}
+
+.cotent_footer {
+	width: 960px;
+	height: 48px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	background: #fafafa;
+}
+
+.qianm {
+	height: 34px;
+	line-height: 34px;
+	text-align: left;
+	border-left: 5px solid #fff;
+}
+
+.qianm a {
+	color: black;
+	text-decoration: none;
+}
+
+.qianm a:hover {
+	color: deeppink;
+	text-decoration: underline;
+}
+
+.go_back_shopping {
+	margin-left: 20px;
+}
+
+.seperate_line {
+	color: #999;
+}
+
+.cotent_footer .foot_right {
+	line-height: 34px;
+	float: right;
+	height: 100%;
+	position: relative;
+	right: 0px;
+	top: -34px;
+}
+
+#dingweia {
+	position: relative;
+	top: -14px;
+}
+
+#yinfu {
+	color: red;
+	text-align: center;
+}
+
+#qian {
+	line-height: 34px;
+	color: red;
+	font-size: 20px;
+	font-weight: bolder;
+	position: relative;
+	top: -14px;
+}
+
+.recommend_box {
+	width: 960px;
+	margin: 160px auto 50px auto;
+}
+
+.recommend_box .nav_tips {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 2px #ccc solid;
+	margin-bottom: 15px;
+	font-size: 0;
+	padding: 124px 14px;
+}
+
+.recommend_box .nav_tips a {
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	padding: 35px 20px;
+	margin: 2px 0;
+	font-family: SimSun;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+	color: red;
+}
+
+.recommend_box .list {
+	float: left;
+	width: 160px;
+	padding: 15px 16px;
+}
+
+.recommend_box ul li {
+	list-style: none;
+}
+
+.recommend_box .tips_info_box {
+	margin-top: 5px;
+	line-height: 18px;
+	height: 36px;
+	overflow: hidden;
+}
+
+.recommend_box .tips_info_box a {
+	overflow: hidden;
+	font-size: 12px;
+	color: palevioletred;
+	text-decoration: none;
+}
+
+.recommend_box .tips_info_box a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.recommend_box .price {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.recommend_box .now {
+	font-size: 18px;
+	color: #ed145b;
+	font-family: Arial;
+}
+
+.recommend_box .old {
+	text-decoration: line-through;
+	font-family: Arial;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.recommend_box .putin {
+	text-align: center;
+}
+
 
 /*footer*/
 
@@ -82,15 +567,17 @@
 	padding-bottom: 20px;
 	color: #000;
 }
-.end .banquan a{
+
+.end .banquan a {
 	text-decoration: none;
 	color: black;
 }
-.end .banquan a:hover{
-		text-decoration: underline;
+
+.end .banquan a:hover {
+	text-decoration: underline;
 }
-#juzhong{
+
+#juzhong {
 	text-align: center;
 	padding: -15px 15px 15px;
-	
 }

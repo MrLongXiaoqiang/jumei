@@ -1,0 +1,537 @@
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*header*/
+			
+			.top {
+				position: relative;
+				height: 32px;
+				line-height: 32px;
+				color: #999999;
+				width: 960px;
+				margin: 0 auto;
+			}
+			
+			.top a {
+				text-decoration: none;
+			}
+			
+			.top .user_box {
+				position: absolute;
+				right: 0;
+				top: 0;
+				font-size: 12px;
+				font-family: "arial narrow";
+			}
+			
+			.top .user_box a:hover {
+				color: pink;
+			}
+			
+			.top_pic {
+				position: relative;
+				left: -300px;
+				top: 5px;
+			}
+			
+			.top_transpot {
+				position: absolute;
+				left: 780px;
+				top: 35px;
+			}
+			
+			.shuip {
+				position: relative;
+				top: 30px;
+				border: 1px solid gray;
+				color: rgba(0, 0, 0, .6);
+			}
+			
+			.top_center {
+				text-align: center;
+				height: 67px;
+				width: 1369px;
+			}
+			/*section*/
+			
+			.big_background {
+				width: 1349px;
+				height: 852px;
+				background: #eee7e1;
+			}
+			
+			.container {
+				width: 960px;
+				height: 100%;
+				margin: 0 auto;
+				padding: 20px 194.5px;
+				/*background: blue;*/
+			}
+			
+			.address {
+				width: 960px;
+				height: 163px;
+				border-bottom: 1px solid gray;
+				background: white;
+			}
+			
+			.address_pos {
+				padding: 10px 20px;
+			}
+			
+			.address_ziti {
+				width: 898px;
+				height: 20px;
+				line-height: 20px;
+				background: papayawhip;
+				margin: 0 auto;
+				padding: 3px 3px;
+				border: 1px solid;
+				color: #ed145b;
+				font-size: 12px;
+			}
+			
+			#adress_piao {
+				margin: 0 auto;
+				padding: 3px 3px;
+				position: relative;
+				top: -13px;
+			}
+			
+			.address_add {
+				width: 920px;
+				height: 48px;
+				padding: 30px 10px 5px 23px;
+			}
+			
+			.address_add input {
+				width: 92px;
+				height: 29px;
+			}
+			/*送货时间*/
+			
+			.time {
+				width: 960px;
+				height: 118px;
+				background: white;
+				border-bottom: 1px solid gray;
+			}
+			
+			.time_choese {
+				height: 36px;
+				line-height: 36px;
+				float: left;
+				padding: 0 20px 0 10px;
+				margin-right: 20px;
+				font-size: 14px;
+			}
+			
+			.time_choese input {
+				float: left;
+			}
+			
+			#working {
+				background: #fff8f3;
+				border-radius:10px;
+				line-height: 38px;
+				text-align: center;
+				width: 122px;
+				height: 38px;
+				border: 1px solid #ccc;
+				vertical-align: middle;
+				position: relative;
+				left: 17px;
+				cursor: pointer;
+			}
+			
+			#working input {
+				margin-top: 12.5px;
+				height: 13px;
+				display: inline-block;
+			}
+			
+			#onweek {
+				background: #fff8f3;
+				border-radius:10px;
+				width: 110px;
+				height: 38px;
+				text-align: center;
+				border: 1px solid #ccc;
+				margin: -40px 250px;
+				cursor: pointer;
+			}
+			
+			#onweek input {
+				margin-top: 12.5px;
+				height: 13px;
+				display: inline-block;
+			}
+			
+			#everyday {
+				background: #fff8f3;
+				border-radius:10px;
+				width: 180px;
+				height: 38px;
+				text-align: center;
+				border: 1px solid #ccc;
+				margin: -40px 500px;
+				cursor: pointer;
+			}
+			
+			#everyday input {
+				margin-top: 12.5px;
+				height: 13px;
+				display: inline-block;
+			}
+			/*商品清单*/
+			
+			.goods_list {
+				width: 960px;
+				height: 300px;
+				background: white;
+				border-bottom: 1px solid gray;
+			}
+			
+			.goods {
+				padding: 10px 20px;
+			}
+			
+			#goods_right {
+				float: right;
+				font-size: 12px;
+				position: relative;
+				top: -15px;
+				right: 15px;
+			}
+			
+			#goods_right a {
+				color: red;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			/*购物车内容*/
+			
+			.sheet {
+				padding: 0px 20px;
+				margin: 6px 10px;
+			}
+			
+			.cart_group_item {
+				width: 960px;
+				height: 34px;
+			}
+			
+			#biankuang {
+				border: 1px solid black;
+			}
+			
+			.cart_group_header {
+				height: 34px;
+				line-height: 34px;
+				text-align: left;
+				border-left: 5px solid #ed145b;
+				width: 530px;
+			}
+			
+			#jiacu {
+				font-size: 14px;
+				font-weight: bolder;
+				position: relative;
+				left: 10px;
+				color: #0abfde;
+			}
+			
+			.cart_group_item th {
+				height: 34px;
+				padding: 0;
+				font-size: 12px;
+				text-align: center;
+				font-weight: 400;
+				border-bottom: 1px solid #eee;
+				background: #fafafa;
+				color: #000;
+				width: 200px;
+			}
+			
+			.cart_overview {
+				width: 500px;
+			}
+			
+			.xiangshui {
+				border: 1px solid black;
+			}
+			
+			.xiangshui td {
+				font-size: 12px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.xiangshui:hover {
+				background: #E8E8E8;
+			}
+			
+			.konghang {
+				height: 40px;
+				line-height: 40px;
+				text-align: left;
+				width: 537px;
+				height: 40px;
+				font-size: 12px;
+			}
+			
+			.konghang img {
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.konghang a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.konghang a:hover {
+				color: red;
+				text-decoration: underline;
+			}
+			
+			.fansizhe {
+				/*border: 1px ;*/
+			}
+			
+			.fansizhe:hover {
+				background: #E8E8E8;
+			}
+			
+			.fansizhe td {
+				font-size: 12px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.post {
+				font-size: 12px;
+				text-align: center;
+			}
+			
+			.transtion_way {
+				width: 778px;
+				height: 25px;
+				font-size: 12px;
+				/*border: 1px solid black;*/
+			}
+			
+			.neirong {
+				float: right;
+			}
+			
+			#newgoods {
+				color: #0abfde;
+			}
+			
+			.discount {
+				float: left;
+				cursor: pointer;
+			}
+			
+			#icona {
+				letter-spacing: 6px;
+				height: 15px;
+				line-height: 15px;
+				font-weight: 700;
+				background: #ed145b;
+				color: #fff;
+				width: 15px;
+				margin: 2px;
+				float: left;
+				
+			}
+			.youhui{
+				font-size: 12px;
+				display: none;
+				float: left;
+				clear: left;
+			}
+			#juanhao{
+				color: red;
+				cursor: pointer;
+			}
+			#hongbaohao{
+				color: red;
+				cursor: pointer;
+			}
+			
+			.redbag {
+				float: left;
+				font-size: 12px;
+				color: red;
+			}
+			/*summary*/
+			
+			.summary {
+				position: relative;
+				width: 960px;
+				/*height: 152px;*/
+				background: white;
+				margin-top: 20px;
+			}
+			
+			.first_line {
+				vertical-align: middle;
+				padding: 15px 20px;
+				width: 960px;
+				height: 60px;
+				font-size: 12px;
+			}
+			
+			.question {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: url(http://f0.jmstatic.com/static_cart/dist/20170925/images/package_tip.png) no-repeat;
+				background-size: 14px 14px;
+				position: relative;
+				left: 64px;
+				top: -17px;
+				vertical-align: middle;
+			}
+			
+			#question_neirong ul {
+				width: 250px;
+				height: 150px;
+				list-style: none;
+				position: absolute;
+				top: -154px;
+				left: 80px;
+				background: papayawhip;
+				display: none;
+			}
+			
+			.text_right {
+				float: right;
+				position: relative;
+				right: 50px;
+				top: -20px;
+				padding: 5px 25px;
+				font-size: 12px;
+			}
+			
+			#shangpinshuliang {
+				color: #ed145b;
+			}
+			
+			#totalmoney {
+				min-width: 80px;
+				font-family: Helvetica, arial, sans-serif;
+			}
+			
+			.second_line {
+				float: right;
+				position: relative;
+				right: -777px;
+				top: -15px;
+				width: 960px;
+				height: 20px;
+				font-size: 12px;
+			}
+			
+			.third_line {
+				float: right;
+				position: relative;
+				right: 43px;
+				top: -13px;
+				padding: 5px 25px;
+				font-size: 12px;
+			}
+			
+			.fapioaleixing {
+				display: none;
+				font-size: 12px;
+				padding: 15px 20px;
+			}
+			
+			.youxiang {
+				display: none;
+			}
+			
+			.fapiaodanwei {
+				display: none;
+			}
+			
+			.queren {
+				position: relative;
+				height: 50px;
+				width: 960px;
+				background: #fafafa;
+			}
+			
+			#back {}
+			
+			#back a {
+				text-decoration: none;
+				color: red;
+				padding: 10px 25px;
+				line-height: 45px;
+				font-size: 14px;
+			}
+			
+			.yingfu_right {
+				float: right;
+				line-height: 40px;
+				padding-right: 20px;
+				clear: right;
+			}
+			
+			#fukuan {
+				color: red;
+				font-size: 20px;
+			}
+			
+			.jiaoyi {
+				float: right;
+				background: #f8296d;
+				border: 1px solid #fc6e9d;
+				font-size: 14px;
+				font-weight: 700;
+				margin: -8px 0px;
+				width: 170px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.jiaoyi a {
+				text-decoration: none;
+				color: #fff;
+			}
+			/*footer*/
+			
+			.end {
+				overflow: hidden;
+				width: 100%;
+				margin-top: 0;
+				border-top: 1px solid #ddd;
+				background: whitesmoke;
+				font-size: 12px;
+			}
+			
+			.end .banquan {
+				text-align: center;
+				line-height: 20px;
+				padding-bottom: 20px;
+				color: #000;
+			}
+			
+			.end .banquan a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.end .banquan a:hover {
+				text-decoration: underline;
+			}
+			
+			#juzhong {
+				text-align: center;
+				padding: -15px 15px 15px;
+			}
