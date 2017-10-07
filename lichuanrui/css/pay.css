@@ -57,7 +57,7 @@
 			
 			.big_background {
 				width: 1349px;
-				height: 852px;
+				/*height: 852px;*/
 				background: #eee7e1;
 			}
 			
@@ -188,7 +188,7 @@
 			
 			.goods_list {
 				width: 960px;
-				height: 300px;
+				/*height: 300px;*/
 				background: white;
 				border-bottom: 1px solid gray;
 			}
@@ -259,6 +259,7 @@
 			}
 			
 			.xiangshui {
+				
 				border: 1px solid black;
 			}
 			
@@ -271,7 +272,9 @@
 			.xiangshui:hover {
 				background: #E8E8E8;
 			}
-			
+			.xiangshui td .konghang {
+				text-align: left;
+			}
 			.konghang {
 				height: 40px;
 				line-height: 40px;
@@ -280,7 +283,9 @@
 				height: 40px;
 				font-size: 12px;
 			}
-			
+			.konghang_left{
+				text-align: left;
+			}
 			.konghang img {
 				text-align: center;
 				vertical-align: middle;
@@ -297,6 +302,7 @@
 			}
 			
 			.fansizhe {
+				text-align: left;
 				/*border: 1px ;*/
 			}
 			
@@ -399,12 +405,14 @@
 			
 			#question_neirong ul {
 				width: 250px;
-				height: 150px;
+				height: 180px;
+				border-radius: 20px;
+				border-color: black;
 				list-style: none;
 				position: absolute;
 				top: -154px;
 				left: 80px;
-				background: papayawhip;
+				background: whitesmoke;
 				display: none;
 			}
 			
