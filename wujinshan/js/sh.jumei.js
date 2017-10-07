@@ -132,11 +132,10 @@ $(function(){
 	})
 	$("#index_search_text").blur(function(){
 		$(this).parent().next().hide()
-		
 	})
 	
 	$("#search_history ul li").click(function(){
-		alert(123)
+//		alert(123)
 		$(this).parent().parent().prev().find("#index_search_text").val($(this).text());
 		alert($(this).parent().parent().prev().find("#index_search_text"));
 	})
