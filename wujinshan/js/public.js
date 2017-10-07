@@ -10,6 +10,23 @@ $.cookie("GOODS_9",0);
 $.cookie("GOODS_10",0);
 $.cookie("GOODS_11",0);
 $.cookie("GOODS_12",0);
+//cookie的相关代码
+
+$(function(){
+	$(".jiarugouwuche").click(function(){
+		var ckie=$(this).attr("id");
+		$.cookie(ckie,parseInt($.cookie(ckie))+1);
+		alert($.cookie(ckie));
+	})
+})
+
+
+
+
+
+
+
+
 
 $(function() {
 	//右侧导航动画
@@ -154,11 +171,3 @@ function left_nav_can() {
 //加入购物车操作
 
 
-//cookie的相关代码
-
-$(function(){
-	
-	
-	
-	
-})
