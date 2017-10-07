@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/jiesuan.css" type="text/css" />
 		<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
 		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jiesuan.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
@@ -68,99 +69,99 @@
 
 							<tr>
 								<td colspan="5">
-									<div class="chexiao" id="show">
+									<div class="chexiao" id="show2">
 										您已删除
-										<a href="#">京润珍珠圆梦盒—莹采白润</a>，如有误，
+										<a href="#">资生堂 胶原弹力高保湿霜90g</a>，如有误，
 										<a href="#" class="chexiaoshanche_a">可撤销删除</a>
 									</div>
 								</td>
 							</tr>
-							<tr class="xiangshui" id="GOODS_1">
-								<td class="konghang">
+							<tr class="xiangshui2" id="GOODS_1">
+								<td class="konghang2">
 									<div>
-										<input type="checkbox" checked="checked" value="true" />
-										<img src="http://p3.jmstatic.com/product/003/831/3831448_std/3831448_60_60.jpg" />
+										<input type="checkbox" value="true" checked="checked" />
+										<img src="http://p1.jmstatic.com/product/002/406/2406641_std/2406641_60_60.jpg" />
 										<span style="color: palevioletred;">[极速免税]</span>
-										<a href="#">京润珍珠圆梦盒—莹采白润</a>
+										<a href="#">资生堂 胶原弹力高保湿霜90g</a>
 									</div>
 								</td>
-								<td class="jiage">98.00</td>
-								<td class="add" onchange="gouwuchexiaoji(this)">
-									<span class="decrease" onclick="dec_count(this)">-</span>
-									<input type="text" value="1" class="shul" />
-									<span class="plus" onclick="add_count(this)">+</span>
+								<td class="jiage2">107.00</td>
+								<td class="add2 addshuliang" onchange="gouwuchexiaoji(this)">
+									<span class="decrease2" onclick="dec_count(this)">-</span>
+									<input type="text" value="1" class="shul2 shuliang" />
+									<span class="plus2" onclick="add_count(this)">+</span>
 								</td>
-								<td class="xiaoji">98.00</td>
+								<td class="xiaoji">107.00</td>
 								<td>
-									<div class="del delbutton" id="hide"></div>
+									<div class="del2 delbutton" id="hide2"></div>
+								</td>
 				</div>
-				</td>
+				<div id="cart_side_nav">
+					<a href="#"></a>
+				</div>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<div class="chexiao" id="show5">
+							您已删除
+							<a href="#">丝蕴无硅水润套装 500ml</a>，如有误，
+							<a href="#" class="chexiaoshanche_a">可撤销删除</a>
+						</div>
+					</td>
+				</tr>
+				<tr class="xiangshui2" id="GOODS_2">
+					<td class="konghang2">
+						<div>
+							<input type="checkbox" value="true" checked="checked" />
+							<img src="http://p4.jmstatic.com/product/003/017/3017379_std/3017379_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">丝蕴无硅水润套装 500ml</a>
+						</div>
+					</td>
+					<td class="jiage2">88.00</td>
+					<td class="add2 addshuliang" onchange="gouwuchexiaoji(this)">
+						<span class="decrease2" onclick="dec_count(this)">-</span>
+						<input type="text" value="1" class="shul2 shuliang" />
+						<span class="plus2" onclick="add_count(this)">+</span>
+					</td>
+					<td class="xiaoji">88.00</td>
+					<td>
+						<div class="del2 delbutton" id="hide5"></div>
+					</td>
+			</div>
+			<div id="cart_side_nav">
+				<a href="#"></a>
 			</div>
 			</tr>
 			<tr>
 				<td colspan="5">
-					<div class="chexiao" id="show2">
+					<div class="chexiao" id="show">
 						您已删除
-						<a href="#">资生堂 胶原弹力高保湿霜90g</a>，如有误，
+						<a href="#">京润珍珠圆梦盒—莹采白润</a>，如有误，
 						<a href="#" class="chexiaoshanche_a">可撤销删除</a>
 					</div>
 				</td>
 			</tr>
-			<tr class="xiangshui2" id="GOODS_2">
-				<td class="konghang2">
+			<tr class="xiangshui" id="GOODS_3">
+				<td class="konghang">
 					<div>
-						<input type="checkbox" value="true" checked="checked" />
-						<img src="http://p1.jmstatic.com/product/002/406/2406641_std/2406641_60_60.jpg" />
+						<input type="checkbox" checked="checked" value="true" />
+						<img src="http://p3.jmstatic.com/product/003/831/3831448_std/3831448_60_60.jpg" />
 						<span style="color: palevioletred;">[极速免税]</span>
-						<a href="#">资生堂 胶原弹力高保湿霜90g</a>
+						<a href="#">京润珍珠圆梦盒—莹采白润</a>
 					</div>
 				</td>
-				<td class="jiage2">107.00</td>
-				<td class="add2" onchange="gouwuchexiaoji(this)">
-					<span class="decrease2" onclick="dec_count(this)">-</span>
-					<input type="text" value="1" class="shul2" />
-					<span class="plus2" onclick="add_count(this)">+</span>
+				<td class="jiage">98.00</td>
+				<td class="add addshuliang" onchange="gouwuchexiaoji(this)">
+					<span class="decrease" onclick="dec_count(this)">-</span>
+					<input type="text" value="1" class="shul shuliang" />
+					<span class="plus" onclick="add_count(this)">+</span>
 				</td>
-				<td class="xiaoji">107.00</td>
+				<td class="xiaoji">98.00</td>
 				<td>
-					<div class="del2 delbutton" id="hide2"></div>
-				</td>
-				</div>
-				<div id="cart_side_nav">
-					<a href="#"></a>
-				</div>
-			</tr>
-			<tr>
-				<td colspan="5">
-					<div class="chexiao" id="show5">
-						您已删除
-						<a href="#">丝蕴无硅水润套装 500ml</a>，如有误，
-						<a href="#" class="chexiaoshanche_a">可撤销删除</a>
+					<div class="del delbutton" id="hide"></div>
 					</div>
 				</td>
-			</tr>
-			<tr class="xiangshui2" id="GOODS_3">
-				<td class="konghang2">
-					<div>
-						<input type="checkbox" value="true" checked="checked" />
-						<img src="http://p4.jmstatic.com/product/003/017/3017379_std/3017379_60_60.jpg" />
-						<span style="color: palevioletred;">[极速免税]</span>
-						<a href="#">丝蕴无硅水润套装 500ml</a>
-					</div>
-				</td>
-				<td class="jiage2">88.00</td>
-				<td class="add2" onchange="gouwuchexiaoji(this)">
-					<span class="decrease2" onclick="dec_count(this)">-</span>
-					<input type="text" value="1" class="shul2" />
-					<span class="plus2" onclick="add_count(this)">+</span>
-				</td>
-				<td class="xiaoji">88.00</td>
-				<td>
-					<div class="del2 delbutton" id="hide5"></div>
-				</td>
-				</div>
-				<div id="cart_side_nav">
-					<a href="#"></a>
 				</div>
 			</tr>
 			</tfoot>
@@ -168,7 +169,7 @@
 			</div>
 			<div class="cotent_footer">
 				<div class="qianm">
-					<input type="checkbox" checked="checked"/>全选
+					<input type="checkbox" checked="checked" />全选
 					<a href="../index.html" class="go_back_shopping ">继续购物</a>
 					<span class="seperate_line ">|</span>
 					<a href="#" id="hide3">清空选中商品</a>
@@ -183,13 +184,13 @@
 			</div>
 			<div class="recommend_box">
 				<div class="nav_tips">
-				<a href="# " class="recommend_box .nav_tips a">今日备受欢迎</a>
+					<a href="# " class="recommend_box .nav_tips a">今日备受欢迎</a>
 				</div>
 				<div>
 					<ul>
 						<li class="list">
 							<div>
-								<a href="#"><img src="img/images/1293263_160_160.jpg "/></a>
+								<a href="#"><img src="img/images/1293263_160_160.jpg " /></a>
 							</div>
 							<div class="tips_info_box ">
 								<a href="#" class="recommend_box .tips_info_box a ">5.1折/ 韩国【补水“膜”王】美迪惠尔MEDIHEAL水库面膜</a>
@@ -199,12 +200,12 @@
 								<span class="old">￥174.00</span>
 							</div>
 							<div class="putin">
-								<a href="#"><img src="img/2017-09-18_105846.png"/></a>
+								<a href="#"><img src="img/2017-09-18_105846.png" /></a>
 							</div>
 						</li>
 						<li class="list">
 							<div>
-								<a href="#"><img src="img/images/20504_160_160.jpg"/></a>
+								<a href="#"><img src="img/images/20504_160_160.jpg" /></a>
 							</div>
 							<div class="tips_info_box">
 								<a href="#" class="recommend_box .tips_info_box a">8折/ 中国台湾 欣兰多媚卡雅黑冻膜 225g</a>
@@ -214,12 +215,12 @@
 								<span class="old">￥148.00</span>
 							</div>
 							<div class="putin">
-								<a href="#"><img src="img/2017-09-18_105846.png "/></a>
+								<a href="#"><img src="img/2017-09-18_105846.png " /></a>
 							</div>
 						</li>
 						<li class="list">
 							<div>
-								<a href="#"><img src="img/images/20605_160_160.jpg "/></a>
+								<a href="#"><img src="img/images/20605_160_160.jpg " /></a>
 							</div>
 							<div class="tips_info_box">
 								<a href="#" class="recommend_box .tips_info_box a ">6.3折/ 日本•芙丽芳丝（freeplus）净润洗面霜 100g</a>
@@ -229,12 +230,12 @@
 								<span class="old">￥150.00</span>
 							</div>
 							<div class="putin">
-								<a href="# "><img src="img/2017-09-18_105846.png "/></a>
+								<a href="# "><img src="img/2017-09-18_105846.png " /></a>
 							</div>
 						</li>
 						<li class="list">
 							<div>
-								<a href="#"><img src="img/images/1775400_160_160.jpg "/></a>
+								<a href="#"><img src="img/images/1775400_160_160.jpg " /></a>
 							</div>
 							<div class="tips_info_box">
 								<a href="#" class="recommend_box .tips_info_box a ">7.2折/ 泰国 【一线艺人御用】mistine羽翼粉饼，巨遮瑕巨控油,流汗、流泪不流妆！</a>
@@ -244,12 +245,12 @@
 								<span class="old">￥69.00</span>
 							</div>
 							<div class="putin">
-								<a href="# "><img src="img/2017-09-18_105846.png"/></a>
+								<a href="# "><img src="img/2017-09-18_105846.png" /></a>
 							</div>
 						</li>
 						<li class="list">
 							<div>
-								<a href="#"><img src="img/images/1304253_160_160.jpg "/></a>
+								<a href="#"><img src="img/images/1304253_160_160.jpg " /></a>
 							</div>
 							<div class="tips_info_box">
 								<a href="# " class="recommend_box .tips_info_box a ">法国 【天然活肤水】雅漾舒护活泉喷雾300ml,增强肌肤耐受性,24h水润不干燥</a>
@@ -259,7 +260,7 @@
 								<span class="old">￥129.00</span>
 							</div>
 							<div class="putin">
-								<a href="# "><img src="img/2017-09-18_105846.png"/></a>
+								<a href="# "><img src="img/2017-09-18_105846.png" /></a>
 							</div>
 						</li>
 					</ul>
@@ -277,7 +278,7 @@
 				</p>
 			</div>
 			<div id="juzhong">
-				<a href="# "><img src="img/2017-09-18_114954.png" </a> 
+				<a href="# "><img src="img/2017-09-18_114954.png" </a>
 					<a href="# "><img src="img/2017-09-18_115106.png" </a>
 						<a href="# "><img src="img/2017-09-18_115155.png" </a>
 							<a href="# "><img src="img/2017-09-18_115236.png" </a>

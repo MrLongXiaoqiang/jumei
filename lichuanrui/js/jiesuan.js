@@ -47,19 +47,32 @@ function gouwuchexiaoji(bbb) {
 function gouwuchezongjine() {
 	var totalMoney = 0.0;
 	$(".xiaoji").each(function() {
-		var check = $(this).parent().find(":checkbox").prop("checked");
-		if(check) {
-			totalMoney += $(this).text() - 0;
-		} else {}
+		if($(this).parent().is(":visible")) {
+			var check = $(this).parent().find(":checkbox").prop("checked");
+			if(check) {
+				totalMoney += $(this).text() - 0;
+			}
+		}
 
 	});
 	var str = "￥" + parseFloat(totalMoney).toFixed(2);
 	$("#qian").text(str);
 	$("#je").text(str);
+	
+	
+	shuliang();
 
 }
-function shuliang(){
-	$(".shul:visible").css("background-color","blue");
+
+function shuliang() {
+	var count001=0;
+	$(".shuliang").each(function(){
+		if($(this).parent().parent().is(":visible")){
+			count001=parseInt($(this).val())+count001;
+		}
+		
+	})
+	$("#yinfu").text(count001);
 }
 //checkbox单击事件
 $(function() {
@@ -76,45 +89,56 @@ $(function() {
 
 //物品的删除与撤销
 $(function() {
-//	$("#hide").click(function() {
-//		$(".xiangshui").hide();
-//		$(".chexiao").show();
-//	});
-//	$("#show").click(function() {
-//		$(".chexiao").hide();
-//		$(".xiangshui").show();
-//	});
-//	$("#hide2").click(function() {
-//		$(".xiangshui2").hide();
-//		$(".chexiao2").show();
-//	});
-//	$("#show2").click(function() {
-//		$(".chexiao2").hide();
-//		$(".xiangshui2").show();
-//	});
-//	$("#hide5").click(function() {
-//		$(".xiangshui2").hide();
-//		$(".chexiao2").show();
-//	});
-//	$("#show5").click(function() {
-//		$("#GOODS_3").hide();
-//		$("#GOODS_3").show();
-//	});
-//	$("#hide3").click(function() {
-//		$(".xiangshui").hide();
-//		$(".xiangshui2").hide();
-//	});
-	
-	
-	
-	$(".delbutton").click(function(){
+	//	$("#hide").click(function() {
+	//		$(".xiangshui").hide();
+	//		$(".chexiao").show();
+	//	});
+	//	$("#show").click(function() {
+	//		$(".chexiao").hide();
+	//		$(".xiangshui").show();
+	//	});
+	//	$("#hide2").click(function() {
+	//		$(".xiangshui2").hide();
+	//		$(".chexiao2").show();
+	//	});
+	//	$("#show2").click(function() {
+	//		$(".chexiao2").hide();
+	//		$(".xiangshui2").show();
+	//	});
+	//	$("#hide5").click(function() {
+	//		$(".xiangshui2").hide();
+	//		$(".chexiao2").show();
+	//	});
+	//	$("#show5").click(function() {
+	//		$("#GOODS_3").hide();
+	//		$("#GOODS_3").show();
+	//	});
+	//	$("#hide3").click(function() {
+	//		$(".xiangshui").hide();
+	//		$(".xiangshui2").hide();
+	//	});
+
+	$(".delbutton").click(function() {
 		$(this).parent().parent().prev().find(".chexiao").show();
 		$(this).parent().parent().hide();
 	})
-	$(".chexiaoshanche_a").click(function(){
+	$(".chexiaoshanche_a").click(function() {
 		$(this).parent().hide();
 		$(this).parent().parent().parent().next().show();
 	})
-	
+
+	//设置cookie
+
+	for(var i = 1; i < 4; i++) {
+		var ckie = "GOODS_" + i;
+		if($.cookie(ckie) == 0) {
+			$("#" + ckie).hide();
+		} else {
+			$("#" + ckie).show().find(".shuliang").val($.cookie(ckie));
+			gouwuchexiaoji($("#" + ckie).find(".addshuliang"));
+
+		}
+		gouwuchezongjine();
+	}
 
 });

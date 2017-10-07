@@ -16,7 +16,7 @@ $(function(){
 	$(".jiarugouwuche").click(function(){
 		var ckie=$(this).attr("id");
 		$.cookie(ckie,parseInt($.cookie(ckie))+1);
-		alert($.cookie(ckie));
+//		alert($.cookie(ckie));
 	})
 })
 
