@@ -58,21 +58,24 @@ function gouwuchezongjine() {
 	var str = "￥" + parseFloat(totalMoney).toFixed(2);
 	$("#qian").text(str);
 	$("#je").text(str);
-	
-	
+
 	shuliang();
 
 }
 
 function shuliang() {
-	var count001=0;
-	$(".shuliang").each(function(){
-		if($(this).parent().parent().is(":visible")){
-			count001=parseInt($(this).val())+count001;
+	var count001 = 0;
+	$(".shuliang").each(function() {
+		if($(this).parent().parent().is(":visible")) {
+			count001 = parseInt($(this).val()) + count001;
 		}
-		
+
 	})
-	$("#yinfu").text(count001);
+	if(count001 == 0) {
+		location = "empty.html";
+	} else {
+		$("#yinfu").text(count001);
+	}
 }
 //checkbox单击事件
 $(function() {
@@ -121,15 +124,17 @@ $(function() {
 	$(".delbutton").click(function() {
 		$(this).parent().parent().prev().find(".chexiao").show();
 		$(this).parent().parent().hide();
+		gouwuchezongjine();
 	})
 	$(".chexiaoshanche_a").click(function() {
 		$(this).parent().hide();
 		$(this).parent().parent().parent().next().show();
+		gouwuchezongjine();
 	})
 
 	//设置cookie
 
-	for(var i = 1; i < 4; i++) {
+	for(var i = 1; i < 6; i++) {
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) == 0) {
 			$("#" + ckie).hide();
@@ -140,5 +145,14 @@ $(function() {
 		}
 		gouwuchezongjine();
 	}
+
+	$("#hide3").click(function() {
+
+		for(var i = 1; i <= 6; i++) {
+			var ckie = "GOODS_" + i;
+			$.cookie(ckie, "0");
+		}
+		location = "empty.html";
+	})
 
 });
