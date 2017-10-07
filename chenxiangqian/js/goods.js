@@ -168,3 +168,29 @@ $(".tx").hover(function(){
 				$(".aside i:eq(0)").find("span").click(function(){
 					$(this).parent().parent().hide();
 				});
+				
+//后续添加
+$(function(){
+	$.cookie("GOODS_4",0);
+	$(".addshopcart").click(function(){
+		$.cookie("GOODS_4",parseInt($.cookie("GOODS_4"))+1);
+		alert($.cookie("GOODS_4"));
+	})
+	$(".goshopcart").click(function(){
+		location="../lichuanrui/shoppingcart.html";
+	})
+	
+	
+})
+
+
+
+
+
+
+
+
+
+
+
+

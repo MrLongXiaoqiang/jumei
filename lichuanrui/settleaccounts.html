@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/pay.css" type="text/css" />
 		<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
 		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pay.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 		</script>
@@ -80,7 +81,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="xiangshui">
+									<tr class="xiangshui" id="GOODS_1">
 										<td class="konghang">
 											<div class="konghang_left">
 												<img src="http://p1.jmstatic.com/product/002/406/2406641_std/2406641_60_60.jpg" />
@@ -88,78 +89,78 @@
 												<a href="#">资生堂 胶原弹力高保湿霜90g</a>
 											</div>
 										</td>
-										<td>1</td>
-										<td>￥168.00</td>
+										<td class="shuliang">1</td>
+										<td class="price_each">￥<span>168.00</span></td>
 										<td>￥168.00</td>
 						</div>
 						</tr>
-									<tr class="xiangshui">
-										<td class="konghang">
-											<div class="konghang_left">
-												<img src="http://p4.jmstatic.com/product/003/017/3017379_std/3017379_60_60.jpg" />
-												<span style="color: palevioletred;">[极速免税]</span>
-												<a href="#">丝蕴无硅水润套装 500ml</a>
-											</div>
-										</td>
-										<td>1</td>
-										<td>￥88.00</td>
-										<td>￥88.00</td>
-						</div>
-						</tr>
-						<tr class="fansizhe">
+						<tr class="xiangshui" id="GOODS_2">
 							<td class="konghang">
 								<div class="konghang_left">
-									<img src="http://p3.jmstatic.com/product/003/831/3831448_std/3831448_60_60.jpg" />
+									<img src="http://p4.jmstatic.com/product/003/017/3017379_std/3017379_60_60.jpg" />
 									<span style="color: palevioletred;">[极速免税]</span>
-									<a href="#">京润珍珠圆梦盒—莹采白润</a>
+									<a href="#">丝蕴无硅水润套装 500ml</a>
 								</div>
 							</td>
-							<td>1</td>
-							<td>￥99.00</td>
-							<td>￥99.00</td>
+							<td class="shuliang">1</td>
+							<td class="price_each">￥<span>88.00</span></td>
+							<td>￥88.00</td>
 					</div>
 					</tr>
-						<tr class="fansizhe">
-							<td class="konghang">
-								<div class="konghang_left">
-									<img src="http://p4.jmstatic.com/product/001/300/1300044_std/1300044_60_60.jpg" />
-									<span style="color: palevioletred;">[极速免税]</span>
-									<a href="#">意大利•菲拉格慕梦中情人淡香水30ml</a>
-								</div>
-							</td>
-							<td>1</td>
-							<td>￥109.00</td>
-							<td>￥109.00</td>
-					</div>
-					</tr>
-					</tbody>
-					<tfoot>
-						
-						<tr class="post">
-							<td colspan="3" class="transtion_way">
-								<div class="neirong">
-									配送方式 <span id="newgoods">（享新用户满39元包邮，已减免¥5）</span>：快递
-								</div>
-							</td>
-							<td>￥0.00</td>
-						</tr>
-						<tr class="discount">
-							<td colspan="4">
-								<span id="icona">+</span>
-								<div class="redbag">
-									使用现金券和红包
-								</div>
-								<div class="youhui">
-									使用现金劵：<input type="text" placeholder="请输入您的现金劵" />或&nbsp;<span id="juanhao">直接输入劵号</span>
-									<input type="text" placeholder="请输入现金劵号"/><br />
-									使用红包：<input type="text" placeholder="请选择您的红包"/>或&nbsp;<span id="hongbaohao">直接输入红包号</span>
-									<input type="text" placeholder="请输入红包号"/>
-								</div>
-							</td>
-						</tr>
-					</tfoot>
-					</table>
+					<tr class="fansizhe" id="GOODS_3">
+						<td class="konghang">
+							<div class="konghang_left">
+								<img src="http://p3.jmstatic.com/product/003/831/3831448_std/3831448_60_60.jpg" />
+								<span style="color: palevioletred;">[极速免税]</span>
+								<a href="#">京润珍珠圆梦盒—莹采白润</a>
+							</div>
+						</td>
+						<td class="shuliang">1</td>
+						<td class="price_each">￥<span>99.00</span></td>
+						<td>￥99.00</td>
 				</div>
+				</tr>
+				<tr class="fansizhe" id="GOODS_4">
+					<td class="konghang">
+						<div class="konghang_left">
+							<img src="http://p4.jmstatic.com/product/001/300/1300044_std/1300044_60_60.jpg" />
+							<span style="color: palevioletred;">[极速免税]</span>
+							<a href="#">意大利•菲拉格慕梦中情人淡香水30ml</a>
+						</div>
+					</td>
+					<td class="shuliang">1</td>
+					<td class="price_each">￥<span>109.00</span></td>
+					<td>￥109.00</td>
+			</div>
+			</tr>
+			</tbody>
+			<tfoot>
+
+				<tr class="post">
+					<td colspan="3" class="transtion_way">
+						<div class="neirong">
+							配送方式 <span id="newgoods">（享新用户满39元包邮，已减免¥5）</span>：快递
+						</div>
+					</td>
+					<td>￥0.00</td>
+				</tr>
+				<tr class="discount">
+					<td colspan="4">
+						<span id="icona">+</span>
+						<div class="redbag">
+							使用现金券和红包
+						</div>
+						<div class="youhui">
+							使用现金劵：<input type="text" placeholder="请输入您的现金劵" />或&nbsp;<span id="juanhao">直接输入劵号</span>
+							<input type="text" placeholder="请输入现金劵号" /><br /> 使用红包：
+							<input type="text" placeholder="请选择您的红包" />或&nbsp;<span id="hongbaohao">直接输入红包号</span>
+							<input type="text" placeholder="请输入红包号" />
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+			</table>
+			</div>
 			</div>
 			<div class="summary">
 				<div class="first_line">
@@ -174,19 +175,19 @@
 						</ul>
 					</div>
 					<span class="question"></span>
-					<div class="text_right">
+					<div class="text_right sum_float_right">
 						<span>共</span>
 						<span id="shangpinshuliang">3</span>
 						<span>件商品,总商品金额:</span>
-						<span id="totalmoney">&nbsp;&nbsp;&nbsp;&nbsp;￥355.00</span>
+						<span id="totalmoney" class="summoney">￥355.00</span>
 					</div>
-					<div class="second_line">
+					<div class="second_line sum_float_right">
 						<span>总运费：</span>
-						<span>&nbsp;&nbsp;&nbsp;&nbsp;￥0.00</span>
+						<span>￥0.00</span>
 					</div>
-					<div class="third_line">
+					<div class="third_line sum_float_right">
 						<span>应付总额:</span>
-						<span>&nbsp;&nbsp;&nbsp;&nbsp;￥355.00</span>
+						<span class="summoney">￥355.00</span>
 					</div>
 				</div>
 
@@ -218,12 +219,12 @@
 				<div class="queren">
 					<span id="back"><a href="../lichuanrui/shoppingcart.html">返回修改购物车</a></span>
 					<div class="yingfu_right">
-						应付总额：<span id="fukuan">￥355.00</span>
+						应付总额：<span id="fukuan" class="summoney">￥355.00</span>
 						<div class="jiaoyi">
-						<a href="#">确认交易</a>
+							<a href="#">确认交易</a>
+						</div>
 					</div>
-					</div>
-					
+
 				</div>
 			</div>
 			</div>

@@ -315,6 +315,9 @@ sup{
 	height: 42px;
 	background: url(../img/allicons_new.png) no-repeat;
 }
+#fou ul li:nth-child(3) div:hover{
+	cursor: pointer;
+}
 .third_child{
 	background: white;
 	height: 56px;
@@ -1064,4 +1067,8 @@ sup{
 }
 .togclass{
 	background: #ed145b !important;
+}
+
+.goshopcart:hover{
+	cursor: pointer;
 }

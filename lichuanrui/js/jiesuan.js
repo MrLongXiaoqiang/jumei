@@ -23,7 +23,13 @@ function add_count(aaa) {
 	$(aaa).prev().val(parseInt($(aaa).prev().val()) + 1);
 	var money = parseFloat($(aaa).parent().prev().text()) * parseFloat($(aaa).prev().val())
 	$(aaa).parent().parent().find(".xiaoji").text(money.toFixed(2));
+	
 	gouwuchezongjine();
+	//后增加
+	var idnum=$(aaa).parent().parent().attr("id");
+	$.cookie(idnum,parseInt($.cookie(idnum))+1);
+	
+	
 }
 
 function dec_count(aaa) {
@@ -34,6 +40,10 @@ function dec_count(aaa) {
 	var money = parseFloat($(aaa).parent().prev().text()) * parseFloat($(aaa).next().val());
 	$(aaa).parent().parent().find(".xiaoji").text(money.toFixed(2));
 	gouwuchezongjine();
+	
+	//后增加
+	var idnum=$(aaa).parent().parent().attr("id");
+	$.cookie(idnum,parseInt($.cookie(idnum))-1);
 }
 
 function gouwuchexiaoji(bbb) {
