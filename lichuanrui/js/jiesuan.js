@@ -58,6 +58,9 @@ function gouwuchezongjine() {
 	$("#je").text(str);
 
 }
+function shuliang(){
+	$(".shul:visible").css("background-color","blue");
+}
 //checkbox单击事件
 $(function() {
 	$(":checkbox").click(function() {
@@ -73,25 +76,45 @@ $(function() {
 
 //物品的删除与撤销
 $(function() {
-	$("#hide").click(function() {
-		$(".xiangshui").hide();
-		$(".chexiao").show();
-	});
-	$("#show").click(function() {
-		$(".chexiao").hide();
-		$(".xiangshui").show();
-	});
-	$("#hide2").click(function() {
-		$(".xiangshui2").hide();
-		$(".chexiao2").show();
-	});
-	$("#show2").click(function() {
-		$(".chexiao2").hide();
-		$(".xiangshui2").show();
-	});
-	$("#hide3").click(function() {
-		$(".xiangshui").hide();
-		$(".xiangshui2").hide();
-	});
+//	$("#hide").click(function() {
+//		$(".xiangshui").hide();
+//		$(".chexiao").show();
+//	});
+//	$("#show").click(function() {
+//		$(".chexiao").hide();
+//		$(".xiangshui").show();
+//	});
+//	$("#hide2").click(function() {
+//		$(".xiangshui2").hide();
+//		$(".chexiao2").show();
+//	});
+//	$("#show2").click(function() {
+//		$(".chexiao2").hide();
+//		$(".xiangshui2").show();
+//	});
+//	$("#hide5").click(function() {
+//		$(".xiangshui2").hide();
+//		$(".chexiao2").show();
+//	});
+//	$("#show5").click(function() {
+//		$("#GOODS_3").hide();
+//		$("#GOODS_3").show();
+//	});
+//	$("#hide3").click(function() {
+//		$(".xiangshui").hide();
+//		$(".xiangshui2").hide();
+//	});
+	
+	
+	
+	$(".delbutton").click(function(){
+		$(this).parent().parent().prev().find(".chexiao").show();
+		$(this).parent().parent().hide();
+	})
+	$(".chexiaoshanche_a").click(function(){
+		$(this).parent().hide();
+		$(this).parent().parent().parent().next().show();
+	})
+	
 
 });
