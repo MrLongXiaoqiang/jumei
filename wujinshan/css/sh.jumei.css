@@ -185,7 +185,7 @@ body {
 
 #header_search_button {
 	width: 100px;
-	height: 35.5px;
+	height: 37.5px;
 	font: 13.3333px arial;
 	cursor: pointer;
 	background: #ed145b;
@@ -569,7 +569,7 @@ body {
 	float: left;
 	width: 610px;
 	height: 350px;
-	background: url(http://p3.jmstatic.com/product/003/831/3831448_std/3831448_dx_1500_400.jpg)-300px 0 no-repeat;
+	background: url(http://p3.jmstatic.com/product/003/831/3831448_std/3831448_dx_1500_400.jpg)-300px -30px no-repeat;
 }
 
 

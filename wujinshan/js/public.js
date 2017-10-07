@@ -1,3 +1,16 @@
+$.cookie("GOODS_1",0);
+$.cookie("GOODS_2",0);
+$.cookie("GOODS_3",0);
+$.cookie("GOODS_4",0);
+$.cookie("GOODS_5",0);
+$.cookie("GOODS_6",0);
+$.cookie("GOODS_7",0);
+$.cookie("GOODS_8",0);
+$.cookie("GOODS_9",0);
+$.cookie("GOODS_10",0);
+$.cookie("GOODS_11",0);
+$.cookie("GOODS_12",0);
+
 $(function() {
 	//右侧导航动画
 
@@ -142,6 +155,10 @@ function left_nav_can() {
 
 
 //cookie的相关代码
+
 $(function(){
+	
+	
+	
 	
 })
