@@ -4,26 +4,27 @@
 	background: white;
 }
 
-.topa {
+.topa{
 	width: 400px;
 	height: 40px;
 	border: 1px solid white;
 	position: absolute;
 	padding: 10px;
 	top: 19px;
-	left: 691px;
+	left: 691px;	
 }
-
-.right {
+.right{
 	position: relative;
 	width: 350px;
 	height: 480px;
 	border: 2px solid whitesmoke;
 	left: 813px;
 	top: 47px;
+	
 }
-
-
+.aa {
+	margin: 40px 220px;
+}
 
 .logo {
 	position: absolute;
@@ -41,29 +42,14 @@
 	width: 300px;
 	height: 43px;
 	position: absolute;
-	left: 24px;
-	top: 72px;
+	left:24px;
+	top: 109px;
 }
-.aabb {
+.zhang2{
 	width: 300px;
 	height: 43px;
 	position: absolute;
-	left: 24px;
-	top: 210px;
-}
-.ccdd {
-	width: 300px;
-	height: 43px;
-	position: absolute;
-	left: 24px;
-	top: 278px;
-}
-
-.zhang2 {
-	width: 300px;
-	height: 43px;
-	position: absolute;
-	left: 24px;
+	left:24px;
 	top: 109px;
 }
 
@@ -78,49 +64,26 @@
 	position: absolute;
 	right: -3px;
 	z-index: 999;
-	margin-top: 44px;
+	margin-top: 44px;	
 }
 
 .zhan input {
 	width: 192px;
 	height: 17px;
 	position: absolute;
-	left: 39px;
-	top: 92px;
+	left: 63px;
+	top: 122px;
 	font-size: 15px;
 	border: none;
 	outline: none;
 	z-index: 999;
 }
-.zhan input {
+.zhan2 input{
 	width: 192px;
 	height: 17px;
 	position: absolute;
-	left: 39px;
-	top: 87px;
-	font-size: 15px;
-	border: none;
-	outline: none;
-	z-index: 999;
-}
-.aa input {
-	width: 192px;
-	height: 17px;
-	position: absolute;
-	left: 42px;
-	top: 224px;
-	font-size: 15px;
-	border: none;
-	outline: none;
-	z-index: 999;
-}
-
-.cc input {
-	width: 192px;
-	height: 17px;
-	position: absolute;
-	left: 58px;
-	top: 220px;
+	left: 63px;
+	top: 122px;
 	font-size: 15px;
 	border: none;
 	outline: none;
@@ -131,17 +94,17 @@
 	display: block;
 }
 
+
 .mima {
 	width: 300px;
-	height: 43px;
+	height:43px;
 	position: absolute;
 	left: 24px;
-	top: 144px;
+	top: 182px;
 }
-
 .mima2 {
 	width: 120px;
-	height: 43px;
+	height:43px;
 	position: absolute;
 	left: 24px;
 	top: 182px;
@@ -151,14 +114,13 @@
 	width: 192px;
 	height: 17px;
 	position: absolute;
-	left: 43px;
-	top: 158px;
+	left: 63px;
+	top: 195px;
 	font-size: 15px;
 	border: none;
 	outline: none;
 	z-index: 999;
 }
-
 .mi2 input {
 	width: 100px;
 	height: 17px;
@@ -170,7 +132,6 @@
 	outline: none;
 	z-index: 999;
 }
-
 .ttb {
 	font-size: 6px;
 	width: 300px;
@@ -183,12 +144,10 @@
 	right: 0px;
 	z-index: 999;
 }
-
 .mima:active .ttb {
 	display: block;
 }
-
-.mi:active .ttb {
+.mi:active .ttb{
 	display: block;
 }
 
@@ -204,9 +163,8 @@
 	width: 80px;
 	height: 12px;
 	position: absolute;
-	right: 49px;
-	top: 31px;
-	font-size: 12px;
+	right: 95px;
+	top: 26px;
 }
 
 .third {
@@ -219,98 +177,162 @@
 	color: #ed145b;
 }
 
-.four {
-	position: absolute;
-	right: 261px;
-	top: 116px;
-	font-size: 7px;
-	color: black;
-}
 
 a:hover .third {
+
 	text-decoration: underline;
 }
-
 .four {
-	position: absolute;
-	right: 206px;
-	top: 380px;
+	position: relative;
+	left: 1079px;
+	top: -173px;
 	font-size: 7px;
 	color: black;
 }
-
 a:hover .four {
+
 	text-decoration: underline;
 }
-
-.cc {
+.cc{
 	width: 180px;
 	height: 12px;
 	font-size: 12px;
 	position: absolute;
-	left: -18px;
-	top: 73px;
+	left: 20px;
+	top: 80px;
 }
-
-.foota {
+.foota{
 	padding: 14px 0px 18px;
 	line-height: 23px;
 	padding-bottom: 80px;
 	position: absolute;
-	left: 380px;
+	left:380px ;
 	top: 630px;
 	font-size: 10px;
 	text-align: center;
 }
-
-.footb {
-	width: 47%;
+.footb{
+	width: 82%;
 	height: 51px;
 	border: 1px solid white;
 	position: absolute;
 	top: 700px;
-	left: 364px;
+	left:364px;
 }
-
-.dd {
+.dd{
 	font-size: 7px;
 	color: black;
-	position: absolute;
-	right: 451px;
-	top: 380px;
+	position: relative;
+	left: 840px;
+	top: -189px;	
 }
-
-.ee {
+.ee{
 	width: 180px;
 	height: 40px;
-	position: absolute;
-	right: 330px;
-	top: 472px;
+	position: relative;
+	left: 840px;
+	top: -180px;
 }
-
-.five {
+.five{
 	width: 150px;
 	height: 10px;
 	font-size: 8px;
-	color: deeppink;
-	position: absolute;
-	right: 361px;
-	top: 525px;
+	position: relative;
+	left: 839px;
+	top: -174px;
 }
-
-
-
-
-
-.s1 {
+.ff{
+	display: none;
+	width: 200px;
+	height: 45px;
+	position: absolute;
+	right: 100px;
+	top:100px ;
+}
+.gg{
+	position: absolute;
+	left:1110px ;
+	top: 507px;
+	font-size: 8px;
+}
+.a1{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 840px;
+	top: 500px;
+}
+.a2{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 890px;
+	top: 500px;
+}
+.a3{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 940px;
+	top: 500px;
+}
+.a4{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 990px;
+	top: 500px;
+}
+.a5{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 1040px;
+	top: 500px;
+}
+.a6{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 840px;
+	top: 550px;
+}
+.a7{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 890px;
+	top: 550px;
+}
+.a8{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 940px;
+	top: 550px;
+}
+.a9{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 990px;
+	top: 550px;
+}
+.a10{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 1040px;
+	top: 550px;
+}
+.s1{
 	width: 3px;
 	height: 400px;
 	position: absolute;
 	left: 1167px;
 	top: 163px;
 }
-
-.s2 {
+.s2{
 	width: 3px;
 	height: 400px;
 	position: absolute;
@@ -318,4 +340,3 @@ a:hover .four {
 	top: 160px;
 	z-index: 999;
 }
-
