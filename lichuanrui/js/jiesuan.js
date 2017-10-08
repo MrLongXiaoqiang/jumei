@@ -158,11 +158,13 @@ $(function() {
 	}
 
 	$("#hide3").click(function() {
-
+		var count=0;
 		for(var i = 1; i <= 6; i++) {
 			var ckie = "GOODS_" + i;
-			$.cookie(ckie, "0");
+			$.cookie(ckie, 0);
+			count+=parseInt($.cookie(ckie));
 		}
+		alert(count);
 		location = "empty.html";
 	})
 

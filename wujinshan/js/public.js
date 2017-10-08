@@ -21,6 +21,11 @@ $(function() {
 		$.cookie(ckie, parseInt($.cookie(ckie)) + 1);
 		right_count();
 	});
+	
+	
+	
+	
+	
 })
 
 
@@ -33,6 +38,7 @@ function right_count() {
 		}
 	}
 	$(".gouwucheshangpinshuliang").html(count_right);
+	alert(count_right);
 	return count_right;
 }
 
