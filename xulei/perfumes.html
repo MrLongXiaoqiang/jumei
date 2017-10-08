@@ -1741,7 +1741,7 @@
 
 						<ul class="nav_right_center">
 							<li class="nav_right_top_hide">
-								<a href="#" onmouseover="$()">
+								<a href="#">
 									<span></span>
 								</a>
 							</li>
@@ -1808,31 +1808,51 @@
 				});
 
 				//由高至底排序
+				var historyul=$("#first_line").html();
 				$("#up_to_low").click(function() {
-					for(var i = 0; i < $("#first_line li").length - 1; i++) {
-						for(var j = i + 1; j < $("#first_line li").length; j++) {
-							if(parseInt($("#first_line li").eq(i).find(".price_large").text()) < parseInt($("#first_line li").eq(j).find(".price_large").text())) {
-								var a = $("#first_line li").eq(i).html();
-								$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
-								$("#first_line li").eq(j).html(a);
+					if($(this).attr('checked')) {
+						$(this).attr('checked', false);
+						$("#first_line").html(historyul);
+
+					} else {
+						$(this).attr('checked', true);
+						for(var i = 0; i < $("#first_line li").length - 1; i++) {
+							for(var j = i + 1; j < $("#first_line li").length; j++) {
+								if(parseInt($("#first_line li").eq(i).find(".price_large").text()) < parseInt($("#first_line li").eq(j).find(".price_large").text())) {
+									var a = $("#first_line li").eq(i).html();
+									$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
+									$("#first_line li").eq(j).html(a);
+								}
 							}
 						}
-					}
-				});
 
+					}
+
+				});
+				var historyul=$("#first_line").html();
 				$("#up_to_high").click(function() {
-					for(var i = 0; i < $("#first_line li").length - 1; i++) {
-						for(var j = i + 1; j < $("#first_line li").length; j++) {
-							if(parseInt($("#first_line li").eq(i).find(".price_large").text()) > parseInt($("#first_line li").eq(j).find(".price_large").text())) {
-								var a = $("#first_line li").eq(i).html();
-								$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
-								$("#first_line li").eq(j).html(a);
+					if($(this).attr('checked')) {
+						$(this).attr('checked', false);
+						$("#first_line").html(historyul);
+
+					} else {
+						$(this).attr('checked', true);
+						for(var i = 0; i < $("#first_line li").length - 1; i++) {
+							for(var j = i + 1; j < $("#first_line li").length; j++) {
+								if(parseInt($("#first_line li").eq(i).find(".price_large").text()) > parseInt($("#first_line li").eq(j).find(".price_large").text())) {
+									var a = $("#first_line li").eq(i).html();
+									$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
+									$("#first_line li").eq(j).html(a);
+								}
 							}
 						}
+
 					}
+
 				});
 
-//				
+				
+				//				
 			});
 
 			//收缩导航筛选栏
@@ -1877,73 +1897,93 @@
 			});
 
 			//右侧浮动画窗口1
-			$(document).ready(function() {
-				$("#menu1").hover(function() {
+			$(document).ready(function(){
+				$("#menu1").hover(function(){
+					$(".side_menu").show();
 					$(".side_menu").animate({
-						left: "-100px",
-						opacity: "1",
-
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
+					
+				},function(){
 					$(".side_menu").animate({
-						left: "-150px",
-						opacity: "0"
-
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide()',500);
 				});
 			});
-			//右侧浮动画窗口2
-			$(document).ready(function() {
-				$("#menu2").hover(function() {
-					$(".side_menu2").animate({
-						left: "-100px",
-						opacity: "1",
-
-					});
-
-				}, function() {
-					$(".side_menu2").animate({
-						left: "-150px",
-						opacity: "0"
-
-					});
-				});
-			});
+			function righthide(){
+				$('.side_menu').hide()
+			}
 			//右侧浮动画窗口3
-			$(document).ready(function() {
-				$("#menu3").hover(function() {
-					$(".side_menu3").animate({
-						left: "-100px",
-						opacity: "1",
-
+			$(document).ready(function(){
+				$("#menu2").hover(function(){
+					$(".side_menu2").show();
+					$(".side_menu2").animate({
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
-					$(".side_menu3").animate({
-						left: "-150px",
-						opacity: "0"
-
+					
+				},function(){
+					$(".side_menu2").animate({
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide2()',500);
 				});
 			});
+			function righthide2(){
+				$('.side_menu2').hide()
+			}			
+			//右侧浮动画窗口3
+			$(document).ready(function(){
+				$("#menu3").hover(function(){
+					$(".side_menu3").show();
+					$(".side_menu3").animate({
+						left:"-100px",
+						opacity:"1",
+						
+					});
+					
+				},function(){
+					$(".side_menu3").animate({
+						left:"-150px",
+						opacity:"0"
+						
+					});
+					setTimeout('righthide3()',500);
+				});
+			});
+			function righthide3(){
+				$('.side_menu3').hide()
+			}			
 			//右侧浮动画窗口底部
-			$(document).ready(function() {
-				$("#menu4").hover(function() {
+			$(document).ready(function(){
+				$("#menu4").hover(function(){
+					$(".side_menu4").show();
 					$(".side_menu4").animate({
-						left: "-100px",
-						opacity: "1",
-
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
+					
+				},function(){
 					$(".side_menu4").animate({
-						left: "-150px",
-						opacity: "0"
-
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide4()',500);
 				});
 			});
+			function righthide4(){
+				$('.side_menu4').hide()
+			}			
 
 			//右侧上部弹出的登陆框
 			$(document).ready(function() {

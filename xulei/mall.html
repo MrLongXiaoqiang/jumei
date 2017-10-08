@@ -951,73 +951,93 @@
 			});
 
 			//右侧浮动画窗口1
-			$(document).ready(function() {
-				$("#menu1").hover(function() {
+			$(document).ready(function(){
+				$("#menu1").hover(function(){
+					$(".side_menu").show();
 					$(".side_menu").animate({
-						left: "-100px",
-						opacity: "1",
-
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
+					
+				},function(){
 					$(".side_menu").animate({
-						left: "-150px",
-						opacity: "0"
-
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide()',500);
 				});
 			});
-			//右侧浮动画窗口2
-			$(document).ready(function() {
-				$("#menu2").hover(function() {
-					$(".side_menu2").animate({
-						left: "-100px",
-						opacity: "1",
-
-					});
-
-				}, function() {
-					$(".side_menu2").animate({
-						left: "-150px",
-						opacity: "0"
-
-					});
-				});
-			});
+			function righthide(){
+				$('.side_menu').hide()
+			}
 			//右侧浮动画窗口3
-			$(document).ready(function() {
-				$("#menu3").hover(function() {
-					$(".side_menu3").animate({
-						left: "-100px",
-						opacity: "1",
-
+			$(document).ready(function(){
+				$("#menu2").hover(function(){
+					$(".side_menu2").show();
+					$(".side_menu2").animate({
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
-					$(".side_menu3").animate({
-						left: "-150px",
-						opacity: "0"
-
+					
+				},function(){
+					$(".side_menu2").animate({
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide2()',500);
 				});
 			});
+			function righthide2(){
+				$('.side_menu2').hide()
+			}			
+			//右侧浮动画窗口3
+			$(document).ready(function(){
+				$("#menu3").hover(function(){
+					$(".side_menu3").show();
+					$(".side_menu3").animate({
+						left:"-100px",
+						opacity:"1",
+						
+					});
+					
+				},function(){
+					$(".side_menu3").animate({
+						left:"-150px",
+						opacity:"0"
+						
+					});
+					setTimeout('righthide3()',500);
+				});
+			});
+			function righthide3(){
+				$('.side_menu3').hide()
+			}			
 			//右侧浮动画窗口底部
-			$(document).ready(function() {
-				$("#menu4").hover(function() {
+			$(document).ready(function(){
+				$("#menu4").hover(function(){
+					$(".side_menu4").show();
 					$(".side_menu4").animate({
-						left: "-100px",
-						opacity: "1",
-
+						left:"-100px",
+						opacity:"1",
+						
 					});
-
-				}, function() {
+					
+				},function(){
 					$(".side_menu4").animate({
-						left: "-150px",
-						opacity: "0"
-
+						left:"-150px",
+						opacity:"0"
+						
 					});
+					setTimeout('righthide4()',500);
 				});
 			});
+			function righthide4(){
+				$('.side_menu4').hide()
+			}			
 
 			//右侧上部弹出的登陆框
 			$(document).ready(function() {

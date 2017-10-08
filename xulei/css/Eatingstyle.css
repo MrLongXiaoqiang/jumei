@@ -916,14 +916,15 @@ nav {
 	height: 42px;
 	width: 100px;
 	background-color: #404040;
-	display: inline-block;
+	/*display: inline-block;*/
 	position: absolute;
 	top: 169px;
 	left: -150px;
-	opacity: 0;	
+	/*opacity: 0;*/	
 	color: whitesmoke;
 	text-align:center;
 	line-height: 45px;
+	display: none;
 }
 .side_menu_little{
 	position: absolute;
