@@ -1,11 +1,10 @@
 $(function() {
-
 	var count = 0;
 	for(var i = 1; i <= 6; i++) {
 		var ckie = "GOODS_" + i;
 		count += parseInt($.cookie(ckie));
 	}
-	alert(count);
+//	alert(count);
 	var count_right = 0;
 	for(var i = 1; i < 6; i++) {
 		var ckie = "GOODS_" + i;
@@ -13,5 +12,9 @@ $(function() {
 			count_right += parseInt($.cookie(ckie));
 		}
 	}
-	alert(count_right);
+//	alert(count_right);
 })
+
+
+
+
