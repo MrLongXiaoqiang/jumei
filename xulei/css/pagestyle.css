@@ -963,19 +963,20 @@ nav {
 	width: 960px;
     height: 100px;
 	background-color: #f7f7f7;
-	
+	display: none;
 }
 .hide_menu span{
-	margin:10px 50px;
+	margin:10px 140px;
 	position: relative;
-	top: 15px;
+	top: 6px;
+	display: inline-block;
 }
 .hide_menu ul li{
 	float: right;
     margin: 10px 16px;
     position: relative;
-    top: 4px;
-    left: -209px;
+    top: 5px;
+    left: -172px;
 
 }
 .box_introduce{
