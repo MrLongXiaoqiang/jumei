@@ -1,0 +1,321 @@
+.top {
+	width: 1349px;
+	height: 85px;
+	background: white;
+}
+
+.topa {
+	width: 400px;
+	height: 40px;
+	border: 1px solid white;
+	position: absolute;
+	padding: 10px;
+	top: 19px;
+	left: 691px;
+}
+
+.right {
+	position: relative;
+	width: 350px;
+	height: 480px;
+	border: 2px solid whitesmoke;
+	left: 813px;
+	top: 47px;
+}
+
+
+
+.logo {
+	position: absolute;
+	left: 185px;
+	top: 20px;
+}
+
+.bb {
+	position: absolute;
+	left: 179px;
+	top: 143px;
+}
+
+.zhang {
+	width: 300px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 72px;
+}
+.aabb {
+	width: 300px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 210px;
+}
+.ccdd {
+	width: 300px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 278px;
+}
+
+.zhang2 {
+	width: 300px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 109px;
+}
+
+.tta {
+	font-size: 6px;
+	width: 300px;
+	height: 15px;
+	border: none;
+	display: none;
+	margin-top: 20px;
+	background: white;
+	position: absolute;
+	right: -3px;
+	z-index: 999;
+	margin-top: 44px;
+}
+
+.zhan input {
+	width: 192px;
+	height: 17px;
+	position: absolute;
+	left: 39px;
+	top: 92px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+.zhan input {
+	width: 192px;
+	height: 17px;
+	position: absolute;
+	left: 39px;
+	top: 87px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+.aa input {
+	width: 192px;
+	height: 17px;
+	position: absolute;
+	left: 42px;
+	top: 224px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+
+.cc input {
+	width: 192px;
+	height: 17px;
+	position: absolute;
+	left: 58px;
+	top: 220px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+
+.zhang:active .tta {
+	display: block;
+}
+
+.mima {
+	width: 300px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 144px;
+}
+
+.mima2 {
+	width: 120px;
+	height: 43px;
+	position: absolute;
+	left: 24px;
+	top: 182px;
+}
+
+.mi input {
+	width: 192px;
+	height: 17px;
+	position: absolute;
+	left: 43px;
+	top: 158px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+
+.mi2 input {
+	width: 100px;
+	height: 17px;
+	position: absolute;
+	left: 63px;
+	top: 195px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	z-index: 999;
+}
+
+.ttb {
+	font-size: 6px;
+	width: 300px;
+	height: 10px;
+	border: none;
+	display: none;
+	margin-top: 44px;
+	background: white;
+	position: absolute;
+	right: 0px;
+	z-index: 999;
+}
+
+.mima:active .ttb {
+	display: block;
+}
+
+.mi:active .ttb {
+	display: block;
+}
+
+.jumei {
+	width: 50px;
+	height: 22px;
+	position: absolute;
+	right: 281px;
+	top: 27px;
+}
+
+.hai {
+	width: 80px;
+	height: 12px;
+	position: absolute;
+	right: 49px;
+	top: 31px;
+	font-size: 12px;
+}
+
+.third {
+	width: 60px;
+	height: 12px;
+	position: absolute;
+	right: 17px;
+	top: 30px;
+	font-size: 7px;
+	color: #ed145b;
+}
+
+.four {
+	position: absolute;
+	right: 261px;
+	top: 116px;
+	font-size: 7px;
+	color: black;
+}
+
+a:hover .third {
+	text-decoration: underline;
+}
+
+.four {
+	position: absolute;
+	right: 206px;
+	top: 380px;
+	font-size: 7px;
+	color: black;
+}
+
+a:hover .four {
+	text-decoration: underline;
+}
+
+.cc {
+	width: 180px;
+	height: 12px;
+	font-size: 12px;
+	position: absolute;
+	left: -18px;
+	top: 73px;
+}
+
+.foota {
+	padding: 14px 0px 18px;
+	line-height: 23px;
+	padding-bottom: 80px;
+	position: absolute;
+	left: 380px;
+	top: 630px;
+	font-size: 10px;
+	text-align: center;
+}
+
+.footb {
+	width: 82%;
+	height: 51px;
+	border: 1px solid white;
+	position: absolute;
+	top: 700px;
+	left: 364px;
+}
+
+.dd {
+	font-size: 7px;
+	color: black;
+	position: absolute;
+	right: 451px;
+	top: 380px;
+}
+
+.ee {
+	width: 180px;
+	height: 40px;
+	position: relative;
+	left: 841px;
+	top: -50px;
+}
+
+.five {
+	width: 150px;
+	height: 10px;
+	font-size: 8px;
+	color: deeppink;
+	position: relative;
+	left: 837px;
+	top: -115px;
+}
+
+
+
+
+
+.s1 {
+	width: 3px;
+	height: 400px;
+	position: absolute;
+	left: 1167px;
+	top: 163px;
+}
+
+.s2 {
+	width: 3px;
+	height: 400px;
+	position: absolute;
+	left: 810px;
+	top: 160px;
+	z-index: 999;
+}
+
