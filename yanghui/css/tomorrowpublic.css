@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 12px "微软雅黑" arial;
+	color: #555555;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: #555555;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+.clearfix:after{
+  content: "020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+  }
+
+.clearfix {
+  /* 触发 hasLayout */ 
+  zoom: 1; 
+  }
+  
+  /*布局居中*/
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
