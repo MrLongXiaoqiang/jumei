@@ -161,10 +161,11 @@ $(function() {
 		var count=0;
 		for(var i = 1; i <= 6; i++) {
 			var ckie = "GOODS_" + i;
-			$.cookie(ckie, 0);
+			$.cookie(ckie, 0,{path:"/"});
+			console.log(ckie+"=="+$.cookie(ckie));
 			count+=parseInt($.cookie(ckie));
 		}
-		alert(count);
+//		alert(count);
 		location = "empty.html";
 	})
 

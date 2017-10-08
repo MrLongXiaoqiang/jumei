@@ -9,43 +9,46 @@
 $(function() {
 	var goodscount = right_count();
 	if(!goodscount > 0) {
-		$.cookie("GOODS_1", 0);
-		$.cookie("GOODS_2", 0);
-		$.cookie("GOODS_3", 0);
-		$.cookie("GOODS_4", 0);
-		$.cookie("GOODS_5", 0);
-		$.cookie("GOODS_6", 0);
+		$.cookie("GOODS_1", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_2", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_3", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_4", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_5", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_6", 0, {
+			"path": "/"
+		});
 	}
 	$(".jiarugouwuche").click(function() {
 		var ckie = $(this).attr("id");
-		$.cookie(ckie, parseInt($.cookie(ckie)) + 1);
+		$.cookie(ckie, parseInt($.cookie(ckie)) + 1, {
+			"path": "/"
+		});
 		right_count();
 	});
-	
-	
-	
-	
-	
 })
-
 
 function right_count() {
 	var count_right = 0;
 	for(var i = 1; i < 6; i++) {
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) > 0) {
-			count_right+= parseInt($.cookie(ckie));
+			count_right += parseInt($.cookie(ckie));
 		}
 	}
 	$(".gouwucheshangpinshuliang").html(count_right);
-//	alert(count_right);
+	//	alert(count_right);
 	return count_right;
 }
-
-
-
-
-
 
 $(function() {
 	//右侧导航动画
@@ -160,7 +163,6 @@ $(document).ready(function() {
 	//右侧导航栏的商品数量设置
 
 })
-
 
 setInterval("toTop()", 100);
 setInterval("cessssssss()", 100);
