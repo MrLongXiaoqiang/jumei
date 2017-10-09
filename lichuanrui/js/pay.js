@@ -56,4 +56,27 @@ $(function() {
 	$(".top_pic").click(function(){
 		location="../index.html";
 	})
+	$(".jiaoyi").click(function(){
+		$.cookie("GOODS_1", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_2", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_3", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_4", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_5", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_6", 0, {
+			"path": "/"
+		});
+		location="../wujinshan/payFinish.html";
+	})
+	
+	
 });
