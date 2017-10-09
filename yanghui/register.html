@@ -6,13 +6,15 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/registerpublic.css" />
 		<link rel="stylesheet" type="text/css" href="css/register.css" />
-
+		<script src="../js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 		<div class="top">
 			<div class="logo">
-				<a href="#"><img src="img/logo.png" /></a>
+				<a href="../index.html"><img src="img/logo.png" /></a>
 			</div>
 			<div class="topa">
 				<a href="# "><img src="img/top1.png" /></a>
@@ -32,13 +34,13 @@
 		<div class="right">
 			<div class="daa">
 				<div class="zhang"><img src="img/小框.png"/></div>
-				<div class="zhan"><input type="password" name="" placeholder="手机号" /></div>
+				<div class="zhan"><input type="password" name="" placeholder="手机号" id="uTel"/></div>
 				<div class="mima"><img src="img/小框.png" /></div>
-				<div class="mi"><input type="password" name="" placeholder="短信验证码" /></div>
+				<div class="mi"><input type="password" name="" placeholder="短信验证码" id="message"/></div>
 				<div class="aabb"><img src="img/小框.png" /></div>
-				<div class="aa"><input type="password" name="" placeholder="密码" /></div>
+				<div class="aa"><input type="password" name="" placeholder="密码" id="pwd"/></div>
 				<div class="ccdd"><img src="img/小框.png" /></div>
-				<div class="cc"><input type="password" name="" placeholder="重复密码" /></div>
+				<div class="cc"><input type="password" name="" placeholder="重复密码" id="repwd"/></div>
 				<!--<div class="shou"><input type="text" name="" placeholder="手机号" /></div>
 
 				<div class="duan"><input type="password" name="" placeholder="短信校验码" /></div>
@@ -51,7 +53,7 @@
 			<div class="jumei"><img src="img/用户注册.png" /></div>
 
 			<div class="hai">已有账号</div>
-			<a>
+			<a href="login.html">
 				<div class="third">在此登录</div>
 			</a>
 			<!--<div class="sh">
@@ -80,7 +82,7 @@
 		</div>
 
 		<div class="ee">
-			<a href="#"><img src="img/同意协议并注册.png" /></a>
+			<a href="#"><img src="img/同意协议并注册.png" id="register_button"/></a>
 		</div>
 		<a href="#"><div class="five">《聚美优品用户协议》</div></a>
 

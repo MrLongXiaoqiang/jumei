@@ -47,4 +47,9 @@ $(function() {
 
 	}
 	$(".summoney").text("￥" + summoney);
+	
+	
+	$(".top_pic").click(function(){
+		location="../index.html";
+	})
 });

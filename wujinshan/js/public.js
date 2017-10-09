@@ -33,7 +33,9 @@ $(function() {
 		$.cookie(ckie, parseInt($.cookie(ckie)) + 1, {
 			"path": "/"
 		});
-		right_count();
+		right_one_up_shoppingcart();
+		setTimeout("right_count()", 600);
+
 	});
 })
 
@@ -98,8 +100,11 @@ function a() {
 	var month = now.getMonth();
 	var day = now.getDay();
 	var hour = 23 - now.getHours();
+	if(hour<10){hour="0"+hour;}
 	var minu = 60 - 1 - now.getMinutes();
+	if(minu<10){minu="0"+minu;}
 	var second = 60 - 1 - now.getSeconds();
+	if(second<10){second="0"+second;}
 	var date = now.getDate();
 	month += 1;
 	var arr_week = new Array("日", "一", "二", "三", "四", "五", "六");
@@ -109,9 +114,13 @@ function a() {
 	for(var i in showtime) {
 		showtime[i].innerHTML = time;
 	}
+	$(".today_new_list_last_time").text(time);
+	var time_bottom= "1天"+hour + "小时" + minu + "分" + second+"秒";
+	$(".pinpaituan_content_right_one_p4").text(time_bottom);
+	
 }
 //聚会疯抢倒计时
-setInterval("juhuifengqiangdaojishi()", 100);
+//setInterval("juhuifengqiangdaojishi()", 100);
 var juhuifengqiangdaojishi_time = 600;
 
 //function juhuifengqiangdaojishi() {
@@ -187,3 +196,31 @@ function left_nav_can() {
 }
 
 //加入购物车操作
+function right_one_up_shoppingcart() {
+	$("#shopping_cart_one_pic").show();
+	setTimeout("right_one_up_shoppingcart_return()", 200);
+	setTimeout("right_one_up_shoppingcart_return1()", 610);
+
+}
+
+function right_one_up_shoppingcart_return() {
+	$("#shopping_cart_one_pic").css({
+		"opacity": "0",
+		"top": "-20px"
+	});
+	$(".gouwucheshangpinshuliang").css({
+		"transform": "scale(1.2)",
+	})
+}
+
+function right_one_up_shoppingcart_return1() {
+	$("#shopping_cart_one_pic").hide();
+	$("#shopping_cart_one_pic").css({
+		"opacity": "1",
+		"top": "0px"
+	});
+	$(".gouwucheshangpinshuliang").css({
+
+		"transform": "scale(1)",
+	})
+}

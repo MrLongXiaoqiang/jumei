@@ -177,7 +177,7 @@ a:hover {
 }
 
 .header_row_3 ul:first-child li:first-child {
-	background: #ed155b;
+	/*background: #ed155b;*/
 	width: 60px;
 	height: 38px;
 	text-align: center;

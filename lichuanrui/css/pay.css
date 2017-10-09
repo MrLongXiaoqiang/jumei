@@ -555,3 +555,8 @@
 .sum_float_right{
 	float: right;
 }
+
+
+.top_pic:hover{
+	cursor: pointer;
+}

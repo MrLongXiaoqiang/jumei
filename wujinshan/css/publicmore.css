@@ -1,0 +1,10 @@
+.footer_div_2 li:hover a{
+	position: relative;
+	color: #ed145b;
+	left: 20px;
+}
+.footer_div_2 li a{
+	position: relative;
+	left: 0px;
+	transition: left 1s;
+}

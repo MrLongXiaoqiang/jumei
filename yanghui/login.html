@@ -8,11 +8,12 @@
 		<link rel="stylesheet" type="text/css" href="css/loginpublic.css" />
 
 	</head>
-<!--主页面-->
+	<!--主页面-->
+
 	<body>
 		<div class="top">
 			<div class="logo">
-				<a href="#"><img src="img/logo.png" /></a>
+				<a href="../index.html"><img src="img/logo.png" /></a>
 			</div>
 			<div class="topa">
 				<a href="# "><img src="img/top1.png" /></a>
@@ -32,19 +33,18 @@
 		<div class="right">
 			<div class="cc">
 				<form method="post" action="">
-					<input type="radio" value="0" checked="checked" name="Sex" />手机动态密码登陆
-					<input type="radio" value="1" name="Sex" />普通登录
+					<input type="radio" value="0" name="Sex"  checked="checked" />手机动态密码登陆
+					<input type="radio" value="1" name="Sex"/>普通登录
 				</form>
 
 			</div>
 
-			
 			<div class="daa">
 				<div class="zhang"><img src="img/账号 .png" /></div>
-				<div class="zhan"><input type="text" name="" placeholder="已验证手机/邮箱/用户名" /></div>
+				<div class="zhan"><input type="text" name="" placeholder="已验证手机/邮箱/用户名" id="uName" /></div>
 				<!--<div><label>姓名</label><input type="text" name=""/><span class="haha1">*</span></div>-->
 				<div class="mima"><img src="img/密码.png" /></div>
-				<div class="mi"><input type="password" name="" placeholder="密码" /></div>
+				<div class="mi"><input type="password" name="" placeholder="密码" id="pwd" /></div>
 			</div>
 			<div class="dab">
 				<div class="zhang2"><img src="img/账号 .png" /></div>
@@ -56,7 +56,7 @@
 			<div class="jumei"><img src="img/登录聚美.png" /></div>
 
 			<div class="hai"><img src="img/还没有.png" /></div>
-			<a>
+			<a href="register.html">
 				<div class="third">30秒注册</div>
 			</a>
 			<div class="zhang">
@@ -78,81 +78,85 @@
 
 		</div>
 
-		
-			<a><div class="four">忘记密码？</div></a>
-		
-		
-			<div class="dd">自动登录<input type="checkbox" name="Bike"></div>
-				
-			
-			<div class="ee"><a href="#"><img src="img/登录.png" /></a></div>
-				
-			
-			<div class="five">你也可以使用以下帐号登录</div>
-			
-			
-			<div id="hh">
-				<a href="#" class="a1"><img src="img/xiao1.png" /></a>
-				<a href="#" class="a2"><img src="img/xiao2.png" /></a>
-				<a href="#" class="a3"><img src="img/xiao3.png" /></a>
-				<a href="#" class="a4"><img src="img/xiao4.png" /></a>
-				<a href="#" class="a5"><img src="img/xiao5.png" /></a>
-			</div>
+		<a>
+			<div class="four">忘记密码？</div>
+		</a>
 
-			<p class="gg" onclick="ll()">更多</p>
-			<div id="ff">
-				<p>
+		<div class="dd">自动登录<input type="checkbox" name="Bike"></div>
 
-					<a href="#" class="a6"><img src="img/xiao6.png" /></a>
-					<a href="#" class="a7"><img src="img/xiao7.png" /></a>
-					<a href="#" class="a8"><img src="img/xiao8.png" /></a>
-					<a href="#" class="a9"><img src="img/xiao9.png" /></a>
-					<a href="#" class="a10"><img src="img/xiao10.png" /></a>
-				</p>
-			</div>
-			<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-			<script>
-				//				var login_val = $("input[name='Sex']:checked").val();
-				$("input[name='Sex']").click(function() {
-					var val = $(this).val();
-					if(0 == val) {
-						$(".daa").show();
-						$(".dab").hide();
-					} else {
-						$(".dab").show();
-						$(".daa").hide();
-					}
-				});
-				$("zhan input").blur(function(){
-				if($("zhan input").val()==""){
+		<div class="ee">
+			<a href="#"><img src="img/登录.png" id="login_button" /></a>
+		</div>
+
+		<div class="five">你也可以使用以下帐号登录</div>
+
+		<div id="hh">
+			<a href="#" class="a1"><img src="img/xiao1.png" /></a>
+			<a href="#" class="a2"><img src="img/xiao2.png" /></a>
+			<a href="#" class="a3"><img src="img/xiao3.png" /></a>
+			<a href="#" class="a4"><img src="img/xiao4.png" /></a>
+			<a href="#" class="a5"><img src="img/xiao5.png" /></a>
+		</div>
+
+		<p class="gg" onclick="ll()">更多</p>
+		<div id="ff">
+			<p>
+
+				<a href="#" class="a6"><img src="img/xiao6.png" /></a>
+				<a href="#" class="a7"><img src="img/xiao7.png" /></a>
+				<a href="#" class="a8"><img src="img/xiao8.png" /></a>
+				<a href="#" class="a9"><img src="img/xiao9.png" /></a>
+				<a href="#" class="a10"><img src="img/xiao10.png" /></a>
+			</p>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script>
+			//				var login_val = $("input[name='Sex']:checked").val();
+			$("input[name='Sex']").click(function() {
+				var val = $(this).val();
+				if(!0 == val) {
+					$(".daa").show();
+					$(".dab").hide();
+				} else {
+					$(".dab").show();
+					$(".daa").hide();
+				}
+			});
+			$("zhan input").blur(function() {
+				if($("zhan input").val() == "") {
 					$(this).next().text("姓名不能为空")
-				}else{
+				} else {
 					$(this).next().text("")
 				}
 			})
-			
-			$("mi input").blur(function(){
-				var pwd=$("mi input").val();				
-				if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z]{6,10}$/).test(pwd)){
-					$(this).next().text("密码格式不正确")
-				}else{
-					$(this).next().text("")
-				}
-			})
-			</script>
 
-			<script type="text/javascript">
-				var count = 0;
-				function ll() {
-					if(count % 2 == 0) {
-						document.getElementById("ff").style.display = "none";
-					}
-					if(count % 2 != 0) {
-						document.getElementById("ff").style.display = "block";
-					}
-					count++;
+			$("mi input").blur(function() {
+				var pwd = $("mi input").val();
+				if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z]{6,10}$/).test(pwd)) {
+					$(this).next().text("密码格式不正确")
+				} else {
+					$(this).next().text("")
 				}
-			</script>
+			})
+		</script>
+
+		<script type="text/javascript">
+			var count = 0;
+
+			function ll() {
+				if(count % 2 == 0) {
+					document.getElementById("ff").style.display = "none";
+				}
+				if(count % 2 != 0) {
+					document.getElementById("ff").style.display = "block";
+				}
+				count++;
+			}
+		</script>
+
+		<!--后续增加-->
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 
 	</body>
 
