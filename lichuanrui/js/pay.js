@@ -75,6 +75,7 @@ $(function() {
 		$.cookie("GOODS_6", 0, {
 			"path": "/"
 		});
+		
 		location="../wujinshan/payFinish.html";
 	})
 	
