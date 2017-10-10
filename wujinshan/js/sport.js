@@ -55,7 +55,7 @@ function a() {
 	}
 }
 //聚会疯抢倒计时
-setInterval("juhuifengqiangdaojishi()", 100);
+//setInterval("juhuifengqiangdaojishi()", 100);
 var juhuifengqiangdaojishi_time = 600;
 
 function juhuifengqiangdaojishi() {

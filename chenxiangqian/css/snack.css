@@ -259,7 +259,13 @@ a:hover {
     float: left;
     display: inline-block;
     width: 713px;
-    height: 273px; }
+    height: 273px; 
+    opacity:1;
+    z-index: 99;
+    background: white;
+    
+    }
+    
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003255}}
     .header_content .nav_right > div {
       display: inline-block;

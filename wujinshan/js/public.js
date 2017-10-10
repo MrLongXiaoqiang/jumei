@@ -27,6 +27,48 @@ $(function() {
 		$.cookie("GOODS_6", 0, {
 			"path": "/"
 		});
+		$.cookie("GOODS_7", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_8", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_9", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_10", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_11", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_12", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_13", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_14", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_15", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_16", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_17", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_18", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_19", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_20", 0, {
+			"path": "/"
+		});
 	}
 	$(".jiarugouwuche").click(function() {
 		var ckie = $(this).attr("id");

@@ -397,13 +397,14 @@ body {
 .site_body_copy,
 .site_body {
 	width: 100%;
-	height: 350px;
+	height: 786px;
 	overflow: visible;
 }
 
 .site_body_copy {
 	overflow: visible;
-	background: url(http://p12.jmstatic.com/jmstore/image/000/005/5869_std/59cb7c9bb5a24_1920_350.jpg?1506507931897) 50% 0 no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/003/3374_std/59cf5ec757696_1920_786.jpg?1506762461071) 50% 0% no-repeat;
+	background-size: auto 100%;
 }
 
 .site_body_copy a {
@@ -997,7 +998,7 @@ body {
 	width: 100%;
 	height: 336px;
 	float: left;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid gray;
 	margin-top: 10px;
 	background: white;
 	clear: both;
@@ -2245,75 +2246,75 @@ body {
 }
 
 .luxuries_main_div ul li:first-child .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/001/1819_std/58f86bb9be566_500_245.jpg?1506565017)no-repeat;
+	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3582_std/599e8ba147389_500_245.jpg?1506693243)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(2) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/001/1824_std/59cc7155c4ac7_500_245.jpg?1506582493)no-repeat;
+	background: url(http://p5.jmstatic.com/jmstore/image/000/005/5993_std/59a649f571595_500_245.jpg?1506658681)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(3) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/002/2808_std/59cef736ee3f7_500_245.jpg?1506741309)no-repeat;
+	background: url(http://p5.jmstatic.com/jmstore/image/000/001/1259_std/59cb1c3adbcf0_500_245.jpg?1506567232)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(4) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3529_std/59cc9ce7d21c9_500_245.jpg?1506587236)no-repeat;
+	background: url(http://p3.jmstatic.com/jmstore/image/000/005/5961_std/59cdfd46bceb9_500_245.jpg?1506676552)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(5) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/001/1114_std/59cc6a14d14b5_500_245.jpg?1506654765)no-repeat;
+	background: url(http://p3.jmstatic.com/jmstore/image/000/005/5522_std/59cce384b60d1_500_245.jpg?1506603246)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(6) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/001/1493_std/59cc99bdf1702_500_245.jpg?1506751691)no-repeat;
+	background: url(http://p2.jmstatic.com/jmstore/image/000/005/5535_std/59cca12e621fe_500_245.jpg?1506675541)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(7) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3049_std/59cde54ea2f5c_500_245.jpg?1506763532)no-repeat;
+	background: url(http://p1.jmstatic.com/jmstore/image/000/006/6238_std/59cc845169817_500_245.jpg?1506594941)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(8) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3049_std/59cc9a4988bc6_500_245.jpg?1506763514)no-repeat;
+	background: url(http://p0.jmstatic.com/jmstore/image/000/005/5970_std/59ccfb0215ff5_500_245.jpg?1506643439)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(9) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/002/2342_std/59cb97e34e31d_500_245.jpg?1506586900)no-repeat;
+	background: url(http://p3.jmstatic.com/jmstore/image/000/000/834_std/59cc700349405_500_245.jpg?1506581206)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(10) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/004/4514_std/59cc60a3747ec_500_245.jpg?1506751309)no-repeat;
+	background: url(http://p2.jmstatic.com/jmstore/image/000/005/5782_std/59cdc597a4cd3_500_245.jpg?1506678938)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(11) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3699_std/59cca17547709_500_245.jpg?1506586361)no-repeat;
+	background: url(http://p5.jmstatic.com/jmstore/image/000/000/795_std/59cf5afb4d2e7_500_245.jpg?1506765026)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(12) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/006/6065_std/59cca9e547508_500_245.jpg?1507047069)no-repeat;
+	background: url(http://p1.jmstatic.com/jmstore/image/000/005/5678_std/59cf2957dcf23_500_245.jpg?1506758240)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(13) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3783_std/59cddefa745f2_500_245.jpg?1506667171)no-repeat;
+	background: url(http://p1.jmstatic.com/jmstore/image/000/003/3692_std/59cdee0429841_500_245.jpg?1506670789)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(14) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/002/2164_std/59ce04e5dbecf_500_245.jpg?1506678930)no-repeat;
+	background: url(http://p5.jmstatic.com/jmstore/image/000/003/3375_std/59cdebee762bc_500_245.jpg?1506741085)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(15) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/005/5810_std/59cf3cdb35013_500_245.jpg?1506757900)no-repeat;
+	background: url(http://p1.jmstatic.com/jmstore/image/000/004/4775_std/59cb5458ce30c_500_245.jpg?1506594332)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(16) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/001/1477_std/59cf7176a9fd1_500_245.jpg?1506767229)no-repeat;
+	background: url(http://p4.jmstatic.com/jmstore/image/000/005/5617_std/59cdb2a12dc7d_500_245.jpg?1506676093)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(17) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/002/2250_std/59cdd07b3554d_500_245.jpg?1506662935)no-repeat;
+	background: url(http://p2.jmstatic.com/jmstore/image/000/004/4854_std/59ca2476936ab_500_245.jpg?1506762765)no-repeat;
 }
 
 .luxuries_main_div ul li:nth-child(18) .luxuries_show_div>div:nth-child(2) {
-	background: url(http://p0.jmstatic.com/jmstore/image/000/003/3298_std/59cdbe0d05d2a_500_245.jpg?1506667158)no-repeat;
+	background: url(http://p2.jmstatic.com/jmstore/image/000/005/5454_std/59c7606a0c3da_500_245.jpg?1506323891)no-repeat;
 }
 
 .luxuries_show_div_bottom {
@@ -2361,16 +2362,13 @@ body {
 
 .sport_ad_pic {
 	width: 960px;
-	height: 360px;
+	height: 180px;
 	margin: 20px auto;
 }
-.sport_ad_pic img{
-	margin-right: 5px;
-	margin-bottom: 10px;
-}
+
 .sport_commingsoon {
 	height: 40px;
-	background: url(http://a2.jmstatic.com/cb7627247ba1fed2/comming_soon_bg.png) no-repeat center;
+	background: url(http://a4.jmstatic.com/352bd44b37a2a916/main_icon.png) 0 -134px no-repeat;
 }
 
 .sport_commingsoon_content {
@@ -2389,7 +2387,6 @@ body {
 	border: 1px solid #ededed;
 	margin: 10px 15px 10px 0px;
 	float: left;
-	background: white;
 }
 
 .sport_comming_div_unit>a {
@@ -2438,13 +2435,13 @@ body {
 	visibility: hidden;
 }
 
+
 /*右侧广告栏，明日预告*/
-.luxuries_main_div_right{
+
+.luxuries_main_div_right {
 	float: right;
 	background: white;
 }
-
-
 
 .sport_section_bottom span {
 	line-height: 52px;
@@ -2500,66 +2497,126 @@ body {
 	/*line-height: 20px;*/
 	color: #a8a8a8;
 }
-.sport_ad_pic_row2>span:last-child{
-	    width: 40px;
-    height: 1px;
-    background: #ee2567;
-    position: absolute;
-    bottom: -1px;
-    font-size: 0;
-    transition: left 0.3s;
-    left: 36px;
+
+.sport_ad_pic_row2>span:last-child {
+	width: 40px;
+	height: 1px;
+	background: #ee2567;
+	position: absolute;
+	bottom: -1px;
+	font-size: 0;
+	transition: left 0.3s;
+	left: 36px;
 }
-.sport_ad_pic_row2_underlineposition_1{
+
+.sport_ad_pic_row2_underlineposition_1 {
 	left: 36px !important;
 }
-.sport_ad_pic_row2_underlineposition_2{
+
+.sport_ad_pic_row2_underlineposition_2 {
 	left: 100px !important;
 }
-.sport_ad_pic_row2_underlineposition_3{
+
+.sport_ad_pic_row2_underlineposition_3 {
 	left: 165px !important;
 }
 
-
-
-
-.sport_ad_pic_row3{
+.sport_ad_pic_row3 {
 	padding: 5px 10px;
 	width: 250px;
-	
 }
-.sport_ad_pic_row3 img{
+
+.sport_ad_pic_row3 img {
 	width: 70px;
 	height: 35px;
 }
 
-.sport_ad_pic_row3 div{
+.sport_ad_pic_row3 div {
 	float: left;
-    display: inline;
-    margin: 10px 23px;
-    position: relative;
-    padding: 1px;
-    width: 70px;
-    height: 35px;
-    overflow: hidden;
+	display: inline;
+	margin: 10px 23px;
+	position: relative;
+	padding: 1px;
+	width: 70px;
+	height: 35px;
+	overflow: hidden;
 }
 
-.border_topleft_bottomright{
+.border_topleft_bottomright {
 	/*border: 1px solid black;*/
 }
 
 
-/*母婴特卖*/
-.motherbaby_nav_everyday_look{
-	height: 56px;
-	margin: 0 auto;
-	text-align: center;
-	line-height: 56px;
-	vertical-align: middle;
+/*goods列表样式*/
+
+.goods_list_div {
+	width: 100%;
 }
-.motherbaby_nav_everyday_look p{
-	text-align: center;
-    color: #000;
-    font-size: 24px;
-    font-weight: bold;
+
+.goods_list_center {
+	margin: 0px auto;
+	padding: 50px 0px 20px;
+	width: 970px;
+	background: white;
+}
+
+.goods_list_center ul {
+	padding: 0 5px;
+	width: 960px;
+	background: white;
+}
+
+.goods_list_center ul li {
+	width: 225px;
+	margin: 0 5px 26px;
+	height: 425px;
+	border: solid 1px #f8f5f5;
+	float: left;
+	display: inline;
+}
+.goods_list_center ul li:hover {
+	box-shadow: 0px 0px 5px #D3D3D3;
+	opacity: .9;
+	cursor: pointer;
+}
+
+.goods_list_center ul li p:nth-child(2){
+	font-size: 12px;
+    font-weight: 400;
+    font-family: 'Microsoft YaHei';
+    padding-top: 11px;
+    padding-left: 6px;
+    height: 16px;
+    line-height: 16px;
+    color: #9c999c;
+    text-indent: 8px;
+    overflow: hidden;
+}
+
+.goods_list_center ul li p:nth-child(3){
+	    color: #010101;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    height: 18px;
+    overflow: hidden;
+    margin-top: 15px;
+	padding-left: 15px;
+}
+.goods_list_center ul li p:nth-child(4){
+	margin-top:20px;
+	padding-left: 10px;
+}
+
+.goods_list_center ul li p:nth-child(4) span:first-child{
+	color: #ed145b;
+    font-family: arial;
+    padding-right: 0;
+        font-size: 24px;
+}
+.goods_list_center ul li p:nth-child(4) span:nth-child(2){
+	    font-size: 12px;
+    text-decoration: line-through;
+    font-family: arial;
+    padding-left: 3px;
+        color: #666
 }
