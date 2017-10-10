@@ -562,7 +562,7 @@ a:hover {
     display: none;
     width: 260px;
     height: 41px;
-    margin-left: 11px;
+    margin-left: 226px;
     line-height: 41px;
     transition: all; }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003560}}
@@ -862,3 +862,12 @@ a:hover {
     color: white;
     float: left;
     background: #2f2f2f; }
+
+/*滚动固定导航*/
+   /*.fixnav{
+		position:fixed !important,
+				top:0 !important,
+				z-index:999 !important,
+				margin-left:-200px !important,
+				width:1340px !important;
+}*/
