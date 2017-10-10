@@ -125,8 +125,7 @@
 			var rand= parseInt(Math.random()*5);//随机序号
 			var ht=$("<div class='comments'><p class='use_his'><span class='username'>"+username[rand]+"<s></s></span><span class='date'>"+dates[rand]+"</span> </p><p class='coment_words'>"+words[1][rand]+"</p><p class='by_type'>型号:1388g/>美食汇聚大礼包</p></div>")
 			$(".pjnr").append(ht);
-					}
-		
+				}
 		}
 		if(index=="bad"){//差评
 			//清除记录￥
