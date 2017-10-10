@@ -51,7 +51,8 @@
 			.top_center {
 				text-align: center;
 				height: 67px;
-				width: 1369px;
+				width: 1090px;
+				margin: 0 auto;
 			}
 			/*section*/
 			
@@ -554,4 +555,9 @@
 			
 .sum_float_right{
 	float: right;
+}
+
+
+.top_pic:hover{
+	cursor: pointer;
 }

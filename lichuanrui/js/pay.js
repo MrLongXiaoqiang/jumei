@@ -30,8 +30,9 @@ $(function() {
 
 	//后增加
 	var summoney = 0;
+	var sumGoods=0;
 	for(var i = 1; i < 6; i++) {
-
+		
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) == 0) {
 			$("#" + ckie).hide();
@@ -39,12 +40,44 @@ $(function() {
 			$("#" + ckie).show().find(".shuliang").text($.cookie(ckie));
 			var money = parseInt($.cookie(ckie)) * parseInt($("#" + ckie).find(".price_each span").text());
 			summoney = summoney + money;
+			sumGoods=sumGoods+parseInt($("#" + ckie).find(".shuliang").text());
 //			alert(money);
 //			alert(summoney);
 			$("#" + ckie).find("td:last-child").text("￥" + money);
+			$("#shangpinshuliang").text(sumGoods);
+			
 
 		}
 
 	}
 	$(".summoney").text("￥" + summoney);
+	
+	
+	$(".top_pic").click(function(){
+		location="../index.html";
+	})
+	$(".jiaoyi").click(function(){
+		$.cookie("GOODS_1", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_2", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_3", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_4", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_5", 0, {
+			"path": "/"
+		});
+		$.cookie("GOODS_6", 0, {
+			"path": "/"
+		});
+		
+		location="../wujinshan/payFinish.html";
+	})
+	
+	
 });

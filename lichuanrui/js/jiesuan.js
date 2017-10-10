@@ -27,7 +27,7 @@ function add_count(aaa) {
 	gouwuchezongjine();
 	//后增加
 	var idnum=$(aaa).parent().parent().attr("id");
-	$.cookie(idnum,parseInt($.cookie(idnum))+1);
+	$.cookie(idnum,parseInt($.cookie(idnum))+1,{"path":"/"});
 	
 	
 }
@@ -43,7 +43,7 @@ function dec_count(aaa) {
 	
 	//后增加
 	var idnum=$(aaa).parent().parent().attr("id");
-	$.cookie(idnum,parseInt($.cookie(idnum))-1);
+	$.cookie(idnum,parseInt($.cookie(idnum))-1,{"path":"/"});
 }
 
 function gouwuchexiaoji(bbb) {
@@ -134,11 +134,18 @@ $(function() {
 
 	$(".delbutton").click(function() {
 		$(this).parent().parent().prev().find(".chexiao").show();
+		str="del"+$(this).parent().parent().attr("id");
+		$.cookie(str,$.cookie($(this).parent().parent().attr("id")));
+		$.cookie($(this).parent().parent().attr("id"),0,{"path":"/"});
+		
 		$(this).parent().parent().hide();
 		gouwuchezongjine();
 	})
 	$(".chexiaoshanche_a").click(function() {
 		$(this).parent().hide();
+		str="del"+$(this).parent().parent().parent().next().attr("id")
+		$.cookie($(this).parent().parent().parent().next().attr("id"),$.cookie(str),{"path":"/"});
+		$.cookie(str,0);
 		$(this).parent().parent().parent().next().show();
 		gouwuchezongjine();
 	})

@@ -185,7 +185,7 @@ body {
 
 #header_search_button {
 	width: 100px;
-	height: 37.5px;
+	height: 36.5px;
 	font: 13.3333px arial;
 	cursor: pointer;
 	background: #ed145b;
@@ -629,7 +629,7 @@ body {
 	display: block;
 }
 
-.today_main_content_one:hover {
+.today_main_content_one:hover .today_main_content_a_one_pic{
 	opacity: 0.8;
 }
 
@@ -1352,6 +1352,7 @@ body {
 	text-align: center;
 	font-size: 12px;
 	margin: 0 auto;
+	transition: all 1.2s;
 }
 
 .nav_right_bottom li:first-child a span:first-child {
@@ -1776,7 +1777,7 @@ body {
 
 .header_bottom_meizhuangshangcheng_right dl dd {
 	display: block;
-	margin: 0px 10px 10px 0px;
+	margin: 0px 25px 10px 0px;
 	float: left;
 }
 
@@ -1974,6 +1975,31 @@ body {
 .jiarugouwuche:hover{
 	cursor: pointer;
 }
+.shopping_cart_one_pic{
+	position: absolute;
+	display: none;
+	width: 15px;
+	height: 15px;
+	background:#e81a62;
+	border-radius: 15px;
+	top: -0px;
+	right: 13px;
+	line-height: 15px;
+	vertical-align: middle;
+	transition: all 1s;
+	opacity: 1;
+	
+}
+.nav_right_gouwuche_li{
+	position: relative;
+	/*text-align: center;*/
+}
+
+
+
+
+
+
 /*.move_pic{
 	display: block;
 	position: absolute;
@@ -1992,12 +2018,13 @@ body {
 .search_history{
 	position: absolute;
 	background: white;
-	width: 411px;
+	width: 393px;
 	height: 200px;
 	top: 62px;
 	display: none;
 	box-shadow: 0 0 2px #C9C9C9;
 	padding: 5px 10px;
+	z-index: 10;
 	}
 	
 
@@ -2012,3 +2039,4 @@ body {
 	cursor: pointer;
 	
 }
+
