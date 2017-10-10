@@ -8,3 +8,7 @@
 	left: 0px;
 	transition: left 1s;
 }
+
+.header_bottom_meizhuangshangcheng_right dl dd a:hover{
+	color:#ed145b;
+}
