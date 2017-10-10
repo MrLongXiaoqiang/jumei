@@ -403,7 +403,8 @@ body {
 
 .site_body_copy {
 	overflow: visible;
-	background: url(http://p0.jmstatic.com/banner/3542/156916_1920_350_002-web.jpg?1506738247) 50% 0 no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/000/831_std/59db18438f8a9_1920_500.jpg?1507530819898) 50% 0% no-repeat;
+	background-size: auto 100%;
 }
 
 .site_body_copy a {
