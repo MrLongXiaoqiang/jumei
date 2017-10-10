@@ -2,29 +2,33 @@
 	//header_top
 	$(function(){
 	$(".you").hover(function(){
-	
 		$(this).find(".arrow").addClass("arrowtrans");
-		
 		$(this).find(".hidden_kid").slideDown();
 			$(this).css("background","white");
-		
-		
 	},function(){
+		
 		$(this).css("background","#f2f2f2");
 		$(this).find(".arrow").removeClass("arrowtrans");
 		$(this).find(".hidden_kid").slideUp();
+		
 	});
 	//nav
 	
-	$(".nav_head").hover(function(){
-		$(this).children("s").toggleClass("arrowtrans");
-		$(this).css("opacity","0.7");
-		$(this).find(".nav_hid").slideDown();
-	},function(){
-		$(this).children("s").toggleClass("arrowtrans");
-		$(this).css("opacity","1");
-		$(this).find(".nav_hid").slideUp();
-	})
+//	$(".nav_head").mouseenter(function(){
+//			
+//		$(this).children("s").toggleClass("arrowtrans");
+//		$(this).css("opacity","0.7");
+//		$(this).find(".nav_hid").slideDown();
+//		});
+//		$(".nav_head .nav_hid").mouseleave(function(){
+//			if(event.target==this){
+//					$(this).prev("s").toggleClass("arrowtrans");
+//		$(this).parent().css("opacity","1");
+//		$(this).slideUp();
+//			}
+//	
+//		});
+	
 	
 	
 	//无聊☞放大镜
@@ -35,7 +39,7 @@
 		var my=event.pageY;//鼠标纵坐标
 		var px=mx-lx-90;
 		var py=my-ly-90;
-		if(px>0&&px<185&&py>0&&py<320){
+		if(px>=0&&px<=285||py>=0&&py<=410){
 			$(this).find(".mouso").css({
 			"display":"block",
 			"left":px,
@@ -66,11 +70,11 @@
 				"top":"0",
 				"z-index":"999",
 				"margin-left":"-200px",
-				"width":"1275px"
+				"width":"100%"
 			});
 			$(".magic_choice .magic_hid").css("display","inline-block");
-			$(".magic_choice ul").animate({
-				marginLeft:"200px"
+			$(".magic_choice ul").css({
+				"margin-left":"200px"
 			})
 		}else{
 			

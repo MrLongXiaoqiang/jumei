@@ -225,7 +225,10 @@ a:hover {
   .header_content .nav_head {
     position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003226}}
-  .header_content .nav_hid {
+ .header_bottomcontent a{
+ 	color: white;
+ }
+  .header_content  .header_bottom .nav_hid {
     display: none;
     width: 1060px;
     height: 308px;
