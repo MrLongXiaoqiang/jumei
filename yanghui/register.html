@@ -95,7 +95,7 @@
 					return;
 				}
 				if(!/^1\d{10}$/.test(val)) {
-					$(this).css("color", "red").attr("isOk", "false").val("请输入正确11位手机号");
+					$(this).css("color", "red").attr("isOk", "false").val("请输入正确的手机号");
 					return;
 				}
 				$(this).css("color", "#555").attr("isOk", "true")
@@ -128,49 +128,47 @@
 					$tel.css("color", "#555").val("");
 				}
 			});
-			
-//			密码验证
-//			$("#pwd").blur(function() {
-//				var val = $(this).val();
-//				if(val == "") {
-//					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
-//					return;
-//				}
-//				if(!/^{6}$/.test(val)) {
-//					$(this).css("color", "red").attr("isOk", "false").val("请输入正确6位密码");
-//					return;
-//				}
-//				$(this).css("color", "#555").attr("isOk", "true")
-//			});
-//
-//			$("#pwd").focus(function() {
-//				var $tel = $(this);
-//				if($tel.attr("isOk") == "false") {
-//					$tel.css("color", "#555").val("");
-//				}
-//			});
-//			//密码重复验证
-//			$("#repwd").blur(function() {
-//				var val = $(this).val();
-//				if(val == "") {
-//					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
-//					return;
-//				}
-//				if(!/^{6}$/.test(val)) {
-//					$(this).css("color", "red").attr("isOk", "false").val("请输入正确6位密码");
-//					return;
-//				}
-//				$(this).css("color", "#555").attr("isOk", "true")
-//			});
-//
-//			$("#repwd").focus(function() {
-//				var $tel = $(this);
-//				if($tel.attr("isOk") == "false") {
-//					$tel.css("color", "#555").val("");
-//				}
-//			});
 
-			
+			//			密码验证
+			$("#pwd").blur(function() {
+				var val = $(this).val();
+				if(val == "") {
+					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
+					return;
+				}
+				if(!/^[a-zA-Z0-9_]{4,15}$/.test(val)) {
+					$(this).css("color", "red").attr("isOk", "false").val("");
+					return;
+				}
+				$(this).css("color", "#555").attr("isOk", "true")
+			});
+
+			$("#pwd").focus(function() {
+				var $tel = $(this);
+				if($tel.attr("isOk") == "false") {
+					$tel.css("color", "#555").val("");
+				}
+			});
+			//密码重复验证
+			$("#repwd").blur(function() {
+				var val = $(this).val();
+				if(val == "") {
+					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
+					return;
+				}
+				if(!/^[a-zA-Z0-9_]{4,15}$/.test(val)) {
+					$(this).css("color", "red").attr("isOk", "false").val("");
+					return;
+				}
+				$(this).css("color", "#555").attr("isOk", "true")
+			});
+
+			$("#repwd").focus(function() {
+				var $tel = $(this);
+				if($tel.attr("isOk") == "false") {
+					$tel.css("color", "#555").val("");
+				}
+			});
 		</script>
 
 	</body>
