@@ -2,58 +2,89 @@
 	//header_top
 	$(function(){
 	$(".you").hover(function(){
-	
 		$(this).find(".arrow").addClass("arrowtrans");
-		
 		$(this).find(".hidden_kid").slideDown();
 			$(this).css("background","white");
-		
-		
 	},function(){
+		
 		$(this).css("background","#f2f2f2");
 		$(this).find(".arrow").removeClass("arrowtrans");
 		$(this).find(".hidden_kid").slideUp();
+		
 	});
 	//nav
 	
-	$(".nav_head").hover(function(){
-		$(this).children("s").toggleClass("arrowtrans");
-		$(this).css("opacity","0.7");
-		$(this).find(".nav_hid").slideDown();
-	},function(){
-		$(this).children("s").toggleClass("arrowtrans");
-		$(this).css("opacity","1");
-		$(this).find(".nav_hid").slideUp();
-	})
+//	$(".nav_head").mouseenter(function(){
+//			
+//		$(this).children("s").toggleClass("arrowtrans");
+//		$(this).css("opacity","0.7");
+//		$(this).find(".nav_hid").slideDown();
+//		});
+//		$(".nav_head .nav_hid").mouseleave(function(){
+//			if(event.target==this){
+//					$(this).prev("s").toggleClass("arrowtrans");
+//		$(this).parent().css("opacity","1");
+//		$(this).slideUp();
+//			}
+//	
+//		});
+	
 	
 	
 	//无聊☞放大镜
 	$(".img_contenner1").mousemove(function(){
+		$(".big_one").show();
 		var lx=$(this).offset().left;//图片坐标x
 		var ly=$(this).offset().top;//图片坐标y
 		var mx=event.pageX;//鼠标坐标
 		var my=event.pageY;//鼠标纵坐标
 		var px=mx-lx-90;
 		var py=my-ly-90;
-		if(px>0&&px<185&&py>0&&py<320){
+		if((px<0&&px>-90)||(px>195&&px<375)){
+			$(this).find(".mouso").css({
+			"display":"block",
+			"top":py
+		});
+		$(".big_one img").css({
+			
+			"top":-(2*py)
+		
+	})
+		}
+		if((py<0&&py>-90)||(py>310&&py<500)){
+			$(this).find(".mouso").css({
+			"display":"block",
+			"left":px
+		});
+		$(".big_one img").css({
+			"left":-(2*px)
+			
+		
+	})
+		}
+		if(px>=0&&px<=195&&py>=0&&py<=310){
 			$(this).find(".mouso").css({
 			"display":"block",
 			"left":px,
 			"top":py
 		});
-		$(".big_one").show();
+		
 		$(".big_one img").css({
 			"left":-(2*px),
 			"top":-(2*py)
-		})}
+		})
+		}
+//		$(".big_one img").css({
+//			"left":-(2*px),
+//			"top":-(2*py)
+//		
+//	})
 		
-		
-	})
 	$(".img_contenner1").mouseleave(function(){
 		$(this).find(".mouso").hide();
 		$(".big_one").hide();
 	});
-	
+	})
 	//滚动的火球
 	$(window).scroll(function(){
 //		var ly=parseFloat($(".magic_choice").offset().top);
@@ -66,20 +97,23 @@
 				"top":"0",
 				"z-index":"999",
 				"margin-left":"-200px",
-				"width":"1275px"
+				"width":"100%"
 			});
+//$(".magic_choice").toggleClass("fixnav");
+
+
+
 			$(".magic_choice .magic_hid").css("display","inline-block");
-			$(".magic_choice ul").animate({
-				marginLeft:"200px"
+			$(".magic_choice ul").css({
+				"margin-left":"200px"
 			})
 		}else{
-			
 			$(".magic_choice").css({
 				"position":"relative",
-				
 				"margin-left":"0",
 				"width":"960px"
 			});
+//			$(".magic_choice").toggleClass("fixnav");
 				$(".magic_choice ul").animate({
 				marginLeft:"0px"
 			})
@@ -125,8 +159,7 @@
 			var rand= parseInt(Math.random()*5);//随机序号
 			var ht=$("<div class='comments'><p class='use_his'><span class='username'>"+username[rand]+"<s></s></span><span class='date'>"+dates[rand]+"</span> </p><p class='coment_words'>"+words[1][rand]+"</p><p class='by_type'>型号:1388g/>美食汇聚大礼包</p></div>")
 			$(".pjnr").append(ht);
-					}
-		
+				}
 		}
 		if(index=="bad"){//差评
 			//清除记录￥
@@ -218,7 +251,9 @@ $(".dire_right").click(function(){
 	
 	
 	
-	
+	$(".magic_boy li").click(function(){
+		$(this).css("background","white");
+	})
 	
 	
 	
