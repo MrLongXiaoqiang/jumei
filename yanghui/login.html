@@ -149,11 +149,11 @@
 					$(this).css("color", "red").attr("isOk", "false").val("用户名不能为空");
 					return;
 				}
-//				if(!/^{10}$/.test(val)) {
-//					$(this).css("color", "red").attr("isOk", "false").val("用户不存在");
-//					return;
-//				}
-//				$(this).css("color", "#555").attr("isOk", "true")
+				if(!/^{10}$/.test(val)) {
+					$(this).css("color", "red").attr("isOk", "false").val("用户不存在");
+					return;
+				}
+				$(this).css("color", "#555").attr("isOk", "true")
 			});
 
 			$("#uName").focus(function() {
