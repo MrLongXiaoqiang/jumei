@@ -39,13 +39,16 @@
 
 			</div>
 
-			<div class="daa">
+			<form method="post" action="#">
+				<div class="daa">
 				<div class="zhang"><img src="img/账号 .png" /></div>
 				<div class="zhan"><input type="text" name="" placeholder="已验证手机/邮箱/用户名" id="uName" /></div>
 				<!--<div><label>姓名</label><input type="text" name=""/><span class="haha1">*</span></div>-->
 				<div class="mima"><img src="img/密码.png" /></div>
 				<div class="mi"><input type="password" name="" placeholder="密码" id="pwd" /></div>
 			</div>
+			</form>
+			
 			<div class="dab">
 				<div class="zhang2"><img src="img/账号 .png" /></div>
 				<div class="zhan2"><input type="text" name="" placeholder="已注册的手机号码" /></div>
@@ -122,22 +125,8 @@
 					$(".daa").hide();
 				}
 			});
-			$("zhan input").blur(function() {
-				if($("zhan input").val() == "") {
-					$(this).next().text("姓名不能为空")
-				} else {
-					$(this).next().text("")
-				}
-			})
-
-			$("mi input").blur(function() {
-				var pwd = $("mi input").val();
-				if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z]{6,10}$/).test(pwd)) {
-					$(this).next().text("密码格式不正确")
-				} else {
-					$(this).next().text("")
-				}
-			})
+			
+			
 		</script>
 
 		<script type="text/javascript">
@@ -152,6 +141,27 @@
 				}
 				count++;
 			}
+		</script>
+		<script>
+			$("#uName").blur(function() {
+				var val = $(this).val();
+				if(val == "") {
+					$(this).css("color", "red").attr("isOk", "false").val("用户名不能为空");
+					return;
+				}
+//				if(!/^{10}$/.test(val)) {
+//					$(this).css("color", "red").attr("isOk", "false").val("用户不存在");
+//					return;
+//				}
+//				$(this).css("color", "#555").attr("isOk", "true")
+			});
+
+			$("#uName").focus(function() {
+				var $tel = $(this);
+				if($tel.attr("isOk") == "false") {
+					$tel.css("color", "#555").val("");
+				}
+			});
 		</script>
 
 		<!--后续增加-->

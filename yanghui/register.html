@@ -9,6 +9,19 @@
 		<script src="../js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.uTel {
+				color: red;
+			}
+			
+			.haha2 {
+				color: red;
+			}
+			
+			.haha3 {
+				color: red;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -32,23 +45,19 @@
 		</div>
 		<div class="bb"><img src="img/大大大图.png" /></div>
 		<div class="right">
-			<div class="daa">
-				<div class="zhang"><img src="img/小框.png"/></div>
-				<div class="zhan"><input type="password" name="" placeholder="手机号" id="uTel"/></div>
-				<div class="mima"><img src="img/小框.png" /></div>
-				<div class="mi"><input type="password" name="" placeholder="短信验证码" id="message"/></div>
-				<div class="aabb"><img src="img/小框.png" /></div>
-				<div class="aa"><input type="password" name="" placeholder="密码" id="pwd"/></div>
-				<div class="ccdd"><img src="img/小框.png" /></div>
-				<div class="cc"><input type="password" name="" placeholder="重复密码" id="repwd"/></div>
-				<!--<div class="shou"><input type="text" name="" placeholder="手机号" /></div>
+			<form method="post" action="#">
+				<div class="daa">
+					<div class="zhang"><img src="img/小框.png" /></div>
+					<div class="zhan"><input type="text" name="" placeholder="手机号" id="uTel" /></div>
+					<div class="mima"><img src="img/小框.png" /></div>
+					<div class="mi"><input type="text" name="" placeholder="短信验证码" id="message" /></div>
+					<div class="aabb"><img src="img/小框.png" /></div>
+					<div class="aa"><input type="password" name="" placeholder="密码" id="pwd" /></div>
+					<div class="ccdd"><img src="img/小框.png" /></div>
+					<div class="cc"><input type="password" name="" placeholder="重复密码" id="repwd" /></div>
 
-				<div class="duan"><input type="password" name="" placeholder="短信校验码" /></div>
-
-				<div class="mima"><input type="password" name="" placeholder="密码" /></div>
-
-				<div class="chong"><input type="password" name="" placeholder="重复密码" /></div>-->
-			</div>
+				</div>
+			</form>
 
 			<div class="jumei"><img src="img/用户注册.png" /></div>
 
@@ -56,18 +65,7 @@
 			<a href="login.html">
 				<div class="third">在此登录</div>
 			</a>
-			<!--<div class="sh">
-				<div class="tta"><span>请输入11位手机号码</span></div>
-			</div>
-			<div class="du">
-				<div class="ttb"><span>请输入6位短信校验码</span></div>
-			</div>
-			<div class="mi">
-				<div class="ttc"><span>6~16个字符，建议使用字母加数字组合</span></div>
-			</div>
-			<div class="ch">
-				<div class="ttd"><span>请再次输入密码</span></div>
-			</div>-->
+
 		</div>
 		<p class="foota">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 <br/> 京公网安备 11010102001226 号 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照
@@ -82,9 +80,98 @@
 		</div>
 
 		<div class="ee">
-			<a href="#"><img src="img/同意协议并注册.png" id="register_button"/></a>
+			<a href="#"><img src="img/同意协议并注册.png" id="register_button" /></a>
 		</div>
-		<a href="#"><div class="five">《聚美优品用户协议》</div></a>
+		<a href="#">
+			<div class="five">《聚美优品用户协议》</div>
+		</a>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script>
+			//手机号验证
+			$("#uTel").blur(function() {
+				var val = $(this).val();
+				if(val == "") {
+					$(this).css("color", "red").attr("isOk", "false").val("姓名不能为空");
+					return;
+				}
+				if(!/^1\d{10}$/.test(val)) {
+					$(this).css("color", "red").attr("isOk", "false").val("请输入正确11位手机号");
+					return;
+				}
+				$(this).css("color", "#555").attr("isOk", "true")
+			});
+
+			$("#uTel").focus(function() {
+				var $tel = $(this);
+				if($tel.attr("isOk") == "false") {
+					$tel.css("color", "#555").val("");
+				}
+			});
+
+			//验证码验证
+			$("#message").blur(function() {
+				var val = $(this).val();
+				if(val == "") {
+					$(this).css("color", "red").attr("isOk", "false").val("验证码不能为空");
+					return;
+				}
+				if(!/^{4}$/.test(val)) {
+					$(this).css("color", "red").attr("isOk", "false").val("请输入正确4位验证码");
+					return;
+				}
+				$(this).css("color", "#555").attr("isOk", "true")
+			});
+
+			$("#message").focus(function() {
+				var $tel = $(this);
+				if($tel.attr("isOk") == "false") {
+					$tel.css("color", "#555").val("");
+				}
+			});
+			
+//			//密码验证
+//			$("#pwd").blur(function() {
+//				var val = $(this).val();
+//				if(val == "") {
+//					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
+//					return;
+//				}
+//				if(!/^{6}$/.test(val)) {
+//					$(this).css("color", "red").attr("isOk", "false").val("请输入正确6位密码");
+//					return;
+//				}
+//				$(this).css("color", "#555").attr("isOk", "true")
+//			});
+//
+//			$("#pwd").focus(function() {
+//				var $tel = $(this);
+//				if($tel.attr("isOk") == "false") {
+//					$tel.css("color", "#555").val("");
+//				}
+//			});
+//			//密码重复验证
+//			$("#repwd").blur(function() {
+//				var val = $(this).val();
+//				if(val == "") {
+//					$(this).css("color", "red").attr("isOk", "false").val("密码不能为空");
+//					return;
+//				}
+//				if(!/^{6}$/.test(val)) {
+//					$(this).css("color", "red").attr("isOk", "false").val("请输入正确6位密码");
+//					return;
+//				}
+//				$(this).css("color", "#555").attr("isOk", "true")
+//			});
+//
+//			$("#repwd").focus(function() {
+//				var $tel = $(this);
+//				if($tel.attr("isOk") == "false") {
+//					$tel.css("color", "#555").val("");
+//				}
+//			});
+
+			
+		</script>
 
 	</body>
 
