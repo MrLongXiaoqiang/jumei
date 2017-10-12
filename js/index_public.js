@@ -6,7 +6,7 @@ $(function(){
 		$("#relogin").text("【退出】").css({
 			"position":"relative",
 			"right":"10px"
-		}).attr("href","../yanghui/login.html");
+		}).attr("href","yanghui/login.html");
 	}
 	$("#relogin").click(function(){
 		$.removeCookie("NOW_UNAME",{"path":"/"});
