@@ -1405,6 +1405,7 @@ body {
 	position: fixed;
 	bottom: 0px;
 	/*background: darkslategray;*/
+	display: none;
 }
 
 .footer_ms_mostly_center {

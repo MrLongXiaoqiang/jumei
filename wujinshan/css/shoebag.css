@@ -1420,6 +1420,7 @@ body {
 	height: 44px;
 	position: fixed;
 	bottom: 0px;
+	display: none;
 	/*background: darkslategray;*/
 }
 

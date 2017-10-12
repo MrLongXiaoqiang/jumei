@@ -33,7 +33,7 @@ $(function() {
 	var sumGoods = 0;
 	for(var i = 1; i < 18; i++) {
 		var ckie = "GOODS_" + i;
-		if($.cookie(ckie) == 0) {
+		if($.cookie(ckie) <= 0) {
 			$("#" + ckie).hide();
 		} else {
 			$("#" + ckie).show().find(".shuliang").text($.cookie(ckie));
@@ -47,38 +47,32 @@ $(function() {
 	$(".summoney").text("￥" + summoney);
 
 	$(".top_pic").click(function() {
+		
+		leave_location();
 		location = "../index.html";
 	})
 	$(".jiaoyi").click(function() {
-//		for(var i = 1; i < 18; i++) {
-//			var ckie = "GOODS_" + i;
-//			if($.cookie(ckie) == 0) {
-//
-//			} else {
-//				$("#" + ckie).show();
-//			}
-//		}
-
-		$.cookie("GOODS_1", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_2", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_3", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_4", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_5", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_6", 0, {
-			"path": "/"
-		});
-
+		for(var i = 1; i < 18; i++) {
+		var ckie = "GOODS_" + i;
+		if($.cookie(ckie) > 0) {
+			$.cookie(ckie, 0, {
+				"path": "/"
+			});
+		} 
+	}
+		leave_location();
 		location = "../wujinshan/payFinish.html";
 	})
 
 });
+
+function leave_location(){
+	for(var i = 1; i < 18; i++) {
+		var ckie = "GOODS_" + i;
+		if($.cookie(ckie) < 0) {
+			$.cookie(ckie, Math.abs($.cookie(ckie)), {
+				"path": "/"
+			});
+		} 
+	}
+}

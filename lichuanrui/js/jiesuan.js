@@ -23,13 +23,16 @@ function add_count(aaa) {
 	$(aaa).prev().val(parseInt($(aaa).prev().val()) + 1);
 	var money = parseFloat($(aaa).parent().prev().text()) * parseFloat($(aaa).prev().val())
 	$(aaa).parent().parent().find(".xiaoji").text(money.toFixed(2));
-	
+
 	gouwuchezongjine();
 	//后增加
-	var idnum=$(aaa).parent().parent().attr("id");
-	$.cookie(idnum,parseInt($.cookie(idnum))+1,{"path":"/"});
-	
-	
+	var idnum = $(aaa).parent().parent().attr("id");
+	$.cookie(idnum, parseInt($.cookie(idnum)) + 1, {
+		"path": "/"
+	});
+
+	$(aaa).parent().parent().find("input[type=checkbox]").prop("checked", true);
+
 }
 
 function dec_count(aaa) {
@@ -40,15 +43,18 @@ function dec_count(aaa) {
 	var money = parseFloat($(aaa).parent().prev().text()) * parseFloat($(aaa).next().val());
 	$(aaa).parent().parent().find(".xiaoji").text(money.toFixed(2));
 	gouwuchezongjine();
-	
+
 	//后增加
-	var idnum=$(aaa).parent().parent().attr("id");
-	$.cookie(idnum,parseInt($.cookie(idnum))-1,{"path":"/"});
+	var idnum = $(aaa).parent().parent().attr("id");
+	$.cookie(idnum, parseInt($.cookie(idnum)) - 1, {
+		"path": "/"
+	});
+	$(aaa).parent().parent().find("input[type=checkbox]").prop("checked", true);
 }
 
 function gouwuchexiaoji(bbb) {
 	$(bbb).next().text((parseFloat($(bbb).prev().text()) * parseFloat($(bbb).find("input").val())).toFixed(2));
-	
+
 }
 
 //function gouwuchexiaoji(bbb) {
@@ -90,12 +96,20 @@ function shuliang() {
 }
 //checkbox单击事件
 $(function() {
+
 	$(":checkbox").click(function() {
 		if(!$(this).is(":checked")) {
 			$(this).prop("checked", false);
+			var idName = $(this).parent().parent().parent().attr("id");
+			$.cookie(idName, -Math.abs($.cookie(idName)), {
+				"path": "/"
+			});
 
 		} else {
 			$(this).prop("checked", true);
+			$.cookie(idName, Math.abs($.cookie(idName)), {
+				"path": "/"
+			});
 		}
 		gouwuchezongjine();
 	});
@@ -134,18 +148,22 @@ $(function() {
 
 	$(".delbutton").click(function() {
 		$(this).parent().parent().prev().find(".chexiao").show();
-		str="del"+$(this).parent().parent().attr("id");
-		$.cookie(str,$.cookie($(this).parent().parent().attr("id")));
-		$.cookie($(this).parent().parent().attr("id"),0,{"path":"/"});
-		
+		str = "del" + $(this).parent().parent().attr("id");
+		$.cookie(str, $.cookie($(this).parent().parent().attr("id")));
+		$.cookie($(this).parent().parent().attr("id"), 0, {
+			"path": "/"
+		});
+
 		$(this).parent().parent().hide();
 		gouwuchezongjine();
 	})
 	$(".chexiaoshanche_a").click(function() {
 		$(this).parent().hide();
-		str="del"+$(this).parent().parent().parent().next().attr("id")
-		$.cookie($(this).parent().parent().parent().next().attr("id"),$.cookie(str),{"path":"/"});
-		$.cookie(str,0);
+		str = "del" + $(this).parent().parent().parent().next().attr("id")
+		$.cookie($(this).parent().parent().parent().next().attr("id"), $.cookie(str), {
+			"path": "/"
+		});
+		$.cookie(str, 0);
 		$(this).parent().parent().parent().next().show();
 		gouwuchezongjine();
 	})
@@ -164,14 +182,16 @@ $(function() {
 	}
 
 	$("#hide3").click(function() {
-		var count=0;
+		var count = 0;
 		for(var i = 1; i <= 18; i++) {
 			var ckie = "GOODS_" + i;
-			$.cookie(ckie, 0,{path:"/"});
-			console.log(ckie+"=="+$.cookie(ckie));
-			count+=parseInt($.cookie(ckie));
+			$.cookie(ckie, 0, {
+				path: "/"
+			});
+			console.log(ckie + "==" + $.cookie(ckie));
+			count += parseInt($.cookie(ckie));
 		}
-//		alert(count);
+		//		alert(count);
 		location = "empty.html";
 	})
 

@@ -83,7 +83,7 @@ $(function() {
 
 function right_count() {
 	var count_right = 0;
-	for(var i = 1; i < 17; i++) {
+	for(var i = 1; i <= 17; i++) {
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) > 0) {
 			count_right += parseInt($.cookie(ckie));
@@ -162,39 +162,11 @@ function a() {
 	
 }
 //聚会疯抢倒计时
-//setInterval("juhuifengqiangdaojishi()", 100);
 var juhuifengqiangdaojishi_time = 600;
 
-//function juhuifengqiangdaojishi() {
-//	juhuifengqiangdaojishi_time--;
-//	if(juhuifengqiangdaojishi_time < 0) {
-//		document.getElementsByClassName("footer_ms_mostly")[0].style.display = "none";
-//
-//	}
-//	var min = parseInt(juhuifengqiangdaojishi_time / 10 / 60);
-//	var sec = parseInt(juhuifengqiangdaojishi_time / 10 % 60);
-//	var msec = parseInt(juhuifengqiangdaojishi_time % 10);
-//	min = "0" + min;
-//	if(sec.length < 10) {
-//		sec = "0" + sec
-//
-//	}
-//	var ad_bottom_time = document.getElementsByClassName("footer_ms_mostly_center_time_up_center_span")[0];
-//	ad_bottom_time.innerText = "   " + min + "分" + sec + "." + msec + "秒";
-//
-//}
 //右侧导航一般动画效果
 $(document).ready(function() {
-	//	$(".ul_li_position_realitive").mouseover(function(){
-	////		alert(123)
-	//		$(".ul_li_position_realitive .nav_right_center_normal_div").fadeIn();
-	//		$(".ul_li_position_realitive .nav_right_center_normal_div").CSS("right","40px");
-	//	});
-	//	$(".ul_li_position_realitive").mouseout(function(){
-	////		alert(123)
-	//		$(".ul_li_position_realitive .nav_right_center_normal_div").fadeOut();
-	//	});
-
+	
 	//美妆商城 下拉动画效果
 	$(".meizhuangshangcheng_header_bottom_canv").mouseover(function() {
 		$(".header_bottom_meizhuangshangcheng").css("height", "300px");
@@ -266,3 +238,11 @@ function right_one_up_shoppingcart_return1() {
 		"transform": "scale(1)",
 	})
 }
+
+
+//明日预告
+$(function(){
+	$(".home_top_menu_div .tab_menu_clearfix li:last-child").click(function(){
+		location.href="#tommory";
+	})
+})
