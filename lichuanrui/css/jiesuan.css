@@ -58,7 +58,7 @@
 
 .contaniner {
 	width: 960px;
-	height: 255px;
+	/*height: 255px;*/
 	/*border: 1px solid black;*/
 	margin: 50px auto;
 	position: relative;
@@ -473,11 +473,13 @@
 
 .recommend_box {
 	width: 960px;
-	margin: 160px auto 50px auto;
+	position: relative;
+	top: -25px;
+	margin: 50px auto 50px auto;
 }
 
 .recommend_box .nav_tips {
-	/*height: 30px;*/
+	height: 30px;
 	line-height: 30px;
 	border-bottom: 2px #ccc solid;
 	margin-bottom: 15px;
