@@ -444,6 +444,10 @@
 	
 
 }
+.banner_section_right img{
+	position: relative;
+}
+
 .banner_section_under{
 	width: 862px;
 	height: 358px;
@@ -1161,4 +1165,17 @@ nav {
 }
 .box_introduce{
 	position: relative;
+}
+.real_time{
+	background-color: black;
+	height: 22px;
+	width: 145px;
+	position: absolute;
+	margin-left: 190px;
+	margin-top: -13px;
+	color: white;
+	font-size: 14px;
+}
+.timein{
+	display: inline-block;
 }
