@@ -1026,3 +1026,14 @@ nav {
 .box_introduce{
 	position: relative;
 }
+.sex_choose{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	background-color: whitesmoke;
+	border-radius: 40px 40px 40px 40px;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 40px;
+}

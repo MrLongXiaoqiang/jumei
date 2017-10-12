@@ -345,7 +345,8 @@
 				<div class="section_top_box">
 					<div class="box_introduce">
 						<a href="#" name="m2"></a>
-						<img id="img_acting"style="cursor: pointer;" src="http://p12.jmstatic.com/jmstore/image/000/003/3083_std/597706ebeb522_960_79.jpg?1500972780065" />
+						<p style="position: absolute;top: 56px; left: 26px;font-size: 10px;letter-spacing: 2px;">点击获取下拉菜单</p>
+						<img id="img_acting" style="cursor: pointer;" src="http://p12.jmstatic.com/jmstore/image/000/003/3083_std/597706ebeb522_960_79.jpg?1500972780065" />
 						<div class="hide_menu">
 							<ul style="font-size: 12px;">
 								<span> 品牌：</span>
@@ -360,13 +361,14 @@
 							</ul>
 							<p style="font-size: 12px; margin-left: 140px;margin-top: 24px;">筛选条件:</p>
 							<h6 style="font-style: normal; position: relative;top: -16px; left:255px;"><input type="radio" id="up_to_low" name="radio_choose" />按照价格由高至低</h6>
-							<h6 style="font-style: normal; position: relative;top: -33px; left:455px;">适用性别：男<input type="radio" name="radio_choose" />女<input type="radio" name="radio_choose" /></h6>
-							<h6 style="font-style: normal; position: relative;top: -49px; left:655px;"><input type="radio" id="up_to_high" name="radio_choose" />按照销量由高至低</h6>
+							<h6 style="font-style: normal; position: relative;top: -33px; left:455px;">适用性别：男<input type="radio" name="sexkind" value="1"/>女<input type="radio" name="sexkind" value="2" /></h6>
+							<h6 style="font-style: normal; position: relative;top: -49px; left:655px;"><input type="radio" id="up_to_koubei" name="radio_choose" />按照口碑由高至低</h6>
 						</div>
 					</div>
 
 					<ul class="section_top_box_sth" id="first_line">
-						<li name="XN">
+						<li name="XN" class="sex_boy">
+							<div class="sex_choose">男</div>
 							<div style="cursor: pointer;">
 								<img src="http://p4.jmstatic.com/product/001/097/1097594_std/1097594_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -374,14 +376,15 @@
 								<a href="../chenxiangqian/perfume.html">法国•香奈儿·仲夏之梦淡香水30ml，让人置身梦境！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">3</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">125</span>
 								<span class="line_through">￥460</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="FL">
+						<li name="FL" class="sex_girl">
+							<div class="sex_choose">女</div>
 							<div style="cursor: pointer;">
 								<img src="http://p3.jmstatic.com/product/001/344/1344748_std/1344748_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -389,14 +392,15 @@
 								<a href="../chenxiangqian/perfume.html">意大利•菲拉格慕蝶忆绽放女士淡香水（新款） 50ml，让梦想和浪漫在纯真中绽放。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">13</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">151</span>
 								<span class="line_through">￥700</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="DW">
+						<li name="DW" class="sex_girl">
+							<div class="sex_choose">女</div>
 							<div style="cursor: pointer;">
 								<img src="http://p2.jmstatic.com/product/001/955/1955587_std/1955587_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -404,14 +408,15 @@
 								<a href="../chenxiangqian/perfume.html">法国•大卫杜夫(Ferragamo)伊人女士淡香水50ml</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">67</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">349</span>
 								<span class="line_through">￥750</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="DR">
+						<li name="DR" class="sex_girl">
+							<div class="sex_choose">女</div>
 							<div style="cursor: pointer;">
 								<img src="http://p2.jmstatic.com/product/003/664/3664452_std/3664452_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -419,14 +424,15 @@
 								<a href="../chenxiangqian/perfume.html">Dior 迪奥(Ferragamo )玄魅伊人女士香水50ml，打造优雅香调。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">87</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">469</span>
 								<span class="line_through">￥920</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="SL" class="SL">
+						<li name="SL" class="sex_girl">
+							<div class="sex_choose">女</div>
 							<div style="cursor: pointer;">
 								<img src="http://p4.jmstatic.com/product/003/664/3664454_std/3664454_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -434,14 +440,15 @@
 								<a href="../chenxiangqian/perfume.html">法国•圣罗兰(Ferragamo )玄魅伊人女士香水5ml，揭开你神秘的另一面。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">1</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49.9</span>
 								<span class="line_through">￥120</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="FL">
+						<li name="FL" class="sex_boy">
+							<div class="sex_choose">男</div>
 							<div style="cursor: pointer;">
 								<img src="http://p2.jmstatic.com/product/000/595/595172_std/595172_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -449,14 +456,15 @@
 								<a href="../chenxiangqian/perfume.html">意大利•菲拉格慕蓝色经典男士淡香水50ml，展现出男士优雅的梦想和清新的性感！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">99</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">149</span>
 								<span class="line_through">￥580</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="DR">
+						<li name="DR" class="sex_boy">
+							<div class="sex_choose">男</div>
 							<div style="cursor: pointer;">
 								<img src="http://p1.jmstatic.com/product/000/595/595176_std/595176_350_350.jpg" alt width="300" height="300" />
 							</div>
@@ -464,14 +472,15 @@
 								<a href="../chenxiangqian/perfume.html">Dior 迪奥 梦中彩虹淡香30ml，仿佛阳光的照耀，散发淡淡花果清香！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">76</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">119</span>
 								<span class="line_through">￥460</span>
 								<a href="#" class="section_love_add"></a>
 							</div>
 						</li>
-						<li name="DR">
+						<li name="DR" class="sex_boy">
+							<div class="sex_choose">男</div>
 							<div style="cursor: pointer;">
 								<a href="../chenxiangqian/perfume.html"><img src="http://p4.jmstatic.com/product/000/595/595179_std/595179_350_350.jpg" alt width="300" height="300" /></a>
 							</div>
@@ -479,7 +488,7 @@
 								<a href="https://cxqlkk.github.io/jmyp_cxq/goods.html">Dior 迪奥 梦中情人淡香水30ml，送你抵达逃离世俗的境地。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(<p style="display: inline-block;" class="liang_num">44</p>)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">109</span>
 								<span class="line_through">￥460</span>
@@ -507,7 +516,7 @@
 								<a href="#">意大利•菲拉格慕优雅迷你系列香氛伊人礼盒，让每一位时尚年轻女士都散发迷人魅力。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(7)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">369</span>
 								<span class="line_through">￥850</span>
@@ -522,7 +531,7 @@
 								<a href="#">制作精致，样子小巧可爱，菲拉格慕女士香水四件套。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(9)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥450</span>
@@ -537,7 +546,7 @@
 								<a href="#">意大利•菲拉格慕经典情侣套装，唤醒沉睡的情感！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(33)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">239</span>
 								<span class="line_through">￥860</span>
@@ -552,7 +561,7 @@
 								<a href="#">意大利•菲拉格慕经典女士香水两件套，散发清新香气！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(435)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">238</span>
 								<span class="line_through">￥920</span>
@@ -567,7 +576,7 @@
 								<a href="#">菲拉格慕(Ferragamo )玄魅伊人女士香水优雅礼盒，编织出巧妙的诱惑。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(346)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">499</span>
 								<span class="line_through">￥920</span>
@@ -592,7 +601,7 @@
 								<a href="#">菲拉格慕仲夏之梦淡香水5ml，让人置身梦境犹如天堂般的光彩夺目！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(253)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥460</span>
@@ -607,7 +616,7 @@
 								<a href="#">菲拉格慕梦中情人淡香水5ml，浪漫跳跃的香味让你爱不释手！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(223)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥460</span>
@@ -622,7 +631,7 @@
 								<a href="#">意大利•菲拉格慕 (Ferragamo)梦中彩虹淡香水 5ml，让你如同一道艳丽的彩虹！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(153)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥460</span>
@@ -637,7 +646,7 @@
 								<a href="#">意大利•菲拉格慕伊人女士淡香水 5ml，自然优雅，婉约感性。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(743)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥460</span>
@@ -652,7 +661,7 @@
 								<a href="#">意大利•菲拉格慕伊人女士香氛5ml，洋溢着天真甜美的味道。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(235)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥460</span>
@@ -667,7 +676,7 @@
 								<a href="#">菲拉格慕情愫女士香水5ml，清新幽香，增添诱人女人味。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(512)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥118</span>
@@ -697,7 +706,7 @@
 								<a href="#">意大利•散发女人味，菲拉格慕(Ferragamo )情愫女士香水10ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(35)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">99</span>
 								<span class="line_through">￥460</span>
@@ -712,7 +721,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo )玄魅伊人女士香水5ml，揭开你神秘的另一面。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(45)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49.9</span>
 								<span class="line_through">￥120</span>
@@ -737,7 +746,7 @@
 								<a href="#">意大利•菲拉格慕仲夏之梦淡香水30ml，让人置身梦境！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(72)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">119</span>
 								<span class="line_through">￥460</span>
@@ -752,7 +761,7 @@
 								<a href="#">意大利•菲拉格慕仲夏之梦淡香水50ml，让人置身梦境犹如天堂般的光彩夺目！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(25)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥700</span>
@@ -767,7 +776,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo )仲夏之梦淡香水00ml，让人置身梦境。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(56)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">219</span>
 								<span class="line_through">￥930</span>
@@ -782,7 +791,7 @@
 								<a href="#">意大利•菲拉格慕花样倾城女士淡香氛50ml，发挥女子的温婉柔美。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(27)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">229</span>
 								<span class="line_through">￥760</span>
@@ -797,7 +806,7 @@
 								<a href="#">意大利•与花精共舞，菲拉格慕(Ferragamo)蝶忆芯语女士淡香氛30ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(56)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">119</span>
 								<span class="line_through">￥460</span>
@@ -812,7 +821,7 @@
 								<a href="#">意大利•倾诉你的恋爱故事，菲拉格慕(Ferragamo ) 伊人女士香氛 50ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(96)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">369</span>
 								<span class="line_through">￥830</span>
@@ -827,7 +836,7 @@
 								<a href="#">意大利•菲拉格慕花样倾城女士淡香氛30ml，领悟花样倾城的浪漫幸福。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(25)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥530</span>
@@ -842,7 +851,7 @@
 								<a href="#">意大利•菲拉格慕蝶忆绽放女士淡香水，让梦想和浪漫在纯真中绽放。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(17)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">119</span>
 								<span class="line_through">￥460</span>
@@ -872,7 +881,7 @@
 								<a href="#">意大利•菲拉格慕伊人女士淡香水20ml，让你展现女性的非凡优雅和妩媚诱惑。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(84)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">189</span>
 								<span class="line_through">￥340</span>
@@ -887,7 +896,7 @@
 								<a href="#">菲拉格慕伊人女士香氛20ml，让你展现女性的优雅和妩媚诱惑。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3463)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">189</span>
 								<span class="line_through">￥340</span>
@@ -902,7 +911,7 @@
 								<a href="#">菲拉格慕梦中彩虹淡香水 50ml，宛如一道艳丽的彩虹，让你拥有美丽香气！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(163)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥660</span>
@@ -917,7 +926,7 @@
 								<a href="#">菲拉格慕典雅伊人女士香水30ml，突显女人精致、优雅、感性一面！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(1243)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">369</span>
 								<span class="line_through">￥690</span>
@@ -932,7 +941,7 @@
 								<a href="#">菲拉格慕典雅伊人女士香水50ml，让每一位时尚年轻女士都绽放魅力。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(253)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">399</span>
 								<span class="line_through">￥920</span>
@@ -947,7 +956,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo)伊人女士淡香水30ml，难以忘怀的美。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(463)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">199</span>
 								<span class="line_through">￥560</span>
@@ -962,7 +971,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo)伊人女士淡香水50ml</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(143)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">349</span>
 								<span class="line_through">￥750</span>
@@ -977,7 +986,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo )情愫女士香水30ml，奢华香氛，丰沛情感，优雅自信。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(111)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">349</span>
 								<span class="line_through">￥690</span>
@@ -992,7 +1001,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo )玄魅伊人女士香水30ml，做优雅女士。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(165)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">349</span>
 								<span class="line_through">￥690</span>
@@ -1007,7 +1016,7 @@
 								<a href="#">菲拉格慕(Ferragamo )玄魅伊人女士香水50ml，打造优雅香调。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(167)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">469</span>
 								<span class="line_through">￥920</span>
@@ -1022,7 +1031,7 @@
 								<a href="#">倾诉你的恋爱故事，菲拉格慕伊人女士香氛30ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(176)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">229</span>
 								<span class="line_through">￥620</span>
@@ -1037,7 +1046,7 @@
 								<a href="#">菲拉格慕伊人女士香氛100ml，注入奢华的时装感。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(178)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">499</span>
 								<span class="line_through">￥1160</span>
@@ -1067,7 +1076,7 @@
 								<a href="#">菲拉格慕伊人女士淡香水100ml，自然展现优雅性感气质。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(7)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">469</span>
 								<span class="line_through">￥1070</span>
@@ -1082,7 +1091,7 @@
 								<a href="#">意大利•菲拉格慕梦中彩虹淡香30ml，仿佛阳光的照耀，散发淡淡花果清香！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(9)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">119</span>
 								<span class="line_through">￥460</span>
@@ -1097,7 +1106,7 @@
 								<a href="#">意大利•菲拉格慕梦中彩虹淡香水100ml，引领着我们的感官在空中花园中漫游。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(10)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">219</span>
 								<span class="line_through">￥930</span>
@@ -1112,7 +1121,7 @@
 								<a href="#">意大利•菲拉格慕梦中情人淡香水30ml，送你抵达逃离世俗的境地。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(37)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">109</span>
 								<span class="line_through">￥460</span>
@@ -1127,7 +1136,7 @@
 								<a href="#">意大利•菲拉格慕梦中情人淡香水 50ml，送你抵达逃离世俗的境地！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(32)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥700</span>
@@ -1142,7 +1151,7 @@
 								<a href="#">菲拉格慕梦中情人淡香水100ml，跳跃感的甜蜜香氛围绕着你。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(13)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">219</span>
 								<span class="line_through">￥930</span>
@@ -1157,7 +1166,7 @@
 								<a href="#">意大利•菲拉格慕蝶忆绽放女士香水100ml，有关花卉的“香水”。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(223)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">198</span>
 								<span class="line_through">￥930</span>
@@ -1182,7 +1191,7 @@
 								<a href="#">意大利•汇聚焦点的独特晚香魅力！菲拉格慕非我莫属黑色男士香水50ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(175)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">189</span>
 								<span class="line_through">￥600</span>
@@ -1197,7 +1206,7 @@
 								<a href="#">意大利•追寻男性魅力的脚步印记，尽情品味生命每一刻，菲拉格慕男士淡香水40ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(154)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">179</span>
 								<span class="line_through">￥460</span>
@@ -1212,7 +1221,7 @@
 								<a href="#">意大利•追寻男性魅力的脚步印记，尽情品味生命每一刻，菲拉格慕男士淡香水60ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(164)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">198</span>
 								<span class="line_through">￥610</span>
@@ -1227,7 +1236,7 @@
 								<a href="#">意大利•菲拉格慕男士淡香水100ml，呈现男性应有的阳刚、高雅的气质。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(122)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">319</span>
 								<span class="line_through">￥850</span>
@@ -1242,7 +1251,7 @@
 								<a href="#">菲拉格慕非我莫属男士香水30ml，展现男人魅力！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(153)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">149</span>
 								<span class="line_through">￥430</span>
@@ -1257,7 +1266,7 @@
 								<a href="#">意大利•传达强烈的男人味！菲拉格慕(Ferragamo )非我莫属男士香水50ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(1653)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">179</span>
 								<span class="line_through">￥600</span>
@@ -1272,7 +1281,7 @@
 								<a href="#">意大利•菲拉格慕非我莫属男士香水100ml，散发着内敛的性感，着实令人无法抗拒。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(123)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">298</span>
 								<span class="line_through">￥780</span>
@@ -1287,7 +1296,7 @@
 								<a href="#">意大利•菲拉格慕菲凡之旅男士淡香水30ml，呈现Ferragamo优雅的男性世界！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(113)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">139</span>
 								<span class="line_through">￥420</span>
@@ -1302,7 +1311,7 @@
 								<a href="#">彰显男士的率性与优雅！菲拉格慕菲凡之旅男士淡香水100ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(213)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">198</span>
 								<span class="line_through">￥760</span>
@@ -1317,7 +1326,7 @@
 								<a href="#">意大利•菲拉格慕蓝色经典男士淡香水30ml，展现出男士优雅的梦想和清新的性感！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(653)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">109</span>
 								<span class="line_through">￥420</span>
@@ -1332,7 +1341,7 @@
 								<a href="#">意大利•纯粹清新而不乏男子气概，菲拉格慕蔚蓝之水男性淡香水30ml</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(8873)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">179</span>
 								<span class="line_through">￥460</span>
@@ -1347,7 +1356,7 @@
 								<a href="#">意大利•海洋般清新，优雅男香！菲拉格慕蔚蓝之水男性淡香水50ml！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(343)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">279</span>
 								<span class="line_through">￥630</span>
@@ -1362,7 +1371,7 @@
 								<a href="#">赋予浓烈的感性且成熟的魅力，菲拉格慕湛蓝之水男性淡香水30ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(353)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">159</span>
 								<span class="line_through">￥460</span>
@@ -1377,7 +1386,7 @@
 								<a href="#">菲拉格慕湛蓝之水男性淡香水50ml，赋予浓烈的感性且成熟的魅力。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(23)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">279</span>
 								<span class="line_through">￥630</span>
@@ -1392,7 +1401,7 @@
 								<a href="#">展现了男人的硬朗、大气、豁达，菲拉格慕碧蓝之水男（士/性）香水5ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(111)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49</span>
 								<span class="line_through">￥118</span>
@@ -1407,7 +1416,7 @@
 								<a href="#">赋予浓烈的感性且成熟的魅力，菲拉格慕湛蓝之水男性淡香水100ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(1534)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">399</span>
 								<span class="line_through">￥800</span>
@@ -1422,7 +1431,7 @@
 								<a href="#">意大利•菲拉格慕(Ferragamo)碧蓝之水男（士/性）香水50ml，坚定而自由。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(124)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">298</span>
 								<span class="line_through">￥630</span>
@@ -1437,7 +1446,7 @@
 								<a href="#">享受真我时刻，菲拉格慕(Ferragamo)蔚蓝之水男（士/性）淡香水100ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(6)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">399</span>
 								<span class="line_through">￥890</span>
@@ -1452,7 +1461,7 @@
 								<a href="#">意大利•菲拉格慕碧蓝之水男士/性香水100ml，释放清新自然的香气。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(8)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">399</span>
 								<span class="line_through">￥890</span>
@@ -1467,7 +1476,7 @@
 								<a href="#">菲拉格慕蔚蓝之水男性淡香水5ml，清新感尽显男士天生优雅。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(99)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">49.9</span>
 								<span class="line_through">￥460</span>
@@ -1482,7 +1491,7 @@
 								<a href="#">意大利•菲拉格慕非我莫属黑色男士香水30ml，散发沉淀的感官魅力！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(973)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">149</span>
 								<span class="line_through">￥430</span>
@@ -1497,7 +1506,7 @@
 								<a href="#">意大利•菲拉格慕非我莫属黑色男士香水100ml，木质调男香，尽显优雅！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(543)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">229</span>
 								<span class="line_through">￥780</span>
@@ -1512,7 +1521,7 @@
 								<a href="#">意大利•菲拉格慕蓝色经典男士淡香水50ml，展现出男士优雅的梦想和清新的性感！</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(475)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">149</span>
 								<span class="line_through">￥580</span>
@@ -1527,7 +1536,7 @@
 								<a href="#">唤起男人内敛的情感，菲拉格慕蓝色经典男士淡香水100ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(235)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">189</span>
 								<span class="line_through">￥690</span>
@@ -1542,7 +1551,7 @@
 								<a href="#">意大利•忠于自我，率性之选，菲拉格慕菲凡之旅男士淡香水50ml。</a>
 							</div>
 							<p class="star"></p>
-							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(3)</a></span>
+							<span class="span_koubei">&nbsp;|&nbsp;<a href="#">口碑报告(13)</a></span>
 							<div class="li_price">
 								<span class="pri">￥</span><span class="price_large">169</span>
 								<span class="line_through">￥590</span>
@@ -1872,6 +1881,25 @@
 			});
 			//关闭下拉
 
+			//性别筛选
+
+			$(function() {
+				$("input[name=sexkind]").click(function() {
+					//						alert($(this).prop("checked"))
+					if($(this).prop("checked")) {
+						if($(this).val() == "1") {
+							$(".sex_boy").show();
+							$(".sex_girl").hide();
+
+						} else {
+							$(".sex_boy").hide();
+							$(".sex_girl").show();
+						}
+					}
+				});
+			});
+
+			var historyul = $("#first_line").html();
 			$(document).ready(function() {
 				//根据品牌筛选	
 				$(".pinpai").click(function() {
@@ -1882,23 +1910,23 @@
 							$("li[name=" + pinpainame + "]").show();
 						}
 					});
+
+					historyul = $("#first_line").html();
 				});
 
 				//由高至底排序
-				var historyul = $("#first_line").html();
 				$("#up_to_low").click(function() {
 					if($(this).attr('checked')) {
 						$(this).attr('checked', false);
 						$("#first_line").html(historyul);
-
 					} else {
 						$(this).attr('checked', true);
 						for(var i = 0; i < $("#first_line li").length - 1; i++) {
 							for(var j = i + 1; j < $("#first_line li").length; j++) {
 								if(parseInt($("#first_line li").eq(i).find(".price_large").text()) < parseInt($("#first_line li").eq(j).find(".price_large").text())) {
-									var a = $("#first_line li").eq(i).html();
-									$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
-									$("#first_line li").eq(j).html(a);
+									var a = $("#first_line li").eq(i).prop("outerHTML");
+									$("#first_line li").eq(i).prop("outerHTML", $("#first_line li").eq(j).prop("outerHTML"));
+									$("#first_line li").eq(j).prop("outerHTML", a);
 								}
 							}
 						}
@@ -1906,8 +1934,7 @@
 					}
 
 				});
-				var historyul = $("#first_line").html();
-				$("#up_to_high").click(function() {
+				$("#up_to_koubei").click(function() {
 					if($(this).attr('checked')) {
 						$(this).attr('checked', false);
 						$("#first_line").html(historyul);
@@ -1916,10 +1943,10 @@
 						$(this).attr('checked', true);
 						for(var i = 0; i < $("#first_line li").length - 1; i++) {
 							for(var j = i + 1; j < $("#first_line li").length; j++) {
-								if(parseInt($("#first_line li").eq(i).find(".price_large").text()) > parseInt($("#first_line li").eq(j).find(".price_large").text())) {
-									var a = $("#first_line li").eq(i).html();
-									$("#first_line li").eq(i).html($("#first_line li").eq(j).html());
-									$("#first_line li").eq(j).html(a);
+								if(parseInt($("#first_line li").eq(i).find(".liang_num").text()) < parseInt($("#first_line li").eq(j).find(".liang_num").text())) {
+									var a = $("#first_line li").eq(i).prop("outerHTML");
+									$("#first_line li").eq(i).prop("outerHTML", $("#first_line li").eq(j).prop("outerHTML"));
+									$("#first_line li").eq(j).prop("outerHTML", a);
 								}
 							}
 						}
@@ -1927,13 +1954,11 @@
 					}
 
 				});
-
 				//				
 			});
 
 			//收缩导航筛选栏
 			$(document).ready(function() {
-			
 
 				$("#img_acting").click(function() {
 					$(".hide_menu").slideDown();
