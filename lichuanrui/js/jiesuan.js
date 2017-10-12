@@ -151,7 +151,7 @@ $(function() {
 	})
 
 	//设置cookie
-	for(var i = 1; i < 12; i++) {
+	for(var i = 1; i < 18; i++) {
 		var ckie = "GOODS_" + i;
 		if(!($.cookie(ckie) > 0)) {
 			$("#" + ckie).hide();
@@ -165,7 +165,7 @@ $(function() {
 
 	$("#hide3").click(function() {
 		var count=0;
-		for(var i = 1; i <= 6; i++) {
+		for(var i = 1; i <= 18; i++) {
 			var ckie = "GOODS_" + i;
 			$.cookie(ckie, 0,{path:"/"});
 			console.log(ckie+"=="+$.cookie(ckie));
