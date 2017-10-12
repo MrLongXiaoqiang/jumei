@@ -404,8 +404,11 @@ body {
 
 .site_body_copy {
 	overflow: visible;
-	background: url(http://p12.jmstatic.com/jmstore/image/000/001/1346_std/59cc68f2a6091_1920_544.jpg?1506568429139) 50% 0% no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/001/1819_std/59c4d6f554903_1920_350.jpg?1506072304226) 50% 0% no-repeat;
+	height: 430px;
+	
 	}
+	
 
 .site_body_copy a {
 	display: block;
@@ -2551,7 +2554,7 @@ body {
 
 .goods_list_div {
 	width: 100%;
-	background: #f2f2f2;
+	background: #FFFFFF;
 }
 
 .goods_list_center {
@@ -2631,4 +2634,16 @@ body {
 }
 .goods_list_pic img{
 	
+}
+.center_pic{
+	text-align: center;
+	width: 1280px;
+	margin: 0 auto;
+}
+.center_pic img{
+	width: 1280px;
+}
+
+.center_pic img:hover{
+	cursor: pointer;
 }

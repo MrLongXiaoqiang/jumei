@@ -60,15 +60,15 @@ $(function() {
 		$.cookie("GOODS_17", 0, {
 			"path": "/"
 		});
-		$.cookie("GOODS_18", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_19", 0, {
-			"path": "/"
-		});
-		$.cookie("GOODS_20", 0, {
-			"path": "/"
-		});
+//		$.cookie("GOODS_18", 0, {
+//			"path": "/"
+//		});
+//		$.cookie("GOODS_19", 0, {
+//			"path": "/"
+//		});
+//		$.cookie("GOODS_20", 0, {
+//			"path": "/"
+//		});
 	}
 	$(".jiarugouwuche").click(function() {
 		var ckie = $(this).attr("id");
@@ -83,7 +83,7 @@ $(function() {
 
 function right_count() {
 	var count_right = 0;
-	for(var i = 1; i < 6; i++) {
+	for(var i = 1; i < 17; i++) {
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) > 0) {
 			count_right += parseInt($.cookie(ckie));
