@@ -11,7 +11,7 @@ function right_count() {
 	for(var i = 1; i <= 17; i++) {
 		var ckie = "GOODS_" + i;
 		if($.cookie(ckie) != 0) {
-			count_right += parseInt(Math.abs($.cookie(ckie)));
+			count_right=count_right + parseInt(Math.abs($.cookie(ckie)));
 		}
 		if($.cookie(ckie) < 0) {
 			$.cookie(ckie,Math.abs(parseInt($.cookie(ckie))));
@@ -97,7 +97,7 @@ $(function() {
 		setTimeout("right_count()", 600);
 
 	});
-//	right_count();
+	right_count();
 })
 
 
