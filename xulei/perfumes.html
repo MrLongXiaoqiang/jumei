@@ -361,7 +361,7 @@
 							</ul>
 							<p style="font-size: 12px; margin-left: 140px;margin-top: 24px;">筛选条件:</p>
 							<h6 style="font-style: normal; position: relative;top: -16px; left:255px;"><input type="radio" id="up_to_low" name="radio_choose" />按照价格由高至低</h6>
-							<h6 style="font-style: normal; position: relative;top: -33px; left:455px;">适用性别：男<input type="radio" name="sexkind" value="1"/>女<input type="radio" name="sexkind" value="2" /></h6>
+							<h6 style="font-style: normal; position: relative;top: -33px; left:455px;">适用性别：男<input type="radio" name="sexkind" value="1"/>女<input type="radio" name="sexkind" value="2" />全部<input type="radio" name="sexkind" value="3" /></h6>
 							<h6 style="font-style: normal; position: relative;top: -49px; left:655px;"><input type="radio" id="up_to_koubei" name="radio_choose" />按照口碑由高至低</h6>
 						</div>
 					</div>
@@ -1891,8 +1891,11 @@
 							$(".sex_boy").show();
 							$(".sex_girl").hide();
 
-						} else {
+						} else if($(this).val() == "2"){
 							$(".sex_boy").hide();
+							$(".sex_girl").show();
+						}else{
+							$(".sex_boy").show();
 							$(".sex_girl").show();
 						}
 					}
