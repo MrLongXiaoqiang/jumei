@@ -14,4 +14,7 @@ $(function(){
 	$("#relogin").click(function(){
 		$.removeCookie("NOW_UNAME",{"path":"/"});
 	})
+	
+	
+	
 })

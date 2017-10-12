@@ -81,7 +81,7 @@ function gouwuchezongjine() {
 function shuliang() {
 	var count001 = 0;
 	$(".shuliang").each(function() {
-		if($(this).parent().parent().is(":visible")) {
+		if($(this).parent().parent().is(":visible") && $(this).parent().parent().find("input[type=checkbox]").is(":checked")) {
 			count001 = parseInt($(this).val()) + count001;
 		}
 
@@ -193,4 +193,8 @@ $(function() {
 		location = "empty.html";
 	})
 
+
+
+
 });
+

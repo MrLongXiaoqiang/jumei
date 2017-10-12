@@ -29,6 +29,7 @@ function right_count() {
 		}
 	}
 	$("#shop_cart_count").text(count_right);
+	$(".gouwucheshangpinshuliang").text(count_right);
 	//	alert(count_right);
 	return count_right;
 }

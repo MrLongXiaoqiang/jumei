@@ -5,9 +5,26 @@
 //$.cookie("GOODS_11", 0);
 //$.cookie("GOODS_12", 0);
 //cookie的相关代码
-
+function right_count() {
+//	alert(123)
+	var count_right = 0;
+	for(var i = 1; i <= 17; i++) {
+		var ckie = "GOODS_" + i;
+		if($.cookie(ckie) != 0) {
+			count_right += parseInt(Math.abs($.cookie(ckie)));
+		}
+		if($.cookie(ckie) < 0) {
+			$.cookie(ckie,Math.abs(parseInt($.cookie(ckie))));
+		}
+	}
+	$(".gouwucheshangpinshuliang").text(count_right);
+	
+//		alert(count_right);
+	return count_right;
+}
 $(function() {
 	var goodscount = right_count();
+//	alert(goodscount);
 	if(!goodscount > 0) {
 		$.cookie("GOODS_1", 0, {
 			"path": "/"
@@ -69,6 +86,7 @@ $(function() {
 //		$.cookie("GOODS_20", 0, {
 //			"path": "/"
 //		});
+		
 	}
 	$(".jiarugouwuche").click(function() {
 		var ckie = $(this).attr("id");
@@ -79,20 +97,10 @@ $(function() {
 		setTimeout("right_count()", 600);
 
 	});
+//	right_count();
 })
 
-function right_count() {
-	var count_right = 0;
-	for(var i = 1; i <= 17; i++) {
-		var ckie = "GOODS_" + i;
-		if($.cookie(ckie) > 0) {
-			count_right += parseInt($.cookie(ckie));
-		}
-	}
-	$(".gouwucheshangpinshuliang").html(count_right);
-	//	alert(count_right);
-	return count_right;
-}
+
 
 $(function() {
 	//右侧导航动画
