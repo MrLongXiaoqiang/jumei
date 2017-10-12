@@ -251,7 +251,7 @@
 	width: 1920px;
 	height: 702px;
 	margin: 0px auto;
-	background: url(http://p12.jmstatic.com/jmstore/image/000/006/6207_std/59ccb64ce4874_1920_694.jpg?1506588237090)center 0 no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/003/3670_std/59cf46b2066eb_1920_724.jpg?1506756274217)center 0 no-repeat;
 	position: absolute;
 	left: -278px;
 }
@@ -268,7 +268,7 @@
 	width: 1920px;
 	height: 702px;
 	margin: 0px auto;
-	background: url(http://p12.jmstatic.com/jmstore/image/000/000/537_std/59c22c93a3925_1920_663.gif?1505897616958)center 0 no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/003/3670_std/59cf3f8a8344b_1920_707.jpg?1506754442777)center 0 no-repeat;
 	position: absolute;
 	display: none;
 	left: -278px;
@@ -277,7 +277,7 @@
 	width: 1920px;
 	height: 702px;
 	margin: 0px auto;
-	background: url(http://p12.jmstatic.com/jmstore/image/000/006/6207_std/59ca13ccaa800_1920_708.jpg?1506415554760)center 0 no-repeat;
+	background: url(http://p12.jmstatic.com/jmstore/image/000/006/6207_std/59ccb64ce4874_1920_694.jpg?1506588237090)center 0 no-repeat;
 	position: absolute;
 	display: none;
 	left: -278px;
@@ -298,6 +298,16 @@
 .banner_bot_li_first .banner_bot{
 	background:grey;
 	color: black;
+}
+#close_button{
+	height: 20px;
+	width: 20px;
+	background: url(http://a5.jmstatic.com/2f861dd916ce9a15/ibar_sprites.png);
+	background-position: 0px -272px;
+	position: absolute;
+	top: 81px;
+	left: 785px;
+	cursor: pointer;
 }
 
 .lovesign{

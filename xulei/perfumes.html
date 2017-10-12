@@ -8,14 +8,14 @@
 		<link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 	</head>
-    
+
 	<body style="overflow-x:hidden;">
 		<!--
         	作者：sherrymaple
         	时间：2017-09-18
         	描述：网页头部
-     -->   
-		<header> 
+     -->
+		<header>
 			<a href="#" name="m1"></a>
 			<div class="header_head">
 				<div class="head_top">
@@ -345,10 +345,11 @@
 				<div class="section_top_box">
 					<div class="box_introduce">
 						<a href="#" name="m2"></a>
-						<img id="img_acting" src="http://p12.jmstatic.com/jmstore/image/000/003/3083_std/597706ebeb522_960_79.jpg?1500972780065" />
+						<img id="img_acting"style="cursor: pointer;" src="http://p12.jmstatic.com/jmstore/image/000/003/3083_std/597706ebeb522_960_79.jpg?1500972780065" />
 						<div class="hide_menu">
 							<ul style="font-size: 12px;">
 								<span> 品牌：</span>
+								<span id="close_button"></span>
 								<li><input type="checkbox" name="FL" class="pinpai" />菲拉格慕</li>
 								<li><input type="checkbox" name="XN" class="pinpai" />香奈儿</li>
 								<li><input type="checkbox" name="DW" class="pinpai" />大卫杜夫</li>
@@ -358,9 +359,9 @@
 								<hr />
 							</ul>
 							<p style="font-size: 12px; margin-left: 140px;margin-top: 24px;">筛选条件:</p>
-							<h6 style="font-style: normal; position: absolute;top: 146px; left:255px;"><input type="radio" id="up_to_low" />按照价格由高至低</h6>
-							<h6 style="font-style: normal; position: absolute;top: 146px; left:455px;">适用性别：男<input type="radio" />女<input type="radio" /></h6>
-							<h6 style="font-style: normal; position: absolute;top: 146px; left:655px;"><input type="radio" id="up_to_high" />按照销量由高至低</h6>
+							<h6 style="font-style: normal; position: relative;top: -16px; left:255px;"><input type="radio" id="up_to_low" name="radio_choose" />按照价格由高至低</h6>
+							<h6 style="font-style: normal; position: relative;top: -33px; left:455px;">适用性别：男<input type="radio" name="radio_choose" />女<input type="radio" name="radio_choose" /></h6>
+							<h6 style="font-style: normal; position: relative;top: -49px; left:655px;"><input type="radio" id="up_to_high" name="radio_choose" />按照销量由高至低</h6>
 						</div>
 					</div>
 
@@ -1854,20 +1855,22 @@
 			//下拉特效
 			$(document).ready(function() {
 				$("#fade1").mouseenter(function() {
-					$(".top_hide_minu_onice").slideDown();
+					$(".top_hide_minu_onice").stop(true, false).slideDown();
 
 				});
 				$("#fade2").mouseenter(function() {
-					$(".top_hide_minu_twice").slideDown();
+					$(".top_hide_minu_twice").stop(true, false).slideDown();
 
 				});
 				$("#fade1").mouseleave(function() {
-					$(".top_hide_minu_onice").slideUp();
+					$(".top_hide_minu_onice").stop(true, false).slideUp();
 				});
 				$("#fade2").mouseleave(function() {
-					$(".top_hide_minu_twice").slideUp();
+					$(".top_hide_minu_twice").stop(true, false).slideUp();
 				});
+
 			});
+			//关闭下拉
 
 			$(document).ready(function() {
 				//根据品牌筛选	
@@ -1930,23 +1933,23 @@
 
 			//收缩导航筛选栏
 			$(document).ready(function() {
-				$("#img_acting").mouseenter(function() {
+			
+
+				$("#img_acting").click(function() {
 					$(".hide_menu").slideDown();
 				});
-				//				$("#img_acting").mouseout(function(){
-				//					$(".hide_menu").slideUp();
-				//			});
-				$(".hide_menu").hover(function() {
-					$(this).show().stop();
+				$("#close_button").click(function() {
+					$(".hide_menu").slideUp();
 				});
+
 			});
 			//nav栏美妆hover
 			$(document).ready(function() {
 				$(".nav_beauty").mouseenter(function() {
-					$(".head_bottom_nav_toggle").slideDown();
+					$(".head_bottom_nav_toggle").stop(true, false).slideDown();
 				});
 				$(".nav_beauty").mouseleave(function() {
-					$(".head_bottom_nav_toggle").slideUp();
+					$(".head_bottom_nav_toggle").stop(true, false).slideUp();
 				});
 				$(".head_bottom_nav_toggle").hover(function() {
 					$(this).show().stop();

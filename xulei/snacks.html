@@ -1360,27 +1360,28 @@
 			//下拉特效
 			$(document).ready(function() {
 				$("#fade1").mouseenter(function() {
-					$(".top_hide_minu_onice").slideDown();
+					$(".top_hide_minu_onice").stop(true, false).slideDown();
 
 				});
 				$("#fade2").mouseenter(function() {
-					$(".top_hide_minu_twice").slideDown();
+					$(".top_hide_minu_twice").stop(true, false).slideDown();
 
 				});
 				$("#fade1").mouseleave(function() {
-					$(".top_hide_minu_onice").slideUp();
+					$(".top_hide_minu_onice").stop(true, false).slideUp();
 				});
 				$("#fade2").mouseleave(function() {
-					$(".top_hide_minu_twice").slideUp();
+					$(".top_hide_minu_twice").stop(true, false).slideUp();
 				});
+
 			});
 			//nav栏美妆hover
 			$(document).ready(function(){
 				$(".nav_beauty").mouseenter(function(){
-					$(".head_bottom_nav_toggle").slideDown();
+					$(".head_bottom_nav_toggle").stop(true ,false).slideDown();
 				});
 				$(".nav_beauty").mouseleave(function(){
-					$(".head_bottom_nav_toggle").slideUp();
+					$(".head_bottom_nav_toggle").stop(true ,false).slideUp();
 				});
 				$(".head_bottom_nav_toggle").hover(function(){
 					$(this).show().stop();
