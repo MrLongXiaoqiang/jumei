@@ -13,6 +13,9 @@ $(function(){
 	})
 	
 	right_count();
+	$("#right_nav_user").text("祝您购物愉快！");
+	$("#right_nav_user_name").text($.cookie("NOW_UNAME"));
+	$("#right_nav_user_res").text("");
 })
 
 
