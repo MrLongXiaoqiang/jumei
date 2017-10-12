@@ -8,14 +8,14 @@
 		<link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 	</head>
-
+    
 	<body style="overflow-x:hidden;">
 		<!--
         	作者：sherrymaple
         	时间：2017-09-18
         	描述：网页头部
-        -->
-		<header>
+     -->   
+		<header> 
 			<a href="#" name="m1"></a>
 			<div class="header_head">
 				<div class="head_top">
@@ -23,10 +23,10 @@
 						<ul class="head_top_box_left">
 							<li>欢迎来到聚美 !</li>
 							<li>
-								<a href="#">请登录</a>
+								<a href="../yanghui/login.html">请登录</a>
 							</li>
 							<li>
-								<a href="#">快速注册</a>
+								<a href="../yanghui/register.html">快速注册</a>
 							</li>
 						</ul>
 						<ul class="head_top_box_right">
@@ -39,16 +39,72 @@
 							<li>
 								<a href="#"><span id="top_lovesign1"></span>收藏的品牌</a>
 							</li>
-							<li>
+							<li id="fade1">
 								<a href="#">我的聚美<span id="top_lovesign2"></span></a>
+								<div class="top_hide_minu_onice">
+									<ul>
+										<li>
+											<a>我的订单</a>
+										</li>
+										<li>
+											<a>我的现金巻</a>
+										</li>
+										<li>
+											<a>我的红包</a>
+										</li>
+										<li>
+											<a>我的余额</a>
+										</li>
+										<li>
+											<a>我的提现退款</a>
+										</li>
+										<li>
+											<a>我的收藏</a>
+										</li>
+										<li>
+											<a>我的心愿单</a>
+										</li>
+										<li>
+											<a>会员中心</a>
+										</li>
+										<li>
+											<a>礼品卡兑换</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li style="width: 10px;padding-right: 5px;"><span class="line1"></span></li>
 							<li>
 								<a href="#" style="color: #ED155B;"><span id="top_lovesign3"></span>手机聚美</a>
 							</li>
 							<li><span class="line1"></span></li>
-							<li>
+							<li id="fade2">
 								<a href="#">更多<span id="top_lovesign4"></span></a>
+								<div class="top_hide_minu_twice">
+									<ul>
+										<li>
+											<a>邀请好友</a>
+										</li>
+										<li>
+											<a>加入收藏</a>
+										</li>
+										<li>
+											<a>新浪微博</a>
+										</li>
+										<li>
+											<a>聚美微信</a>
+										</li>
+										<li>
+											<a>百度贴吧</a>
+										</li>
+										<li>
+											<a>腾讯微博</a>
+										</li>
+										<li>
+											<a>人人公众号</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -1728,8 +1784,8 @@
 							<span class="little_white_sq"></span>
 							<p style=""><img src="http://p0.jmstatic.com/assets/avatar_nonesign.jpg" width="62" height="62" style="border-radius: 62px;" /></p>
 							<p>你好！请
-								<a href="#">&nbsp;&nbsp;登录</a>&nbsp;|&nbsp;
-								<a href="#">注册</a>
+								<a href="../yanghui/login.html">&nbsp;&nbsp;登录</a>&nbsp;|&nbsp;
+								<a href="../yanghui/register.html">注册</a>
 							</p>
 						</div>
 						<div style="margin-left: 32px;">
@@ -1795,6 +1851,24 @@
 		<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
 		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			//下拉特效
+			$(document).ready(function() {
+				$("#fade1").mouseenter(function() {
+					$(".top_hide_minu_onice").slideDown();
+
+				});
+				$("#fade2").mouseenter(function() {
+					$(".top_hide_minu_twice").slideDown();
+
+				});
+				$("#fade1").mouseleave(function() {
+					$(".top_hide_minu_onice").slideUp();
+				});
+				$("#fade2").mouseleave(function() {
+					$(".top_hide_minu_twice").slideUp();
+				});
+			});
+
 			$(document).ready(function() {
 				//根据品牌筛选	
 				$(".pinpai").click(function() {
@@ -1808,7 +1882,7 @@
 				});
 
 				//由高至底排序
-				var historyul=$("#first_line").html();
+				var historyul = $("#first_line").html();
 				$("#up_to_low").click(function() {
 					if($(this).attr('checked')) {
 						$(this).attr('checked', false);
@@ -1829,7 +1903,7 @@
 					}
 
 				});
-				var historyul=$("#first_line").html();
+				var historyul = $("#first_line").html();
 				$("#up_to_high").click(function() {
 					if($(this).attr('checked')) {
 						$(this).attr('checked', false);
@@ -1851,7 +1925,6 @@
 
 				});
 
-				
 				//				
 			});
 
@@ -1897,93 +1970,97 @@
 			});
 
 			//右侧浮动画窗口1
-			$(document).ready(function(){
-				$("#menu1").hover(function(){
+			$(document).ready(function() {
+				$("#menu1").hover(function() {
 					$(".side_menu").show();
 					$(".side_menu").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide()',500);
+					setTimeout('righthide()', 500);
 				});
 			});
-			function righthide(){
+
+			function righthide() {
 				$('.side_menu').hide()
 			}
 			//右侧浮动画窗口3
-			$(document).ready(function(){
-				$("#menu2").hover(function(){
+			$(document).ready(function() {
+				$("#menu2").hover(function() {
 					$(".side_menu2").show();
 					$(".side_menu2").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu2").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide2()',500);
+					setTimeout('righthide2()', 500);
 				});
 			});
-			function righthide2(){
+
+			function righthide2() {
 				$('.side_menu2').hide()
-			}			
+			}
 			//右侧浮动画窗口3
-			$(document).ready(function(){
-				$("#menu3").hover(function(){
+			$(document).ready(function() {
+				$("#menu3").hover(function() {
 					$(".side_menu3").show();
 					$(".side_menu3").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu3").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide3()',500);
+					setTimeout('righthide3()', 500);
 				});
 			});
-			function righthide3(){
+
+			function righthide3() {
 				$('.side_menu3').hide()
-			}			
+			}
 			//右侧浮动画窗口底部
-			$(document).ready(function(){
-				$("#menu4").hover(function(){
+			$(document).ready(function() {
+				$("#menu4").hover(function() {
 					$(".side_menu4").show();
 					$(".side_menu4").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu4").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide4()',500);
+					setTimeout('righthide4()', 500);
 				});
 			});
-			function righthide4(){
+
+			function righthide4() {
 				$('.side_menu4').hide()
-			}			
+			}
 
 			//右侧上部弹出的登陆框
 			$(document).ready(function() {

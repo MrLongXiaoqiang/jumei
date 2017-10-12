@@ -9,11 +9,11 @@ header,section,footer{
 a{
 	text-decoration: none;
 	color: #6C6C6C;
-}
+}   
 ul{
 	list-style: none;
 }
-ul li{
+ul li{ 
 	font-size: 12px;
 	color: #6C6C6C;
 }

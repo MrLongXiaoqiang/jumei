@@ -7,14 +7,18 @@
 		<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
 		<link rel="stylesheet" href="css/mallstyle.css" type="text/css" />
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../plugin/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plugin/css/bootstrap.min.css" />
+		<script src="../js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugin/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-
+      
 	<body style="overflow-x:hidden;">
 		<!--
         	作者：sherrymaple
         	时间：2017-10-6
         	描述：网页头部
-        -->
+       --> 
 		<header>
 			<a href="#" name="m1"></a>
 			<div class="header_head">
@@ -23,32 +27,88 @@
 						<ul class="head_top_box_left">
 							<li>欢迎来到聚美 !</li>
 							<li>
-								<a href="#">请登录</a>
+								<a href="../yanghui/login.html" style="color: gray;">请登录</a>
 							</li>
 							<li>
-								<a href="#">快速注册</a>
+								<a href="../yanghui/register.html"style="color: gray;">快速注册</a>
 							</li>
 						</ul>
 						<ul class="head_top_box_right">
 							<li>
-								<a href="../wujinshan/promise.html">正品保证</a>
+								<a href="../wujinshan/promise.html"style="color: gray;">正品保证</a>
 							</li>
 							<li>
-								<a href="#">订单查询</a>
+								<a href="#"style="color: gray;">订单查询</a>
 							</li>
 							<li>
-								<a href="#"><span id="top_lovesign1"></span>收藏的品牌</a>
+								<a href="#"style="color: gray;"><span id="top_lovesign1"></span>收藏的品牌</a>
 							</li>
-							<li>
-								<a href="#">我的聚美<span id="top_lovesign2"></span></a>
+							<li id="fade1">
+								<a href="#"style="color: gray;">我的聚美<span id="top_lovesign2"></span></a>
+								<div class="top_hide_minu_onice">
+									<ul>
+										<li>
+											<a style="color: gray;">我的订单</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的现金巻</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的红包</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的余额</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的提现退款</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的收藏</a>
+										</li>
+										<li>
+											<a style="color: gray;">我的心愿单</a>
+										</li>
+										<li>
+											<a style="color: gray;">会员中心</a>
+										</li>
+										<li>
+											<a style="color: gray;">礼品卡兑换</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li style="width: 10px;padding-right: 5px;"><span class="line1"></span></li>
 							<li>
 								<a href="#" style="color: #ED155B;"><span id="top_lovesign3"></span>手机聚美</a>
 							</li>
 							<li><span class="line1"></span></li>
-							<li>
-								<a href="#">更多<span id="top_lovesign4"></span></a>
+							<li id="fade2">
+								<a href="#"style="color: gray;">更多<span id="top_lovesign4"></span></a>
+								<div class="top_hide_minu_twice">
+									<ul>
+										<li>
+											<a style="color: gray;">邀请好友</a>
+										</li>
+										<li>
+											<a style="color: gray;">加入收藏</a>
+										</li>
+										<li>
+											<a style="color: gray;">新浪微博</a>
+										</li>
+										<li>
+											<a style="color: gray;">聚美微信</a>
+										</li>
+										<li>
+											<a style="color: gray;">百度贴吧</a>
+										</li>
+										<li>
+											<a style="color: gray;">腾讯微博</a>
+										</li>
+										<li>
+											<a style="color: gray;">人人公众号</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -264,7 +324,7 @@
 			<div class="section_top">
 				<div class="section_top_box">
 					<div class="section_top_box_left">
-						<h5 style="height: 45px;border-bottom: dotted #808080 1px;">&nbsp;&nbsp;&nbsp;全部分类</h5>
+						<h5 style="height: 45px; text-align:left;font-weight:700;border-bottom: dotted #808080 1px;position: relative;top: 10px;">&nbsp;&nbsp;&nbsp;全部分类</h5>
 						<ul>
 							<li>
 								<a><strong>&nbsp;&nbsp;&nbsp;推荐品牌</strong></a>
@@ -358,9 +418,47 @@
 						</ul>
 					</div>
 					<div class="banner_section">
-						<img src="http://p0.jmstatic.com/banner/3436/155904_675_435_003-web.jpg?1506322779">
-						<img src="http://p0.jmstatic.com/banner/3436/155910_675_435_004-web.jpg?1506322178">
-						<img src="http://p0.jmstatic.com/banner/3436/155906_675_435_002-web.jpg?1506320466">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="http://p0.jmstatic.com/banner/3436/155904_675_435_003-web.jpg?1506322779">
+									<div class="carousel-caption">
+
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://p0.jmstatic.com/banner/3436/155910_675_435_004-web.jpg?1506322178">
+									<div class="carousel-caption">
+
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://p0.jmstatic.com/banner/3436/155906_675_435_002-web.jpg?1506320466">
+									<div class="carousel-caption">
+
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
 					</div>
 					<div class="banner_section_under">
 						<div class="banner_section_under_nav">
@@ -421,9 +519,9 @@
 					<div class="banner_section_right_under">
 						<a href="http://thefaceshop.jumei.com?from=mall_null_index30_brand_tuijian_big&amp;lo=3439&amp;mat=38506" target="_blank"><img src="http://p0.jmstatic.com/banner/3439/38506_202_202_002-web.jpg?1427338236"></a>
 						<div class="sc_change">
-                        <a href="#" class="sc_prev"></a>
-                        <a href="#" class="sc_next"></a>
-                    </div>
+							<a href="#" class="sc_prev"></a>
+							<a href="#" class="sc_next"></a>
+						</div>
 					</div>
 				</div>
 				<!--
@@ -431,239 +529,239 @@
             	时间：2017-10-07
             	描述：精彩活动
             -->
-			<div class="newmall_ongoing">
-				<div class="newmall_ongoing_title_pic">
-					<ul class="newmall_ongoing_shop">
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155876_535_250_001-web.jpg?1506309409">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">悦诗风吟旗舰店</p>
-										<p class="ongoing_item_sub_title">来自济州岛的自然恩赐</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc"><em>500</em>送<em>6</em>件套</p>
+				<div class="newmall_ongoing">
+					<div class="newmall_ongoing_title_pic">
+						<ul class="newmall_ongoing_shop">
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155876_535_250_001-web.jpg?1506309409">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">悦诗风吟旗舰店</p>
+											<p class="ongoing_item_sub_title">来自济州岛的自然恩赐</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc"><em>500</em>送<em>6</em>件套</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/837.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/837.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155874_600_320_001-web.jpg?1506309339">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">兰芝旗舰店</p>
-										<p class="ongoing_item_sub_title">闪耀水漾美肌</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>599</em>送<em>4</em>件套</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155874_600_320_001-web.jpg?1506309339">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">兰芝旗舰店</p>
+											<p class="ongoing_item_sub_title">闪耀水漾美肌</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>599</em>送<em>4</em>件套</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/10.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/10.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155870_535_250_001-web.jpg?1506309269">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">欧莱雅旗舰店</p>
-										<p class="ongoing_item_sub_title">你值得拥有</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">全场满<em>150</em>送<em>150</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155870_535_250_001-web.jpg?1506309269">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">欧莱雅旗舰店</p>
+											<p class="ongoing_item_sub_title">你值得拥有</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">全场满<em>150</em>送<em>150</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/388.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/388.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155868_535_250_001-web.jpg?1506309232">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">自然堂旗舰店</p>
-										<p class="ongoing_item_sub_title">你本来就很美</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>160</em>送<em>158</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155868_535_250_001-web.jpg?1506309232">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">自然堂旗舰店</p>
+											<p class="ongoing_item_sub_title">你本来就很美</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>160</em>送<em>158</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/1145.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/1145.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155862_535_250_001-web.jpg?1506309131">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">御泥坊旗舰店</p>
-										<p class="ongoing_item_sub_title">我的御用面膜</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>179</em>送<em>139</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155862_535_250_001-web.jpg?1506309131">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">御泥坊旗舰店</p>
+											<p class="ongoing_item_sub_title">我的御用面膜</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>179</em>送<em>139</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/245.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/245.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155854_535_250_001-web.jpg?1506308973">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">玛丽黛佳旗舰店</p>
-										<p class="ongoing_item_sub_title">新艺术彩妆品牌</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>89</em>送<em>68</em>元唇膏</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155854_535_250_001-web.jpg?1506308973">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">玛丽黛佳旗舰店</p>
+											<p class="ongoing_item_sub_title">新艺术彩妆品牌</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>89</em>送<em>68</em>元唇膏</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/701.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/701.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3495/155848_535_250_001-web.jpg?1506308840">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">美宝莲旗舰店</p>
-										<p class="ongoing_item_sub_title">美就现在</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>89</em>赠底妆<em>3</em>件</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3495/155848_535_250_001-web.jpg?1506308840">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">美宝莲旗舰店</p>
+											<p class="ongoing_item_sub_title">美就现在</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>89</em>赠底妆<em>3</em>件</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/623.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/623.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155846_535_250_001-web.jpg?1506308601">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">膜法世家1908旗舰店</p>
-										<p class="ongoing_item_sub_title">开启膜法美肤之旅</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">任意<em>2</em>件<em>8</em>折</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155846_535_250_001-web.jpg?1506308601">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">膜法世家1908旗舰店</p>
+											<p class="ongoing_item_sub_title">开启膜法美肤之旅</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">任意<em>2</em>件<em>8</em>折</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/690.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/690.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155844_535_250_001-web.jpg?1506308562">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">佰草集旗舰店</p>
-										<p class="ongoing_item_sub_title">中草药高端护理品牌</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>129</em>赠<em>100</em>元大礼包</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155844_535_250_001-web.jpg?1506308562">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">佰草集旗舰店</p>
+											<p class="ongoing_item_sub_title">中草药高端护理品牌</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>129</em>赠<em>100</em>元大礼包</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/630.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/630.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155842_535_250_001-web.jpg?1506308521">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">姬芮旗舰店</p>
-										<p class="ongoing_item_sub_title">青春肌肤“无穷尽”</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>150</em>送<em>150</em>礼包</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155842_535_250_001-web.jpg?1506308521">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">姬芮旗舰店</p>
+											<p class="ongoing_item_sub_title">青春肌肤“无穷尽”</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>150</em>送<em>150</em>礼包</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/679.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/679.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155838_535_250_001-web.jpg?1506308443">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">卡姿兰旗舰店</p>
-										<p class="ongoing_item_sub_title">时尚就是卡姿兰</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>129</em>送<em></em>礼包</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155838_535_250_001-web.jpg?1506308443">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">卡姿兰旗舰店</p>
+											<p class="ongoing_item_sub_title">时尚就是卡姿兰</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>129</em>送<em></em>礼包</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/458.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/458.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155832_535_250_002-web.jpg?1506752734">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">珀莱雅旗舰店</p>
-										<p class="ongoing_item_sub_title">魅力源自深海赐</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>159</em>赠<em>259</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155832_535_250_002-web.jpg?1506752734">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">珀莱雅旗舰店</p>
+											<p class="ongoing_item_sub_title">魅力源自深海赐</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>159</em>赠<em>259</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/3660.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/3660.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155820_535_250_001-web.jpg?1506307981">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">伊蒂之屋旗舰店</p>
-										<p class="ongoing_item_sub_title">百变公主的魔法盒</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>79</em>送<em>99</em>元环保袋</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155820_535_250_001-web.jpg?1506307981">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">伊蒂之屋旗舰店</p>
+											<p class="ongoing_item_sub_title">百变公主的魔法盒</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>79</em>送<em>99</em>元环保袋</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/6654.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/6654.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155810_535_250_001-web.jpg?1506307757">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">梦妆旗舰店</p>
-										<p class="ongoing_item_sub_title">发现花朵的美肌奥秘</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>388</em>送<em>388</em>礼包</p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155810_535_250_001-web.jpg?1506307757">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">梦妆旗舰店</p>
+											<p class="ongoing_item_sub_title">发现花朵的美肌奥秘</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>388</em>送<em>388</em>礼包</p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/685.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/685.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155808_535_250_001-web.jpg?1506307709">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">阿芙旗舰店</p>
-										<p class="ongoing_item_sub_title">阿芙契约庄园直供</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc"><em>299</em>减<em>100</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155808_535_250_001-web.jpg?1506307709">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">阿芙旗舰店</p>
+											<p class="ongoing_item_sub_title">阿芙契约庄园直供</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc"><em>299</em>减<em>100</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/759.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/759.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						<a href="#">
-							<li>
-							<img alt="" src="http://p0.jmstatic.com/banner/3496/155806_535_250_001-web.jpg?1506307650">
-								<div class="newmall_ongoing_shop_info">
-									<div class="info_left">
-										<p class="ongoing_item_title">丸美旗舰店</p>
-										<p class="ongoing_item_sub_title">15年专注眼部护理</p>
-										<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>128</em>赠<em>258</em></p>
+
+								</li>
+							</a>
+							<a href="#">
+								<li>
+									<img alt="" src="http://p0.jmstatic.com/banner/3496/155806_535_250_001-web.jpg?1506307650">
+									<div class="newmall_ongoing_shop_info">
+										<div class="info_left">
+											<p class="ongoing_item_title">丸美旗舰店</p>
+											<p class="ongoing_item_sub_title">15年专注眼部护理</p>
+											<p class="ongoing_item_discount_desc J_cuxiao_desc">满<em>128</em>赠<em>258</em></p>
+										</div>
+										<img src="http://p0.jmstatic.com/brand/logo_180/1309.jpg" alt="">
 									</div>
-									<img src="http://p0.jmstatic.com/brand/logo_180/1309.jpg" alt="">
-								</div>
-								
-						</li>
-						</a>
-						
-					</ul>
+
+								</li>
+							</a>
+
+						</ul>
+					</div>
 				</div>
 			</div>
-			</div>
-			
+
 		</section>
 		<!--
         	作者：972893248@qq.com
@@ -869,8 +967,8 @@
 							<span class="little_white_sq"></span>
 							<p style=""><img src="http://p0.jmstatic.com/assets/avatar_nonesign.jpg" width="62" height="62" style="border-radius: 62px;" /></p>
 							<p>你好！请
-								<a href="#">&nbsp;&nbsp;登录</a>&nbsp;|&nbsp;
-								<a href="#">注册</a>
+								<a href="../yanghui/login.html">&nbsp;&nbsp;登录</a>&nbsp;|&nbsp;
+								<a href="../yanghui/register.html">注册</a>
 							</p>
 						</div>
 						<div style="margin-left: 32px;">
@@ -933,8 +1031,25 @@
 					</div>
 				</nav>
 		</footer>
-		<script type="text/javascript" src="../js/jquery-2.2.4.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript">
+			//下拉特效
+			$(document).ready(function() {
+				$("#fade1").mouseenter(function() {
+					$(".top_hide_minu_onice").slideDown();
+
+				});
+				$("#fade2").mouseenter(function() {
+					$(".top_hide_minu_twice").slideDown();
+
+				});
+				$("#fade1").mouseleave(function() {
+					$(".top_hide_minu_onice").slideUp();
+				});
+				$("#fade2").mouseleave(function() {
+					$(".top_hide_minu_twice").slideUp();
+				});
+			});
 			//nav栏美妆hover
 			$(document).ready(function() {
 				$(".nav_beauty").mouseenter(function() {
@@ -951,93 +1066,97 @@
 			});
 
 			//右侧浮动画窗口1
-			$(document).ready(function(){
-				$("#menu1").hover(function(){
+			$(document).ready(function() {
+				$("#menu1").hover(function() {
 					$(".side_menu").show();
 					$(".side_menu").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide()',500);
+					setTimeout('righthide()', 500);
 				});
 			});
-			function righthide(){
+
+			function righthide() {
 				$('.side_menu').hide()
 			}
 			//右侧浮动画窗口3
-			$(document).ready(function(){
-				$("#menu2").hover(function(){
+			$(document).ready(function() {
+				$("#menu2").hover(function() {
 					$(".side_menu2").show();
 					$(".side_menu2").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu2").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide2()',500);
+					setTimeout('righthide2()', 500);
 				});
 			});
-			function righthide2(){
+
+			function righthide2() {
 				$('.side_menu2').hide()
-			}			
+			}
 			//右侧浮动画窗口3
-			$(document).ready(function(){
-				$("#menu3").hover(function(){
+			$(document).ready(function() {
+				$("#menu3").hover(function() {
 					$(".side_menu3").show();
 					$(".side_menu3").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu3").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide3()',500);
+					setTimeout('righthide3()', 500);
 				});
 			});
-			function righthide3(){
+
+			function righthide3() {
 				$('.side_menu3').hide()
-			}			
+			}
 			//右侧浮动画窗口底部
-			$(document).ready(function(){
-				$("#menu4").hover(function(){
+			$(document).ready(function() {
+				$("#menu4").hover(function() {
 					$(".side_menu4").show();
 					$(".side_menu4").animate({
-						left:"-100px",
-						opacity:"1",
-						
+						left: "-100px",
+						opacity: "1",
+
 					});
-					
-				},function(){
+
+				}, function() {
 					$(".side_menu4").animate({
-						left:"-150px",
-						opacity:"0"
-						
+						left: "-150px",
+						opacity: "0"
+
 					});
-					setTimeout('righthide4()',500);
+					setTimeout('righthide4()', 500);
 				});
 			});
-			function righthide4(){
+
+			function righthide4() {
 				$('.side_menu4').hide()
-			}			
+			}
 
 			//右侧上部弹出的登陆框
 			$(document).ready(function() {
