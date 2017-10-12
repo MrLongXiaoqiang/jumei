@@ -30,9 +30,7 @@ function add_count(aaa) {
 	$.cookie(idnum, parseInt($.cookie(idnum)) + 1, {
 		"path": "/"
 	});
-
 	$(aaa).parent().parent().find("input[type=checkbox]").prop("checked", true);
-
 }
 
 function dec_count(aaa) {
