@@ -90,7 +90,7 @@
 //		var ly=parseFloat($(".magic_choice").offset().top);
 		var sr=parseFloat($(document).scrollTop());
 //		var relat=parseFloat($(".magic_choice").offset().top)-parseFloat($(document).scrollTop());
-		if(sr>886){
+		if(sr>=886){
 			
 			$(".magic_choice").css({
 				"position":"fixed",
@@ -98,6 +98,7 @@
 				"z-index":"999",
 				"margin-left":"-200px",
 				"width":"100%"
+				
 			});
 //$(".magic_choice").toggleClass("fixnav");
 
@@ -116,12 +117,17 @@
 //			$(".magic_choice").toggleClass("fixnav");
 				$(".magic_choice ul").animate({
 				marginLeft:"0px"
-			})
+			},30);
 			$(".magic_choice .magic_hid").css("display","none");
 		}
 		
 	});
 	
+	//导航锚链接
+	$(".magic_boy li").click(function(){
+		$(this).siblings("li").removeClass("boder_bottomr");
+		$(this).addClass("boder_bottomr");
+	});
 	//自动评价区
 	$(":radio").change(function(){//对象数组更好点
 		var username=["小**莉亚","仓**空","波**结衣","吉**布","北**子"]
@@ -132,6 +138,7 @@
 		words[1]=["还(^_-)行，就是有点少，不信问石老师","一般般把","快递有点慢","模样有点差","店主不是妹子"]
 		words[2]=["差评*999","别问我为啥(^_-)，走失差评","包装很烂","不好吃，而且很难看","快递很慢"]
 		var index=$(":checked").prop("id");
+		$(":radio").next("label").css("color","black");
 		$(":checked").next("label").css("color","red");
 			if(index=="all"){//全部评价
 				$(".pjnr").empty();

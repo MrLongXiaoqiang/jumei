@@ -526,6 +526,7 @@ a:hover {
       color: rgba(0, 0, 0, 0.5); }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003511}}
   .big_img .big_one {
+  	background: white;
     width: 375px;
     height: 500px;
     overflow: hidden;
@@ -548,8 +549,10 @@ a:hover {
   width: 960px;
   height: 41px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: white;
   line-height: 41px;
   margin: 0 auto;
+  animation: all 20ms;
   position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003538}}
   .magic_choice .magic_boy li {
@@ -563,6 +566,9 @@ a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003546}}
     .magic_choice .magic_boy li a {
       font-size: 14px !important; }
+      .boder_bottomr{
+      	border-bottom: 2px solid red;
+      }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/localgra\/jmyp_cxq\/css\/snack\.scss}line{font-family:\00003552}}
   .magic_choice .magic_hid {
     display: none;
