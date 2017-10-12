@@ -11,4 +11,21 @@ $(function(){
 	$("#relogin").click(function(){
 		$.removeCookie("NOW_UNAME",{"path":"/"});
 	})
+	
+	right_count();
 })
+
+
+
+function right_count() {
+	var count_right = 0;
+	for(var i = 1; i <= 17; i++) {
+		var ckie = "GOODS_" + i;
+		if($.cookie(ckie) > 0) {
+			count_right += parseInt($.cookie(ckie));
+		}
+	}
+	$("#shop_cart_count").text(count_right);
+	//	alert(count_right);
+	return count_right;
+}
