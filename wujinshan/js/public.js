@@ -10,7 +10,7 @@ function right_count() {
 	var count_right = 0;
 	for(var i = 1; i <= 17; i++) {
 		var ckie = "GOODS_" + i;
-		if($.cookie(ckie) != 0) {
+		if($.cookie(ckie) > 0) {
 			count_right=count_right + parseInt(Math.abs($.cookie(ckie)));
 		}
 		if($.cookie(ckie) < 0) {
