@@ -15,6 +15,16 @@ $(function(){
 		$.removeCookie("NOW_UNAME",{"path":"/"});
 	})
 	
+	$(".pinpaituan").click(function(){
+		location="xulei/mall.html";
+	})
+	$(".today_main_content_a_one_pic").click(function(){
+		location="xulei/mall.html";
+	})
+	$(".today_new_list_pic a").click(function(){
+//		alert(123);
+		location="xulei/mall.html";
+	})
 	
 	
 })
