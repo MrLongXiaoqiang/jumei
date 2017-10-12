@@ -477,7 +477,7 @@
 }
 
 .recommend_box .nav_tips {
-	height: 30px;
+	/*height: 30px;*/
 	line-height: 30px;
 	border-bottom: 2px #ccc solid;
 	margin-bottom: 15px;
@@ -489,7 +489,7 @@
 	height: 30px;
 	line-height: 30px;
 	font-size: 15px;
-	padding: 35px 20px;
+	padding: 13px 20px;
 	margin: 2px 0;
 	font-family: SimSun;
 	display: inline-block;
