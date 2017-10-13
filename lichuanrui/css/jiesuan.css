@@ -55,7 +55,7 @@
 
 
 /*section*/
-
+/*购物车头部*/
 .contaniner {
 	width: 960px;
 	/*height: 255px;*/
@@ -408,7 +408,7 @@
 	font-weight: bolder;
 	font-size: 14px;
 }
-
+/*购物车尾部*/
 .cotent_footer {
 	width: 960px;
 	height: 48px;
@@ -470,7 +470,7 @@
 	position: relative;
 	top: -14px;
 }
-
+/*今日推荐*/
 .recommend_box {
 	width: 960px;
 	position: relative;
@@ -554,7 +554,7 @@
 
 
 /*footer*/
-
+/*底部介绍*/
 .end {
 	overflow: hidden;
 	width: 100%;
