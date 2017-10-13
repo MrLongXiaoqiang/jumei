@@ -1972,15 +1972,19 @@
 			$(document).ready(function() {
 				//根据品牌筛选	
 				$(".pinpai").click(function() {
+					var num1=0;
 					$("#first_line li").hide();
 					$(".pinpai").each(function() {
 						if($(this).is(":checked")) {
 							var pinpainame = $(this).attr("name");
 							$("li[name=" + pinpainame + "]").show();
-
+							num1++;
 						}
 
 					});
+					if(num1==0){
+						$("#first_line li").show();
+					}
 
 					historyul = $("#first_line").html();
 				});
