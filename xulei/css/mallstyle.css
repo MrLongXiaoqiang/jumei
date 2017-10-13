@@ -1179,3 +1179,95 @@ nav {
 .timein{
 	display: inline-block;
 }
+.hide_goods{
+	width: 795px;
+	height: 395px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+.hide_goods2{
+	width: 550px;
+	height: 395px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+.hide_goods3{
+	width: 550px;
+	height: 395px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+.hide_goods4{
+	width: 606px;
+	height: 220px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+.hide_goods5{
+	width: 550px;
+	height: 395px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+.hide_goods6{
+	width: 606px;
+	height: 191px;
+	background-color: white;
+	position: absolute;
+	z-index: 700;
+	left: 220px;
+	display: none;
+	cursor: pointer;
+	box-shadow: 1px 0px 4px 1px darkgrey;
+}
+
+/*.hide_goods_1{
+	width: 265px;
+	height: 394px;
+	display: inline-block;
+	float: left;*/
+}
+/*.hide_goods_1 a{
+	font-size: 12px;
+	margin-top: -100px;
+}
+
+.hide_goods_2{
+	width: 264px;
+	height: 394px;
+
+	display: inline-block;
+	float: left;
+}
+.hide_goods_3{
+	width: 265px;
+	height: 394px;
+
+	display: inline-block;
+	float: left;
+}*/
