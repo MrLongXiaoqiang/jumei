@@ -33,6 +33,8 @@ function add_count(aaa) {
 	$(aaa).parent().parent().find("input[type=checkbox]").prop("checked", true);
 }
 
+
+//小计
 function dec_count(aaa) {
 	if(parseInt($(aaa).next().val()) == 1) {
 		return false;
@@ -59,6 +61,8 @@ function gouwuchexiaoji(bbb) {
 //	$(bbb).next().text((parseFloat($(bbb).prev().text()) * parseFloat($(bbb).find("input").val())).toFixed(2));
 //}
 
+
+//购物车总金额
 function gouwuchezongjine() {
 	var totalMoney = 0.0;
 	$(".xiaoji").each(function() {
@@ -77,14 +81,13 @@ function gouwuchezongjine() {
 	shuliang();
 
 }
-
+//判断购物车数量
 function shuliang() {
 	var count001 = 0;
 	$(".shuliang").each(function() {
 		if($(this).parent().parent().is(":visible")) {
 			count001 = parseInt($(this).val()) + count001;
 		}
-
 	})
 	if(count001 == 0) {
 		location = "empty.html";
@@ -115,34 +118,6 @@ $(function() {
 
 //物品的删除与撤销
 $(function() {
-	//	$("#hide").click(function() {
-	//		$(".xiangshui").hide();
-	//		$(".chexiao").show();
-	//	});
-	//	$("#show").click(function() {
-	//		$(".chexiao").hide();
-	//		$(".xiangshui").show();
-	//	});
-	//	$("#hide2").click(function() {
-	//		$(".xiangshui2").hide();
-	//		$(".chexiao2").show();
-	//	});
-	//	$("#show2").click(function() {
-	//		$(".chexiao2").hide();
-	//		$(".xiangshui2").show();
-	//	});
-	//	$("#hide5").click(function() {
-	//		$(".xiangshui2").hide();
-	//		$(".chexiao2").show();
-	//	});
-	//	$("#show5").click(function() {
-	//		$("#GOODS_3").hide();
-	//		$("#GOODS_3").show();
-	//	});
-	//	$("#hide3").click(function() {
-	//		$(".xiangshui").hide();
-	//		$(".xiangshui2").hide();
-	//	});
 
 	$(".delbutton").click(function() {
 		$(this).parent().parent().prev().find(".chexiao").show();

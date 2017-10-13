@@ -1,3 +1,4 @@
+//索要发票淡入淡出
 $(function() {
 	$(".question").hover(function() {
 		$("#question_neirong ul").fadeIn();
@@ -5,6 +6,7 @@ $(function() {
 		$("#question_neirong ul").fadeOut();
 
 	});
+//索要发票涛哥效果
 	$(".suoyao").click(function() {
 		$(".fapioaleixing").slideToggle("fast");
 	});
@@ -24,11 +26,13 @@ $(function() {
 	$(".discount").click(function() {
 		$(".youhui").slideToggle("slow");
 	});
+	//送货时间单击变色
 	$(".time_choese>div").click(function() {
 		$(this).css("background", "#0ABFDE").siblings().css("background", "#fff");
 	})
 
 	//后增加
+	//总商品数量
 	var summoney = 0;
 	var sumGoods = 0;
 	for(var i = 1; i < 18; i++) {
@@ -44,10 +48,9 @@ $(function() {
 			$("#shangpinshuliang").text(sumGoods);
 		}
 	}
+	//判断商品数量跳转首页
 	$(".summoney").text("￥" + summoney);
-
 	$(".top_pic").click(function() {
-		
 		leave_location();
 		location = "../index.html";
 	})
@@ -65,7 +68,7 @@ $(function() {
 	})
 
 });
-
+//跳转首页
 function leave_location(){
 	for(var i = 1; i < 18; i++) {
 		var ckie = "GOODS_" + i;

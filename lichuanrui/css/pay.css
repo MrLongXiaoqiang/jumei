@@ -3,6 +3,7 @@
 				padding: 0;
 			}
 			/*header*/
+			/*确认订单头部*/
 			
 			.top {
 				position: relative;
@@ -55,6 +56,7 @@
 				margin: 0 auto;
 			}
 			/*section*/
+			/*确认订单商品内容*/
 			
 			.big_background {
 				width: 1349px;
@@ -134,7 +136,7 @@
 			
 			#working {
 				background: #fff8f3;
-				border-radius:10px;
+				border-radius: 10px;
 				line-height: 38px;
 				text-align: center;
 				width: 122px;
@@ -154,7 +156,7 @@
 			
 			#onweek {
 				background: #fff8f3;
-				border-radius:10px;
+				border-radius: 10px;
 				width: 110px;
 				height: 38px;
 				text-align: center;
@@ -171,7 +173,7 @@
 			
 			#everyday {
 				background: #fff8f3;
-				border-radius:10px;
+				border-radius: 10px;
 				width: 180px;
 				height: 38px;
 				text-align: center;
@@ -260,7 +262,6 @@
 			}
 			
 			.xiangshui {
-				
 				border: 1px solid black;
 			}
 			
@@ -273,9 +274,11 @@
 			.xiangshui:hover {
 				background: #E8E8E8;
 			}
+			
 			.xiangshui td .konghang {
 				text-align: left;
 			}
+			
 			.konghang {
 				height: 40px;
 				line-height: 40px;
@@ -284,9 +287,11 @@
 				height: 40px;
 				font-size: 12px;
 			}
-			.konghang_left{
+			
+			.konghang_left {
 				text-align: left;
 			}
+			
 			.konghang img {
 				text-align: center;
 				vertical-align: middle;
@@ -316,6 +321,7 @@
 				text-align: center;
 				vertical-align: middle;
 			}
+			/*配送方式快递*/
 			
 			.post {
 				font-size: 12px;
@@ -336,6 +342,7 @@
 			#newgoods {
 				color: #0abfde;
 			}
+			/*使用代金券*/
 			
 			.discount {
 				float: left;
@@ -352,19 +359,21 @@
 				width: 15px;
 				margin: 2px;
 				float: left;
-				
 			}
-			.youhui{
+			
+			.youhui {
 				font-size: 12px;
 				display: none;
 				float: left;
 				clear: left;
 			}
-			#juanhao{
+			
+			#juanhao {
 				color: red;
 				cursor: pointer;
 			}
-			#hongbaohao{
+			
+			#hongbaohao {
 				color: red;
 				cursor: pointer;
 			}
@@ -375,6 +384,7 @@
 				color: red;
 			}
 			/*summary*/
+			/*商品总结*/
 			
 			.summary {
 				position: relative;
@@ -391,6 +401,7 @@
 				height: 60px;
 				font-size: 12px;
 			}
+			/*索要发票介绍*/
 			
 			.question {
 				display: inline-block;
@@ -522,6 +533,7 @@
 				color: #fff;
 			}
 			/*footer*/
+			/*聚美优品尾部介绍*/
 			
 			.end {
 				overflow: hidden;
@@ -553,11 +565,10 @@
 				padding: -15px 15px 15px;
 			}
 			
-.sum_float_right{
-	float: right;
-}
-
-
-.top_pic:hover{
-	cursor: pointer;
-}
+			.sum_float_right {
+				float: right;
+			}
+			
+			.top_pic:hover {
+				cursor: pointer;
+			}

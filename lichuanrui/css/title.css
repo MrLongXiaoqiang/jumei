@@ -5,7 +5,7 @@
 
 
 /*header*/
-
+/*未添加商品头部*/
 .top {
 	position: relative;
 	height: 32px;
@@ -54,7 +54,7 @@
 
 
 /*section*/
-
+/*未添加商品购物车*/
 #sps {
 	padding: 60px;
 }
@@ -177,7 +177,7 @@
 
 
 /*footer*/
-
+/*底部介绍*/
 .end {
 	overflow: hidden;
 	width: 100%;
