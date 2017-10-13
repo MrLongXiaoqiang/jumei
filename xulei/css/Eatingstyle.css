@@ -1,3 +1,4 @@
+/*上部分top*/
 .header_head{
 	width: 100%;
 	background-color: #fff;
@@ -5,6 +6,7 @@
 	position: relative;
 	/*overflow: hidden;*/
 }
+
 .head_bottom{
 	width: 100%;
 	height: 38px;
@@ -55,6 +57,7 @@
 	left: 276px;
 	
 }
+/*右侧下拉菜单*/
 .ul_right{
 	height: 137px;
 	width: 222px;	
@@ -82,6 +85,7 @@
 .ul_right_inside span{
 
 }
+/*上部分图片效果*/
 #img_center1{
 	width: 100%;
 	margin: 0 auto;
@@ -108,6 +112,7 @@
 #img_center3 img{
 	width: 100%;
 }
+/*上部分top底部NAV*/
 .head_bottom_box_nav2 li{
 	padding-right: 10px;
     padding-left: 0px;
@@ -142,6 +147,7 @@
 	transform:rotate(180deg);
 	background-position: 0 0 ;
 }
+/*中部分logo位置*/
 .head_center{
 	height: 110px;
 	width: 960px;
@@ -180,6 +186,7 @@
 	float: left;
 	padding-right: 20px;
 }
+/*上部隐藏部分nav下拉第一次*/
 .top_hide_minu_onice{
 	height: 253px;
 	width: 121px;
@@ -192,6 +199,7 @@
 	display: none;
 	overflow: hidden;
 }
+/*上部隐藏部分nav下拉第二次*/
 .top_hide_minu_twice{
 	height: 200px;
 	width: 115px;
@@ -224,6 +232,7 @@
 	overflow: hidden;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
 }
+/*logo所在*/
 .head_center_logo{
 	display: inline-block;
 	float: left;
@@ -329,7 +338,8 @@
 	background:grey;
 	color: black;
 }
-
+/*小下拉图标（样式）
+ */
 .lovesign{
 	position: relative;
 	top: -3px;
