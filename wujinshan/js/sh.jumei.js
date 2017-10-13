@@ -32,6 +32,8 @@ $(function(){
 			$.cookie("SEARCH_ALL1",search_all);
 			
 		}
+		search_goods(str);
+		
 	})
 	$("#index_search_text").focus(function(){
 		$(this).parent().next().slideDown()
@@ -49,4 +51,26 @@ $(function(){
 })
 function search_history_div_hide(){
 	$("#search_history").slideUp();
+}
+function search_goods(str){
+	if(str.indexOf("鞋")!=-1||str.indexOf("履")!=-1){
+		location="wujinshan/shoe_good.html";
+	}else if(str.indexOf("装")!=-1||str.indexOf("衣服")!=-1){
+		location="wujinshan/sport_good.html";
+	}else if(str.indexOf("母")!=-1||str.indexOf("婴")!=-1||str.indexOf("童")!=-1){
+		location="wujinshan/motherbaby_good.html";
+	}else if(str.indexOf("表")!=-1){
+		location="wujinshan/luxuries_good.html";
+	}else if(str.indexOf("妆")!=-1){
+		location="xulei/mall.html";
+	}else if(str.indexOf("香水")!=-1){
+		location="xulei/perfumes.html";
+	}else if(str.indexOf("零食")!=-1||str.indexOf("吃")!=-1||str.indexOf("特")!=-1||str.indexOf("便宜")!=-1){
+		location="xulei/snacks.html";
+	}else if(str.indexOf("奢")!=-1){
+		location="wujinshan/luxuries.html";
+	}else{
+		
+		location="xulei/mall.html";
+	}
 }
